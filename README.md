@@ -12,6 +12,20 @@ http://api.harvardartmuseums.org
 
 The API uses keys to authenticate requests. Every request must be accompanied by the `apikey` parameter and an API key. [Send a request](https://docs.google.com/forms/d/1Fe1H4nOhFkrLpaeBpLAnSrIMYvcAxnYWm0IU9a6IkFA/viewform) to obtain your key.
 
+## Paging through data
+
+By default, list requests return 10 records at a time. You can increase the number of records per page up to a maximum of 100 by setting the size parameter. Use the page parameter to page through large record sets.
+
+## Images
+
+Some of the data includes URLS to images of objects in the collection. URLs for images of objects that have rights restrictions are excluded for most users. This means images for many 20th and 21st century works of art will not be available to you at the present time. We are working on a solution to this.
+
+Our images are served to you by an image delivery service that is capable of resizing images on the fly. Append ?height=[PIXEL_DIMS]&width=[PIXEL_DIMS] to image URLs to get an image sized to fit to the supplied dimensions. For example, if you want a JPEG image scaled to 150 pixels on the longest side construct the URL as follows.
+
+```shell
+http://nrs.harvard.edu/urn-3:HUAM:OCP16703_dynmc?height=150&width=150
+```
+
 ## Resources that are available
 
 Several primary museum resources are accessible in this API. They include the following:

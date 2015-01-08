@@ -114,7 +114,7 @@ Include one or more of the following parameters to filter the items.
 				},
 				{
 					"birthplace": "Siegen, Westphalia",
-					name: "Peter Paul Rubens",
+					"name": "Peter Paul Rubens",
 					"prefix": "After",
 					"personid": 28402,
 					"role": "Artist after",
