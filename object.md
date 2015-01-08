@@ -6,34 +6,35 @@ Contains detailed information on the items in the Harvard Art Museums collection
 
 `GET /object` will get all objects.
 
-```
+
 *Parameters*
 
-> q=[FIELD]:[VALUE]
-> size=[0-9+]
-> from=[0-9+]
-sort=[FIELD NAME or “random” or “random:[SEED NUMBER]”]
+```
+q=[FIELD]:[VALUE]
+size=[0-9+]
+from=[0-9+]
+sort=[FIELD NAME or "random" or "random:[SEED NUMBER]"]
 sortorder=[asc or desc]
 fields=[comma separated list of fields]
 hasimage=[0 or 1]
-century=[CENTURY or pipe separated list of centuries or “any”]
-classification=[CLASSIFICATION or pipe separated list of classifications or “any”]
-color=[COLOR or pipe separated list of colors or “any”]
-culture=[CULTURE or pipe separated list of cultures or “any”]
-exhibition=[EXHIBITION ID or “any”]
-gallery=[GALLERY NUMBER or pipe separated list of gallery numbers or “any”]
-group=[GROUP NAME or “any”]
+century=[CENTURY or pipe separated list of centuries or "any"]
+classification=[CLASSIFICATION or pipe separated list of classifications or "any"]
+color=[COLOR or pipe separated list of colors or "any"]
+culture=[CULTURE or pipe separated list of cultures or "any"]
+exhibition=[EXHIBITION ID or "any"]
+gallery=[GALLERY NUMBER or pipe separated list of gallery numbers or "any"]
+group=[GROUP NAME or "any"]
 keyword=[1 or more terms]
-medium=[MEDIUM or pipe separated list of mediums or “any”]
+medium=[MEDIUM or pipe separated list of mediums or "any"]
 objectnumber=[1 or more terms]
-period=[PERIOD or pipe separated list of periods or “any”]
-person=[PERSON ID or PERSON NAME or “any”]
-place=[PLACE or pipe separated list of places or “any”]
+period=[PERIOD or pipe separated list of periods or "any"]
+person=[PERSON ID or PERSON NAME or "any"]
+place=[PLACE or pipe separated list of places or "any"]
 relatedto=[OBJECT ID]
-technique=[TECHNIQUE or pipe separated list of techniques or “any”]
+technique=[TECHNIQUE or pipe separated list of techniques or "any"]
 title=[1 or more terms]
 exact_title=[EXACT URL ENCODED TITLE]
-worktype=[WORKTYPE or pipe separated list of worktypes or “any”]
+worktype=[WORKTYPE or pipe separated list of worktypes or "any"]
 facet=[FIELD NAME or comma separated list of fields]
 apikey=[YOUR API KEY] required
 ```
@@ -78,199 +79,201 @@ accesslevel describes the accessibility of a record
 #### Examples
 
 http://api.harvardartmuseums.org/object/299843
-Returns the full record for van Gogh’s “Self-Portrait Dedicated to Paul Gauguin”.
+Returns the full record for van Gogh’s "Self-Portrait Dedicated to Paul Gauguin".
+
+#### Response
 
 ```json
 {
-“accesslevel”: 1,
-“accessionyear”: 2014,
-“century”: “”,
-“classification”: “”,
-“colorcount”: 0,
-“colors”: [
-{
-	“color”: “”,
-	“hue”: “”,
-	“percent”: “”,
-	“css3”: “”,
-	“spectrum”: “”
-}],
-“commentary”: “”,
-“contact”: “”,
-“contextualtext”: [
-{
-	“context”: “”,
-	“date”: “”,
-	“text”: “”,
-	“type”: “”
-}],
-“contextualtextcount”: 0,
-“copyright”: “”,
-“creditline”: “”,
-“culture”: “”,
-“datebegin”: “”,
-“dated”: “”,
-“dateend”: “”,
-“dateoffirstpageview”: “”,
-“dateoflastpageview”: “”,
-“department”: “”,
-“description”: “”,
-“details”: [
-	“coins”: {
-		“dateonobject”: “”,
-		“denomination”: “”,
-		“dieaxis”: “”,
-		“metal”: “”,
-		“obverseinscription”: “”,
-		“reverseinscription”: “”
-	},
-	“technical”: [
+	"accesslevel": 1,
+	"accessionyear": 2014,
+	"century": "",
+	"classification": "",
+	"colorcount": 0,
+	"colors": [
 	{
-		“type”: “”,
-		“text”: “”
-	}]
-	],
-“dimensions”: “”,
-“division”: “”,
-“edition”: “”,
-“exhibitioncount”: 0,
-“exhibitions”: [
-{
-	“begindate”: “”,
-	“enddate”: “”,
-	“exhibitionid”: “”,
-	“title”: “”,
-	“citation”: “”
-}],
-“gallery”: { 
-	“gallerynumber”: 0,
-	“name”: “”,
-	“floor”: “”
-},
-“groupcount”: 0,
-“groupings”: [
-{
-	“groupid”: “”,
-	“name”: “”
-}],
-“id”: 123456,
-“imagecount”: 0,
-“imagepermissionlevel”:, 0,
-“images”: [
-{
-	“baseimageurl”: “”,
-	“copyright”: “”,
-	“displayorder”: “”,
-	“publiccaption”: “”,
-	“renditionnumber”: “”
-}],
-“lastupdate”: “”,
-“marks”: [
-{
-	“text”: “”,
-“type”: “”
-}],
-“markscount”: 0,
-“media”: [
-{
-	“filetype”: “”,
-	“fileurl”: “”,
-	“publiccaption”: “”,
-	“renditionnumber”: “”
-}],
-“mediacount”: 0,
-“medium”: “”,
-“objectid”: “”,
-“objectnumber”: “”,
-“people”: [
-{
-	“birthplace”: “”,
-	“personid”: “”,
-	“culture”: “”,
-	“deathplace”: “”,
-	“displaydate”: “”,
-	“displayname”: “”,
-	“displayorder”: “”,
-	“name”: “”,
-	“prefix”: “”,
-	“role”: “”
-}],
-“peoplecount”: 0,
-“period”: “”,
-“places”: [
-{
-	“displayname”: “”,
-“placeid”: “”,
-“type”: “”
+		"color": "",
+		"hue": "",
+		"percent": "",
+		"css3": "",
+		"spectrum": ""
 	}],
-“primaryimageurl”: “”,
-“provenance”: “”,
-“publicationcount”: 0,
-“publications”: [
-{
-	“citation”: “”,
-“citationremarks”: “”,
-“format”: “”,
-“pagenumbers”: “”,
-“publicationdate”: “”,
-“publicationid”: “”,
-“publicationplace”: “”,
-“publicationyear”: “”,
-“title”: “”,
-“volumetitle”: “”,
-“volumenumber”: “”
-}],
-“rank”: 12345”,
-“related”: [
-{
-	“accesslevel”: “”,
-	“objectid”: “”,
-	“relationship”: “”
-}],
-“relatedcount”: 0,
-“signed”: “”,
-“state”: “”,
-“standardreferencenumber”: “”,
-“style”: “”,
-“tags”: [
-{
-	“tag”: “”
-}],
-“technique”: “”,
-“terms”: [
-	“century”: [
-{
-		“id”: “”,
-	“name”: “”
-}],
-	“medium”: [
-{
-		“id”: “”,
-	“name”: “”
-}],
-“place”: [
-{
-“id”: “”,
-“name”: “”
+	"commentary": "",
+	"contact": "",
+	"contextualtext": [
+	{
+		"context": "",
+		"date": "",
+		"text": "",
+		"type": ""
+	}],
+	"contextualtextcount": 0,
+	"copyright": "",
+	"creditline": "",
+	"culture": "",
+	"datebegin": "",
+	"dated": "",
+	"dateend": "",
+	"dateoffirstpageview": "",
+	"dateoflastpageview": "",
+	"department": "",
+	"description": "",
+	"details": [
+		"coins": {
+			"dateonobject": "",
+			"denomination": "",
+			"dieaxis": "",
+			"metal": "",
+			"obverseinscription": "",
+			"reverseinscription": ""
+		},
+		"technical": [
+		{
+			"type": "",
+			"text": ""
+		}]
+		],
+	"dimensions": "",
+	"division": "",
+	"edition": "",
+	"exhibitioncount": 0,
+	"exhibitions": [
+	{
+		"begindate": "",
+		"enddate": "",
+		"exhibitionid": "",
+		"title": "",
+		"citation": ""
+	}],
+	"gallery": { 
+		"gallerynumber": 0,
+		"name": "",
+		"floor": ""
+	},
+	"groupcount": 0,
+	"groupings": [
+	{
+		"groupid": "",
+		"name": ""
+	}],
+	"id": 123456,
+	"imagecount": 0,
+	"imagepermissionlevel":, 0,
+	"images": [
+	{
+		"baseimageurl": "",
+		"copyright": "",
+		"displayorder": "",
+		"publiccaption": "",
+		"renditionnumber": ""
+	}],
+	"lastupdate": "",
+	"marks": [
+	{
+		"text": "",
+	"type": ""
+	}],
+	"markscount": 0,
+	"media": [
+	{
+		"filetype": "",
+		"fileurl": "",
+		"publiccaption": "",
+		"renditionnumber": ""
+	}],
+	"mediacount": 0,
+	"medium": "",
+	"objectid": "",
+	"objectnumber": "",
+	"people": [
+	{
+		"birthplace": "",
+		"personid": "",
+		"culture": "",
+		"deathplace": "",
+		"displaydate": "",
+		"displayname": "",
+		"displayorder": "",
+		"name": "",
+		"prefix": "",
+		"role": ""
+	}],
+	"peoplecount": 0,
+	"period": "",
+	"places": [
+	{
+		"displayname": "",
+	"placeid": "",
+	"type": ""
+		}],
+	"primaryimageurl": "",
+	"provenance": "",
+	"publicationcount": 0,
+	"publications": [
+	{
+		"citation": "",
+	"citationremarks": "",
+	"format": "",
+	"pagenumbers": "",
+	"publicationdate": "",
+	"publicationid": "",
+	"publicationplace": "",
+	"publicationyear": "",
+	"title": "",
+	"volumetitle": "",
+	"volumenumber": ""
+	}],
+	"rank": 12345",
+	"related": [
+	{
+		"accesslevel": "",
+		"objectid": "",
+		"relationship": ""
+	}],
+	"relatedcount": 0,
+	"signed": "",
+	"state": "",
+	"standardreferencenumber": "",
+	"style": "",
+	"tags": [
+	{
+		"tag": ""
+	}],
+	"technique": "",
+	"terms": [
+		"century": [
+	{
+			"id": "",
+		"name": ""
+	}],
+		"medium": [
+	{
+			"id": "",
+		"name": ""
+	}],
+	"place": [
+	{
+	"id": "",
+	"name": ""
+		}]
+	]
+	"title": "",
+	"titles": [
+	{
+		"displayorder": "",
+		"title": "",
+		"titleid": "",
+		"titletype": ""
+	}],
+	"titlescount": 0,
+	"totalpageviews": "",
+	"totaluniquepageviews": "",
+	"url": "",
+	"verificationlevel": "",
+	"worktypes": [
+	{
+		"worktype": ""
 	}]
-]
-“title”: “”,
-“titles”: [
-{
-	“displayorder”: “”,
-	“title”: “”,
-	“titleid”: “”,
-	“titletype”: “”
-}],
-“titlescount”: 0,
-“totalpageviews”: “”,
-“totaluniquepageviews”: “”,
-“url”: “”,
-“verificationlevel”: “”,
-“worktypes”: [
-{
-	“worktype”: “”
-}]
 }
 ```
 
@@ -281,4 +284,4 @@ Returns the full record for van Gogh’s “Self-Portrait Dedicated to Paul Gaug
 #### Examples 
 
 http://api.harvardartmuseums.org/object/299843/publications
-Returns an array containing all the publications related to van Gogh’s “Self-Portrait Dedicated to Paul Gauguin”.
+Returns an array containing all the publications related to van Gogh’s "Self-Portrait Dedicated to Paul Gauguin".
