@@ -40,7 +40,7 @@ Include one or more of the following parameters to filter the items.
 
 #### Examples
 
-> EX 1
+> EX 1  
 > EX 2
 
 
@@ -56,35 +56,25 @@ Include one or more of the following parameters to filter the items.
 
 Some fields contain numeric values that have special meaning.
 
-**imagepermissionlevel** describes the level of image copyright permissions for a record
-
-0 – ok to display images at any size
-
-1 – images have restrictions; display at a maximum pixel dimension of 256px
-
+**imagepermissionlevel** describes the level of image copyright permissions for a record  
+0 – ok to display images at any size  
+1 – images have restrictions; display at a maximum pixel dimension of 256px  
 2 – do not display any images
 
-**verificationlevel** describes the completeness and vetting status of information in a record
-
-0 - Unchecked. Object information has not been verified for completeness and has not been vetted
-
-1 - Poor. Object information is likely incomplete and has not been vetted
-
-2 - Adequate. Object is adequately described but information may not be vetted
-
-3 - Good. Object is well described and information is vetted
-
+**verificationlevel** describes the completeness and vetting status of information in a record  
+0 - Unchecked. Object information has not been verified for completeness and has not been vetted  
+1 - Poor. Object information is likely incomplete and has not been vetted  
+2 - Adequate. Object is adequately described but information may not be vetted  
+3 - Good. Object is well described and information is vetted  
 4 - Best. Object is extensively researched, well described and information is vetted
 
-**accesslevel** describes the accessibility of a record
-
-0 – Restricted. Object record is restricted to certain API keys
-
+**accesslevel** describes the accessibility of a record  
+0 – Restricted. Object record is restricted to certain API keys  
 1 – Public. Object record is available to all API keys
 
 #### Examples
 
-> http://api.harvardartmuseums.org/object/299843
+> http://api.harvardartmuseums.org/object/299843  
 > Returns the full record for van Gogh’s "Self-Portrait Dedicated to Paul Gauguin".
 
 #### Response
@@ -289,7 +279,11 @@ Some fields contain numeric values that have special meaning.
 
 #### Examples 
 
-> http://api.harvardartmuseums.org/object/299843/publications
+> http://api.harvardartmuseums.org/object/299843/publications  
 > Returns an array containing all the publications related to van Gogh’s "Self-Portrait Dedicated to Paul Gauguin".
 
 #### Response
+
+```json
+{}
+```
