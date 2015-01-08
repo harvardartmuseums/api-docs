@@ -1,6 +1,6 @@
 # Object
 
-Contains information on items in the Harvard Art Museums collections.
+Contains detailed information on the items in the Harvard Art Museums collections.
 
 ## Get objects
 
@@ -57,9 +57,6 @@ Finds all of the objects classified as prints that have been viewed only once on
 
 `GET /object/OBJECT_ID` will get the full record of the specified object.
 
-Response
-Click here to jump to the full list of response fields below.
-
 Some fields contain numeric values that have special meaning.
 
 imagepermissionlevel describes the level of image copyright permissions for a record
@@ -82,6 +79,200 @@ accesslevel describes the accessibility of a record
 
 http://api.harvardartmuseums.org/object/299843
 Returns the full record for van Gogh’s “Self-Portrait Dedicated to Paul Gauguin”.
+
+```json
+{
+“accesslevel”: 1,
+“accessionyear”: 2014,
+“century”: “”,
+“classification”: “”,
+“colorcount”: 0,
+“colors”: [
+{
+	“color”: “”,
+	“hue”: “”,
+	“percent”: “”,
+	“css3”: “”,
+	“spectrum”: “”
+}],
+“commentary”: “”,
+“contact”: “”,
+“contextualtext”: [
+{
+	“context”: “”,
+	“date”: “”,
+	“text”: “”,
+	“type”: “”
+}],
+“contextualtextcount”: 0,
+“copyright”: “”,
+“creditline”: “”,
+“culture”: “”,
+“datebegin”: “”,
+“dated”: “”,
+“dateend”: “”,
+“dateoffirstpageview”: “”,
+“dateoflastpageview”: “”,
+“department”: “”,
+“description”: “”,
+“details”: [
+	“coins”: {
+		“dateonobject”: “”,
+		“denomination”: “”,
+		“dieaxis”: “”,
+		“metal”: “”,
+		“obverseinscription”: “”,
+		“reverseinscription”: “”
+	},
+	“technical”: [
+	{
+		“type”: “”,
+		“text”: “”
+	}]
+	],
+“dimensions”: “”,
+“division”: “”,
+“edition”: “”,
+“exhibitioncount”: 0,
+“exhibitions”: [
+{
+	“begindate”: “”,
+	“enddate”: “”,
+	“exhibitionid”: “”,
+	“title”: “”,
+	“citation”: “”
+}],
+“gallery”: { 
+	“gallerynumber”: 0,
+	“name”: “”,
+	“floor”: “”
+},
+“groupcount”: 0,
+“groupings”: [
+{
+	“groupid”: “”,
+	“name”: “”
+}],
+“id”: 123456,
+“imagecount”: 0,
+“imagepermissionlevel”:, 0,
+“images”: [
+{
+	“baseimageurl”: “”,
+	“copyright”: “”,
+	“displayorder”: “”,
+	“publiccaption”: “”,
+	“renditionnumber”: “”
+}],
+“lastupdate”: “”,
+“marks”: [
+{
+	“text”: “”,
+“type”: “”
+}],
+“markscount”: 0,
+“media”: [
+{
+	“filetype”: “”,
+	“fileurl”: “”,
+	“publiccaption”: “”,
+	“renditionnumber”: “”
+}],
+“mediacount”: 0,
+“medium”: “”,
+“objectid”: “”,
+“objectnumber”: “”,
+“people”: [
+{
+	“birthplace”: “”,
+	“personid”: “”,
+	“culture”: “”,
+	“deathplace”: “”,
+	“displaydate”: “”,
+	“displayname”: “”,
+	“displayorder”: “”,
+	“name”: “”,
+	“prefix”: “”,
+	“role”: “”
+}],
+“peoplecount”: 0,
+“period”: “”,
+“places”: [
+{
+	“displayname”: “”,
+“placeid”: “”,
+“type”: “”
+	}],
+“primaryimageurl”: “”,
+“provenance”: “”,
+“publicationcount”: 0,
+“publications”: [
+{
+	“citation”: “”,
+“citationremarks”: “”,
+“format”: “”,
+“pagenumbers”: “”,
+“publicationdate”: “”,
+“publicationid”: “”,
+“publicationplace”: “”,
+“publicationyear”: “”,
+“title”: “”,
+“volumetitle”: “”,
+“volumenumber”: “”
+}],
+“rank”: 12345”,
+“related”: [
+{
+	“accesslevel”: “”,
+	“objectid”: “”,
+	“relationship”: “”
+}],
+“relatedcount”: 0,
+“signed”: “”,
+“state”: “”,
+“standardreferencenumber”: “”,
+“style”: “”,
+“tags”: [
+{
+	“tag”: “”
+}],
+“technique”: “”,
+“terms”: [
+	“century”: [
+{
+		“id”: “”,
+	“name”: “”
+}],
+	“medium”: [
+{
+		“id”: “”,
+	“name”: “”
+}],
+“place”: [
+{
+“id”: “”,
+“name”: “”
+	}]
+]
+“title”: “”,
+“titles”: [
+{
+	“displayorder”: “”,
+	“title”: “”,
+	“titleid”: “”,
+	“titletype”: “”
+}],
+“titlescount”: 0,
+“totalpageviews”: “”,
+“totaluniquepageviews”: “”,
+“url”: “”,
+“verificationlevel”: “”,
+“worktypes”: [
+{
+	“worktype”: “”
+}]
+}
+```
 
 ## Get object subsection
 
