@@ -6,7 +6,6 @@ Contains detailed information on the items in the Harvard Art Museums collection
 
 `GET /object` will get all objects.
 
-
 Include one or more of the following parameters to filter the items.
 
 | Parameter | Value |
@@ -39,32 +38,54 @@ Include one or more of the following parameters to filter the items.
 | apikey | YOUR API KEY required |
 
 
+#### Examples
+
+> EX 1
+> EX 2
+
+
+#### Response
+
+```json
+{}
+```
+
 ## Get object
 
 `GET /object/OBJECT_ID` will get the full record of the specified object.
 
 Some fields contain numeric values that have special meaning.
 
-imagepermissionlevel describes the level of image copyright permissions for a record
+**imagepermissionlevel** describes the level of image copyright permissions for a record
+
 0 – ok to display images at any size
+
 1 – images have restrictions; display at a maximum pixel dimension of 256px
+
 2 – do not display any images
 
-verificationlevel describes the completeness and vetting status of information in a record
+**verificationlevel** describes the completeness and vetting status of information in a record
+
 0 - Unchecked. Object information has not been verified for completeness and has not been vetted
+
 1 - Poor. Object information is likely incomplete and has not been vetted
+
 2 - Adequate. Object is adequately described but information may not be vetted
+
 3 - Good. Object is well described and information is vetted
+
 4 - Best. Object is extensively researched, well described and information is vetted
 
-accesslevel describes the accessibility of a record
+**accesslevel** describes the accessibility of a record
+
 0 – Restricted. Object record is restricted to certain API keys
+
 1 – Public. Object record is available to all API keys
 
 #### Examples
 
-http://api.harvardartmuseums.org/object/299843
-Returns the full record for van Gogh’s "Self-Portrait Dedicated to Paul Gauguin".
+> http://api.harvardartmuseums.org/object/299843
+> Returns the full record for van Gogh’s "Self-Portrait Dedicated to Paul Gauguin".
 
 #### Response
 
@@ -105,21 +126,21 @@ Returns the full record for van Gogh’s "Self-Portrait Dedicated to Paul Gaugui
 	"dateoflastpageview": "",
 	"department": "",
 	"description": "",
-	"details": [
+	"details": {
 		"coins": {
 			"dateonobject": "",
 			"denomination": "",
 			"dieaxis": "",
-			"metal": "",
+			"metal": "AE",
 			"obverseinscription": "",
-			"reverseinscription": ""
+			"reverseinscription": "aes rude"
 		},
 		"technical": [
 		{
 			"type": "",
 			"text": ""
 		}]
-	],
+	},
 	"dimensions": "",
 	"division": "",
 	"edition": "",
@@ -268,5 +289,7 @@ Returns the full record for van Gogh’s "Self-Portrait Dedicated to Paul Gaugui
 
 #### Examples 
 
-http://api.harvardartmuseums.org/object/299843/publications
-Returns an array containing all the publications related to van Gogh’s "Self-Portrait Dedicated to Paul Gauguin".
+> http://api.harvardartmuseums.org/object/299843/publications
+> Returns an array containing all the publications related to van Gogh’s "Self-Portrait Dedicated to Paul Gauguin".
+
+#### Response
