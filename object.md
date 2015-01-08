@@ -10,33 +10,33 @@ Contains detailed information on the items in the Harvard Art Museums collection
 Include one or more of the following parameters to filter the items.
 
 | Parameter | Value |
-| --------- | ----- |
-| q | [FIELD]:[VALUE] |
-| size | [0-9+] |
-| page | [0-9+] |
-| sortorder | [asc or desc] |
-| fields | [comma separated list of fields] |
-| hasimage | [0 or 1] |
-| century | [CENTURY or pipe separated list of centuries or "any"] |
-| classification | [CLASSIFICATION or pipe separated list of classifications or "any"] |
-| color | [COLOR or pipe separated list of colors or "any"] |
-| culture | [CULTURE or pipe separated list of cultures or "any"] |
-| exhibition | [EXHIBITION ID or "any"] |
-| gallery | [GALLERY NUMBER or pipe separated list of gallery numbers or "any"] |
-| group | [GROUP NAME or "any"] |
-| keyword | [1 or more terms] |
-| medium | [MEDIUM or pipe separated list of mediums or "any"] |
-| objectnumber | [1 or more terms] |
-| period | [PERIOD or pipe separated list of periods or "any"] |
-| person | [PERSON ID or PERSON NAME or "any"] |
-| place | [PLACE or pipe separated list of places or "any"] |
-| relatedto | [OBJECT ID] |
-| technique | [TECHNIQUE or pipe separated list of techniques or "any"] |
-| title | [1 or more terms] |
-| exact_title | [EXACT URL ENCODED TITLE] |
-| worktype | [WORKTYPE or pipe separated list of worktypes or "any"] |
-| facet | [FIELD NAME or comma separated list of fields] |
-| apikey | [YOUR API KEY] required |
+| :--------- | :----- |
+| q | FIELD:VALUE |
+| size | 0-9+ |
+| page | 0-9+ |
+| sortorder | asc or desc |
+| fields | comma separated list of data fields you want in the output |
+| hasimage | 0 or 1 |
+| century | CENTURY or pipe separated list of centuries or "any" |
+| classification | CLASSIFICATION or pipe separated list of classifications or "any" |
+| color | COLOR or pipe separated list of colors or "any" |
+| culture | CULTURE or pipe separated list of cultures or "any" |
+| exhibition | EXHIBITION ID or "any" |
+| gallery | GALLERY NUMBER or pipe separated list of gallery numbers or "any" |
+| group | GROUP NAME or "any" |
+| keyword | 1 or more terms |
+| medium | MEDIUM or pipe separated list of mediums or "any" |
+| objectnumber | 1 or more terms |
+| period | PERIOD or pipe separated list of periods or "any" |
+| person | PERSON ID or PERSON NAME or "any" |
+| place | PLACE or pipe separated list of places or "any" |
+| relatedto | OBJECT ID |
+| technique | TECHNIQUE or pipe separated list of techniques or "any" |
+| title | 1 or more terms |
+| exact_title | EXACT URL ENCODED TITLE |
+| worktype | WORKTYPE or pipe separated list of worktypes or "any" |
+| facet | FIELD NAME or comma separated list of fields |
+| apikey | YOUR API KEY required |
 
 
 ## Get object
@@ -70,6 +70,8 @@ Returns the full record for van Gogh’s "Self-Portrait Dedicated to Paul Gaugui
 
 ```json
 {
+	"id": 123456,
+	"objectid": "",
 	"accesslevel": 1,
 	"accessionyear": 2014,
 	"century": "",
@@ -117,7 +119,7 @@ Returns the full record for van Gogh’s "Self-Portrait Dedicated to Paul Gaugui
 			"type": "",
 			"text": ""
 		}]
-		],
+	],
 	"dimensions": "",
 	"division": "",
 	"edition": "",
@@ -141,9 +143,8 @@ Returns the full record for van Gogh’s "Self-Portrait Dedicated to Paul Gaugui
 		"groupid": "",
 		"name": ""
 	}],
-	"id": 123456,
 	"imagecount": 0,
-	"imagepermissionlevel":, 0,
+	"imagepermissionlevel": 0,
 	"images": [
 	{
 		"baseimageurl": "",
@@ -156,7 +157,7 @@ Returns the full record for van Gogh’s "Self-Portrait Dedicated to Paul Gaugui
 	"marks": [
 	{
 		"text": "",
-	"type": ""
+		"type": ""
 	}],
 	"markscount": 0,
 	"media": [
@@ -168,7 +169,6 @@ Returns the full record for van Gogh’s "Self-Portrait Dedicated to Paul Gaugui
 	}],
 	"mediacount": 0,
 	"medium": "",
-	"objectid": "",
 	"objectnumber": "",
 	"people": [
 	{
@@ -188,27 +188,27 @@ Returns the full record for van Gogh’s "Self-Portrait Dedicated to Paul Gaugui
 	"places": [
 	{
 		"displayname": "",
-	"placeid": "",
-	"type": ""
-		}],
+		"placeid": "",
+		"type": ""
+	}],
 	"primaryimageurl": "",
 	"provenance": "",
 	"publicationcount": 0,
 	"publications": [
 	{
 		"citation": "",
-	"citationremarks": "",
-	"format": "",
-	"pagenumbers": "",
-	"publicationdate": "",
-	"publicationid": "",
-	"publicationplace": "",
-	"publicationyear": "",
-	"title": "",
-	"volumetitle": "",
-	"volumenumber": ""
+		"citationremarks": "",
+		"format": "",
+		"pagenumbers": "",
+		"publicationdate": "",
+		"publicationid": "",
+		"publicationplace": "",
+		"publicationyear": "",
+		"title": "",
+		"volumetitle": "",
+		"volumenumber": ""
 	}],
-	"rank": 12345",
+	"rank": 12345,
 	"related": [
 	{
 		"accesslevel": "",
@@ -227,19 +227,19 @@ Returns the full record for van Gogh’s "Self-Portrait Dedicated to Paul Gaugui
 	"technique": "",
 	"terms": [
 		"century": [
-	{
+		{
 			"id": "",
-		"name": ""
-	}],
+			"name": ""
+		}],
 		"medium": [
-	{
+		{
 			"id": "",
-		"name": ""
-	}],
-	"place": [
-	{
-	"id": "",
-	"name": ""
+			"name": ""
+		}],
+		"place": [
+		{
+			"id": "",
+			"name": ""
 		}]
 	]
 	"title": "",
