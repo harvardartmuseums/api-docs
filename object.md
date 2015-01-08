@@ -7,51 +7,36 @@ Contains detailed information on the items in the Harvard Art Museums collection
 `GET /object` will get all objects.
 
 
-*Parameters*
+Include one or more of the following parameters to filter the items.
 
-```
-q=[FIELD]:[VALUE]
-size=[0-9+]
-from=[0-9+]
-sort=[FIELD NAME or "random" or "random:[SEED NUMBER]"]
-sortorder=[asc or desc]
-fields=[comma separated list of fields]
-hasimage=[0 or 1]
-century=[CENTURY or pipe separated list of centuries or "any"]
-classification=[CLASSIFICATION or pipe separated list of classifications or "any"]
-color=[COLOR or pipe separated list of colors or "any"]
-culture=[CULTURE or pipe separated list of cultures or "any"]
-exhibition=[EXHIBITION ID or "any"]
-gallery=[GALLERY NUMBER or pipe separated list of gallery numbers or "any"]
-group=[GROUP NAME or "any"]
-keyword=[1 or more terms]
-medium=[MEDIUM or pipe separated list of mediums or "any"]
-objectnumber=[1 or more terms]
-period=[PERIOD or pipe separated list of periods or "any"]
-person=[PERSON ID or PERSON NAME or "any"]
-place=[PLACE or pipe separated list of places or "any"]
-relatedto=[OBJECT ID]
-technique=[TECHNIQUE or pipe separated list of techniques or "any"]
-title=[1 or more terms]
-exact_title=[EXACT URL ENCODED TITLE]
-worktype=[WORKTYPE or pipe separated list of worktypes or "any"]
-facet=[FIELD NAME or comma separated list of fields]
-apikey=[YOUR API KEY] required
-```
-
-#### Examples
-
-http://api.harvardartmuseums.org/object?q=totalpageviews:0
-Returns ten objects that have never been viewed on the Art Museums main public website.
-
-http://api.harvardartmuseums.org/object?person=33430
-Finds all of the objects that involve a specific person.
-
-http://api.harvardartmuseums.org/object?person=33430
-Finds all of the objects that involve a specific person.
-
-http://api.harvardartmuseums.org/object?classification=Prints&q=totalpageviews:1
-Finds all of the objects classified as prints that have been viewed only once on the Art Museums main public website.
+| Parameter | Value |
+| --------- | ----- |
+| q | [FIELD]:[VALUE] |
+| size | [0-9+] |
+| page | [0-9+] |
+| sortorder | [asc or desc] |
+| fields | [comma separated list of fields] |
+| hasimage | [0 or 1] |
+| century | [CENTURY or pipe separated list of centuries or "any"] |
+| classification | [CLASSIFICATION or pipe separated list of classifications or "any"] |
+| color | [COLOR or pipe separated list of colors or "any"] |
+| culture | [CULTURE or pipe separated list of cultures or "any"] |
+| exhibition | [EXHIBITION ID or "any"] |
+| gallery | [GALLERY NUMBER or pipe separated list of gallery numbers or "any"] |
+| group | [GROUP NAME or "any"] |
+| keyword | [1 or more terms] |
+| medium | [MEDIUM or pipe separated list of mediums or "any"] |
+| objectnumber | [1 or more terms] |
+| period | [PERIOD or pipe separated list of periods or "any"] |
+| person | [PERSON ID or PERSON NAME or "any"] |
+| place | [PLACE or pipe separated list of places or "any"] |
+| relatedto | [OBJECT ID] |
+| technique | [TECHNIQUE or pipe separated list of techniques or "any"] |
+| title | [1 or more terms] |
+| exact_title | [EXACT URL ENCODED TITLE] |
+| worktype | [WORKTYPE or pipe separated list of worktypes or "any"] |
+| facet | [FIELD NAME or comma separated list of fields] |
+| apikey | [YOUR API KEY] required |
 
 
 ## Get object
