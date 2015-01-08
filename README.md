@@ -18,9 +18,9 @@ Several primary museum resources are accessible in this API. They include the fo
 
 * [Object](https://github.com/harvardartmuseums/api-docs/blob/master/object.md)
 * [Person](https://github.com/harvardartmuseums/api-docs/blob/master/person.md)
-* Exhibition
-* Publication
-* Gallery
+* [Exhibition](https://github.com/harvardartmuseums/api-docs/blob/master/exhibition.md)
+* [Publication](https://github.com/harvardartmuseums/api-docs/blob/master/publication.md)
+* [Gallery](https://github.com/harvardartmuseums/api-docs/blob/master/gallery.md)
 
 ## Feedback
 

@@ -14,6 +14,7 @@ Include one or more of the following parameters to filter the items.
 | q | FIELD:VALUE |
 | size | 0-9+ |
 | page | 0-9+ |
+| sort | FIELD NAME or "random" or "random:[SEED NUMBER]" |
 | sortorder | asc or desc |
 | fields | comma separated list of data fields you want in the output |
 | facet | FIELD NAME or comma separated list of fields |
@@ -40,9 +41,14 @@ Include one or more of the following parameters to filter the items.
 
 #### Examples
 
-> EX 1  
-> EX 2
-
+> http://api.harvardartmuseums.org/object?q=totalpageviews:0  
+> Returns ten objects that have never been viewed on the Art Museums main public website.  
+>  
+> http://api.harvardartmuseums.org/object?person=33430  
+> Finds all of the objects that involve a specific person.  
+>   
+> http://api.harvardartmuseums.org/object?classification=Prints&q=totalpageviews:1  
+> Finds all of the objects classified as prints that have been viewed only once on the Art Museums main public website.
 
 #### Response
 
