@@ -53,7 +53,97 @@ Include one or more of the following parameters to filter the items.
 #### Response
 
 ```json
-{}
+{
+	info: {
+		totalrecordsperquery: 10,
+		totalrecords: 261018,
+		pages: 26102,
+		page: 1
+	},
+	records: [
+		{
+			accessionyear: "1969",
+			technique: null,
+			mediacount: 0,
+			edition: null,
+			totalpageviews: 98,
+			groupcount: 0,
+			people: [
+				{
+					birthplace: null,
+					name: "Unknown Artist",
+					prefix: null,
+					personid: 23184,
+					role: "Artist",
+					displayorder: 1,
+					culture: null,
+					displaydate: null,
+					deathplace: null,
+					displayname: "Unknown Artist"
+				}
+			],
+			objectnumber: "1969.172",
+			colorcount: 10,
+			lastupdate: "2015-01-07T04:21:10-0500",
+			rank: 86736,
+			imagecount: 2,
+			description: null,
+			dateoflastpageview: "2014-11-14",
+			dateoffirstpageview: "2009-05-12",
+			primaryimageurl: "http://nrs.harvard.edu/urn-3:HUAM:72721_dynmc"
+		},
+		{
+			accessionyear: null,
+			technique: "Engraving",
+			mediacount: 0,
+			edition: null,
+			totalpageviews: 98,
+			groupcount: 0,
+			people: [
+				{
+					birthplace: null,
+					name: "Ignatius Cornelis Marinus",
+					prefix: null,
+					personid: 32489,
+					role: "Artist",
+					displayorder: 1,
+					culture: "Flemish",
+					displaydate: "1599 - 1639",
+					deathplace: null,
+					displayname: "Ignatius Cornelis Marinus"
+				},
+				{
+					birthplace: "Siegen, Westphalia",
+					name: "Peter Paul Rubens",
+					prefix: "After",
+					personid: 28402,
+					role: "Artist after",
+					displayorder: 2,
+					culture: "Flemish",
+					displaydate: "1577 - 1640",
+					deathplace: "Antwerp, Belgium",
+					displayname: "After Peter Paul Rubens"
+				}
+			],
+			objectnumber: "R5196",
+			colorcount: 0,
+			lastupdate: "2015-01-07T04:21:30-0500",
+			rank: 235396,
+			imagecount: 1,
+			description: null,
+			dateoflastpageview: "2014-12-05",
+			dateoffirstpageview: "2009-06-19",
+			primaryimageurl: "http://nrs.harvard.edu/urn-3:HUAM:INV202403_dynmc",
+			dated: "17th century",
+			contextualtextcount: 0,
+			copyright: null,
+			period: null,
+			url: "http://harvardartmuseums.org/collections/object/240724",
+			provenance: "John Witt Randall, bequest to his sister. Belinda Lull Randall, gift to Harvard University, 1892. sister of John Witt Randall ",
+			publicationcount: 0	
+		}
+	]
+}
 ```
 
 ## Get object
@@ -291,5 +381,58 @@ Some fields contain numeric values that have special meaning.
 #### Response
 
 ```json
-{}
+[
+	{
+		citation: "Kristian Romare, "Japan: van Gogh's Utopia", <em>Sydsvenska Dagbladet</em> (Malmo, Sweden)",
+		title: ""Japan: van Gogh's Utopia"",
+		citationremarks: null,
+		publicationplace: "Malmo, Sweden",
+		publicationyear: 0,
+		volumenumber: null,
+		format: "Article/Essay",
+		publicationid: 6830,
+		publicationdate: null,
+		volumetitle: "Sydsvenska Dagbladet",
+		pagenumbers: "repr."
+	},
+	{
+		citation: "E. H. DuQuesne-van Gogh, <em>Persönnliche Erinnerungen an Vincent Van Gogh</em> (Munich, Germany, 1911)",
+		title: "Persönnliche Erinnerungen an Vincent Van Gogh",
+		citationremarks: null,
+		publicationplace: "Munich, Germany",
+		publicationyear: 1911,
+		volumenumber: null,
+		format: "Book",
+		publicationid: 9382,
+		publicationdate: "1911",
+		volumetitle: null,
+		pagenumbers: "repr. as frontispiece"
+	},
+	{
+		citation: "Vincent van Gogh, <em>Brieven aan zijn broeder</em> (Amsterdam, The Netherlands, 1914)",
+		title: "Brieven aan zijn broeder",
+		citationremarks: null,
+		publicationplace: "Amsterdam, The Netherlands",
+		publicationyear: 1914,
+		volumenumber: null,
+		format: "Book",
+		publicationid: 8666,
+		publicationdate: "1914",
+		volumetitle: null,
+		pagenumbers: "v. iii, no. 537, p. 174; no. 545, pp. 204-205"
+	},
+	{
+		citation: "Julius Meier-Graefe, <em>Vincent</em>, R. Piper (Munich, Germany, 1922)",
+		title: "Vincent",
+		citationremarks: "Also English translation, New York, 1933; reproduced pl. 47",
+		publicationplace: "Munich, Germany",
+		publicationyear: 1922,
+		volumenumber: null,
+		format: "Book",
+		publicationid: 8787,
+		publicationdate: "1922",
+		volumetitle: null,
+		pagenumbers: "repr. v. II, pl. 79"
+	}
+]
 ```
