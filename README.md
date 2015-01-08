@@ -10,11 +10,11 @@ All requests to the API begin with:
 http://api.harvardartmuseums.org
 ```
 
-The API uses keys to authenticate requests. Every request must be accompanied by the apikey parameter and an API key. [Send us a request](https://docs.google.com/forms/d/1Fe1H4nOhFkrLpaeBpLAnSrIMYvcAxnYWm0IU9a6IkFA/viewform) to obtain your key.
+The API uses keys to authenticate requests. Every request must be accompanied by the `apikey` parameter and an API key. [Send us a request](https://docs.google.com/forms/d/1Fe1H4nOhFkrLpaeBpLAnSrIMYvcAxnYWm0IU9a6IkFA/viewform) to obtain your key.
 
 ## Resources that are available
 
-Several primary museum resources are accessible in through this API. They include the following:
+Several primary museum resources are accessible in this API. They include the following:
 
 * Object
 * Person
