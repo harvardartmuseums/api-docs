@@ -4,7 +4,9 @@ The Harvard Art Museums API is a REST-style service designed for developers who 
 
 ## Access to the API
 
-All requests to the API begin with: http://api.harvardartmuseums.org
+All requests to the API begin with: 
+
+http://api.harvardartmuseums.org
 
 The API uses keys to authenticate requests. Every request must be accompanied by the apikey parameter and an API key. Send us a request to obtain your key.
 
