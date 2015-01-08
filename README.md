@@ -17,7 +17,7 @@ The API uses keys to authenticate requests. Every request must be accompanied by
 Several primary museum resources are accessible in this API. They include the following:
 
 * [Object](https://github.com/harvardartmuseums/api-docs/blob/master/object.md)
-* Person
+* [Person](https://github.com/harvardartmuseums/api-docs/blob/master/person.md)
 * Exhibition
 * Publication
 * Gallery

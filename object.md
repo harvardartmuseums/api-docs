@@ -10,11 +10,13 @@ Include one or more of the following parameters to filter the items.
 
 | Parameter | Value |
 | :--------- | :----- |
+| apikey | YOUR API KEY required |
 | q | FIELD:VALUE |
 | size | 0-9+ |
 | page | 0-9+ |
 | sortorder | asc or desc |
 | fields | comma separated list of data fields you want in the output |
+| facet | FIELD NAME or comma separated list of fields |
 | hasimage | 0 or 1 |
 | century | CENTURY or pipe separated list of centuries or "any" |
 | classification | CLASSIFICATION or pipe separated list of classifications or "any" |
@@ -34,8 +36,6 @@ Include one or more of the following parameters to filter the items.
 | title | 1 or more terms |
 | exact_title | EXACT URL ENCODED TITLE |
 | worktype | WORKTYPE or pipe separated list of worktypes or "any" |
-| facet | FIELD NAME or comma separated list of fields |
-| apikey | YOUR API KEY required |
 
 
 #### Examples
@@ -236,7 +236,7 @@ Some fields contain numeric values that have special meaning.
 		"tag": ""
 	}],
 	"technique": "",
-	"terms": [
+	"terms": {
 		"century": [
 		{
 			"id": "",
@@ -252,7 +252,7 @@ Some fields contain numeric values that have special meaning.
 			"id": "",
 			"name": ""
 		}]
-	]
+	},
 	"title": "",
 	"titles": [
 	{
