@@ -6,10 +6,12 @@ Contains information on items in the Harvard Art Museums collections.
 
 `GET /object` will get all objects.
 
-Parameters
-q=[FIELD]:[VALUE]
-size=[0-9+]
-from=[0-9+]
+```
+*Parameters*
+
+> q=[FIELD]:[VALUE]
+> size=[0-9+]
+> from=[0-9+]
 sort=[FIELD NAME or “random” or “random:[SEED NUMBER]”]
 sortorder=[asc or desc]
 fields=[comma separated list of fields]
@@ -19,7 +21,7 @@ classification=[CLASSIFICATION or pipe separated list of classifications or “a
 color=[COLOR or pipe separated list of colors or “any”]
 culture=[CULTURE or pipe separated list of cultures or “any”]
 exhibition=[EXHIBITION ID or “any”]
-gallery=[GALLERY NUMBER or pipe separated list of gallery numbers or “any”] *
+gallery=[GALLERY NUMBER or pipe separated list of gallery numbers or “any”]
 group=[GROUP NAME or “any”]
 keyword=[1 or more terms]
 medium=[MEDIUM or pipe separated list of mediums or “any”]
@@ -34,10 +36,9 @@ exact_title=[EXACT URL ENCODED TITLE]
 worktype=[WORKTYPE or pipe separated list of worktypes or “any”]
 facet=[FIELD NAME or comma separated list of fields]
 apikey=[YOUR API KEY] required
+```
 
-* access is restricted to this parameter
-
-# Examples
+#### Examples
 
 http://api.harvardartmuseums.org/object?q=totalpageviews:0
 Returns ten objects that have never been viewed on the Art Museums main public website.
@@ -77,7 +78,7 @@ accesslevel describes the accessibility of a record
 0 – Restricted. Object record is restricted to certain API keys
 1 – Public. Object record is available to all API keys
 
-## Examples
+#### Examples
 
 http://api.harvardartmuseums.org/object/299843
 Returns the full record for van Gogh’s “Self-Portrait Dedicated to Paul Gauguin”.
@@ -86,7 +87,7 @@ Returns the full record for van Gogh’s “Self-Portrait Dedicated to Paul Gaug
 
 `GET /object/OBJECT_ID/SECTION` will get a section of detailed info about the specified object.
 
-## Examples 
+#### Examples 
 
 http://api.harvardartmuseums.org/object/299843/publications
 Returns an array containing all the publications related to van Gogh’s “Self-Portrait Dedicated to Paul Gauguin”.
