@@ -10,11 +10,13 @@ All requests to the API begin with:
 http://api.harvardartmuseums.org
 ```
 
-The API uses keys to authenticate requests. Every request must be accompanied by the `apikey` parameter and an API key. [Send a request](https://docs.google.com/forms/d/1Fe1H4nOhFkrLpaeBpLAnSrIMYvcAxnYWm0IU9a6IkFA/viewform) to obtain your key.
+The API uses keys to authenticate requests. Every request must be accompanied by the `apikey` parameter and an API key. 
 
 ```shell
-http://api.harvardartmuseums.org?apikey=00000-000000-000000-0000-0000-00000-000000
+http://api.harvardartmuseums.org?apikey=00000000-0000-0000-0000-000000000000
 ```
+
+[Send a request](https://docs.google.com/forms/d/1Fe1H4nOhFkrLpaeBpLAnSrIMYvcAxnYWm0IU9a6IkFA/viewform) to obtain your key.
 
 ## Responses and the data format
 
@@ -39,7 +41,7 @@ All data comes out in [JSON](http://json.org) format. Here is a typical response
 
 ## Paging through data
 
-By default, list requests return 10 records at a time. You can increase the number of records per page up to a maximum of 100 by setting the `size` parameter. Use the `page` parameter to page through large record sets.
+By default, requests return 10 records at a time. You can increase the number of records per page up to a maximum of 100 by setting the `size` parameter. Use the `page` parameter to page through large record sets.
 
 ```shell
 http://api.harvardartmuseums.org/object?size=5&page=42
@@ -47,7 +49,7 @@ http://api.harvardartmuseums.org/object?size=5&page=42
 
 ## Images
 
-Some of the datasets include URLS to images. Our images are served to you by an image delivery service that is capable of resizing images on the fly. Append ?height=[PIXEL_DIMS]&width=[PIXEL_DIMS] to image URLs to get an image sized to fit to the supplied dimensions. For example, if you want a JPEG image scaled to 150 pixels on the longest side construct the URL as follows.
+Some of the datasets include URLs to images in JPEG format. Our images are served to you by an image delivery service that is capable of resizing images on the fly. Append `height` and `width` parameters to image URLs to get an image sized to fit to the supplied dimensions. For example, if you want an image scaled to 150 pixels on the longest side construct the URL as follows.
 
 ```shell
 http://nrs.harvard.edu/urn-3:HUAM:OCP16703_dynmc?height=150&width=150
