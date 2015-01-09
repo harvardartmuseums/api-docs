@@ -4,7 +4,7 @@ Contains a list of the colors used in the color spectrum that is part of the bra
 
 ## Get Techniques
 
-'GET /technique' will get list of techniques used to make items in the collection..
+`GET /technique` will get list of techniques used to make items in the collection..
 
 Include one or more of the following parameters to filter the items.
 
