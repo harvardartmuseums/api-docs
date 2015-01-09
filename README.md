@@ -83,7 +83,7 @@ Several primary museum resources are accessible in this API. They include the fo
 You can do a lot with the API. Here are few examples. 
 
 > [Art Explorer](http://apps.harvardartmuseums.org/art-explorer/)  
-> Press the left and right arrows to scroll through a set of random images. Swipe left or right on a touch screen to scroll. Press the up and down arrows to show and hide the grid of images.  
+> A different approach to browsing through the collections.  
 >  
 > [Suns Explorer](http://apps.harvardartmuseums.org/suns-explorer/)  
 > A simple abstract use of the color information supplied with some of the object records.  
