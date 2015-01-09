@@ -69,7 +69,7 @@ Several primary museum resources are accessible in this API. They include the fo
 * [Spectrum](https://github.com/harvardartmuseums/api-docs/blob/master/spectrum.md)
 * [Classification](https://github.com/harvardartmuseums/api-docs/blob/master/classification.md)
 * [Century](https://github.com/harvardartmuseums/api-docs/blob/master/century.md)
-* Color
+* [Color](https://github.com/harvardartmuseums/api-docs/blob/master/color.md)
 * [Culture](https://github.com/harvardartmuseums/api-docs/blob/master/culture.md)
 * [Group](https://github.com/harvardartmuseums/api-docs/blob/master/group.md)
 * [Medium](https://github.com/harvardartmuseums/api-docs/blob/master/medium.md)
