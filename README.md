@@ -71,8 +71,8 @@ Several primary museum resources are accessible in this API. They include the fo
 * [Century](https://github.com/harvardartmuseums/api-docs/blob/master/century.md)
 * Color
 * [Culture](https://github.com/harvardartmuseums/api-docs/blob/master/culture.md)
-* Group
-* Medium
+* [Group](https://github.com/harvardartmuseums/api-docs/blob/master/group.md)
+* [Medium](https://github.com/harvardartmuseums/api-docs/blob/master/medium.md)
 * [Period](https://github.com/harvardartmuseums/api-docs/blob/master/period.md)
 * [Place](https://github.com/harvardartmuseums/api-docs/blob/master/place.md)
 * [Technique](https://github.com/harvardartmuseums/api-docs/blob/master/technique.md)
