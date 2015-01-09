@@ -21,13 +21,52 @@ Include one or more of the following parameters to filter the items.
 
 #### Examples
 
-> EX 1  
-> EX 2
+> http://api.harvardartmuseums.org/person?q=culture:Dutch 
+> Finds all of the people with that are Dutch.    
 
 #### Response
 
 ```json
-{}
+{
+    "info": {
+        "totalrecordsperquery": 10,
+        "totalrecords": 600,
+        "pages": 60,
+        "page": 1
+    },
+    "records": [
+        {
+            "dateend": 0,
+            "alphasort": "Kaap, Gérald Van Der",
+            "displaydate": "born 1959",
+            "deathplace": null,
+            "objectcount": 1,
+            "id": 18135,
+            "lastupdate": "2015-01-09T04:07:45-0500",
+            "datebegin": 1959,
+            "birthplace": "Enschede, Netherlands",
+            "personid": 18135,
+            "gender": "male",
+            "culture": "Dutch",
+            "displayname": "Gérald Van Der Kaap"
+        },
+        {
+            "dateend": 1633,
+            "alphasort": "Vinckboons, David",
+            "displaydate": "1576 - 1632-1633",
+            "deathplace": "Amsterdam",
+            "objectcount": 9,
+            "id": 18301,
+            "lastupdate": "2015-01-09T04:07:45-0500",
+            "datebegin": 1576,
+            "birthplace": "Mechelen",
+            "personid": 18301,
+            "gender": null,
+            "culture": "Dutch",
+            "displayname": "David Vinckboons"
+        }
+    ]
+}
 ```
 
 ## Get person
@@ -43,22 +82,21 @@ Include one or more of the following parameters to filter the items.
 
 ```json
 {
-	"alphasort": "",
-	"alternatenames": "",
-	"birthplace": "", 
-	"personid": ,
-	"culture": "",
-	"gender": "",
-	"deathplace": "",
-	"displaydate": "",
-	"datebegin": "",
-	"dateend": "",
-	"displayname": "",
-	"id": ,
-	"lastupdate": "",
-	"objectcount": ,
-	"ulan_id": "",
-	"viaf_id": "",
-	"wikipedia_id": ""
+    "personid": 28241,
+    "displayname": "Rembrandt Harmensz van Rijn",
+    "datebegin": 1606,
+    "dateend": 1669,
+    "displaydate": "1606 - 1669",
+    "culture": "Dutch",
+    "gender": null,
+    "birthplace": "Leiden",
+    "deathplace": "Amsterdam",
+    "alphasort": "Rembrandt Harmensz van Rijn",
+    "objectcount": 691,
+    "id": 28241,
+    "lastupdate": "2015-01-09T04:08:25-0500",
+    "ulan_id": "500011051",
+    "viaf_id": "64013650",
+    "wikipedia_id": "4254144"
 }
 ```

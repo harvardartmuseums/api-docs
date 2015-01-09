@@ -41,7 +41,7 @@ Include one or more of the following parameters to filter the items.
 
 #### Examples
 
-> http://api.harvardartmuseums.org/object?q=totalpageviews:0  
+> http://api.harvardartmuseums.org/object?q=totalpageviews:0&size=10
 > Returns ten objects that have never been viewed on the Art Museums main public website.  
 >  
 > http://api.harvardartmuseums.org/object?person=33430  
