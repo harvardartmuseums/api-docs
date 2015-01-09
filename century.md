@@ -4,7 +4,7 @@ Contains information on the centuries used to describe items in the Harvard Art 
 
 ## Get Centuries
 
-`GET /century` will get list of the centuries used to describe items in the collection.
+`GET /century` will get all centuries.
 
 Include one or more of the following parameters to filter the items.
 
@@ -32,7 +32,7 @@ Include one or more of the following parameters to filter the items.
 
 ## Get Century
 
-`GET /century/CENTURY_ID` will get detailed info about a century.
+`GET /century/CENTURY_ID` will get the full record of the specified century.
 
 #### Examples
 
