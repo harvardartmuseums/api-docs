@@ -80,7 +80,7 @@ Several primary museum resources are accessible in this API. They include the fo
 
 ## Example projects
 
-You can do a lot with the API. Here are few examples. 
+You can do a lot with the API. Here are a few examples. 
 
 > [Art Explorer](http://apps.harvardartmuseums.org/art-explorer/)  
 > A different approach to browsing through the collections.  
@@ -89,7 +89,10 @@ You can do a lot with the API. Here are few examples.
 > A simple abstract use of the color information supplied with some of the object records.  
 >   
 > [Spectrum Explorer](http://apps.harvardartmuseums.org/spectrum-explorer)  
-> The color spectrum that is part of the branding of the Harvard Art Museums.
+> The color spectrum that is part of the branding of the Harvard Art Museums.  
+>  
+> [ARTphone](https://github.com/harvardartmuseums/ARTphone)  
+> Call or text the word "random" to 1-617-500-1866 to listen to the collection.  
 
 ## Feedback
 
