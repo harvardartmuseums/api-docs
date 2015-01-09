@@ -1,6 +1,6 @@
 # Harvard Art Museums API Documentation
 
-The Harvard Art Museums API is a REST-style service designed for developers who wish to explore and integrate the museums’ collections in their projects. The API provides direct access to [JSON](http://json.org) formatted data that powers the [museums' website](http://www.harvardartmuseums.org) and many other aspects of the museums. 
+The Harvard Art Museums API is a REST-style service designed for developers who wish to explore and integrate the museums’ collections in their projects. The API provides direct access to the data that powers the [museums' website](http://www.harvardartmuseums.org) and many other aspects of the museums. 
 
 ## Access to the API
 
