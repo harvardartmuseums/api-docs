@@ -73,7 +73,7 @@ Several primary museum resources are accessible in this API. They include the fo
 * [Culture](https://github.com/harvardartmuseums/api-docs/blob/master/culture.md)
 * Group
 * Medium
-* Period
+* [Period](https://github.com/harvardartmuseums/api-docs/blob/master/period.md)
 * Place
 * [Technique](https://github.com/harvardartmuseums/api-docs/blob/master/technique.md)
 * [Worktype](https://github.com/harvardartmuseums/api-docs/blob/master/worktype.md)
