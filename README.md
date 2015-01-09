@@ -35,22 +35,20 @@ Several primary museum resources are accessible in this API. They include the fo
 * [Exhibition](https://github.com/harvardartmuseums/api-docs/blob/master/exhibition.md)
 * [Publication](https://github.com/harvardartmuseums/api-docs/blob/master/publication.md)
 * [Gallery](https://github.com/harvardartmuseums/api-docs/blob/master/gallery.md)
+* [Spectrum](https://github.com/harvardartmuseums/api-docs/blob/master/spectrum.md)
 
 ## Example projects
 
 You can do a lot with the API. Here are few examples. 
 
-> Art Explorer  
-> http://apps.harvardartmuseums.org/art-explorer/  
+> [Art Explorer](http://apps.harvardartmuseums.org/art-explorer/)  
 > Press the left and right arrows to scroll through a set of random images. Swipe left or right on a touch screen to scroll. Press the up and down arrows to show and hide the grid of images.  
 >  
-> Suns Explorer  
-> http://apps.harvardartmuseums.org/suns-explorer/  
-> Just a simple example of how you could use the color information supplied with some of the object records.  
+> [Suns Explorer](http://apps.harvardartmuseums.org/suns-explorer/)  
+> A simple abstract use of the color information supplied with some of the object records.  
 >   
-> Spectrum Explorer  
-> http://apps.harvardartmuseums.org/spectrum-explorer  
-> The color spectrum of the Harvard Art Museums brand.
+> [Spectrum Explorer](http://apps.harvardartmuseums.org/spectrum-explorer)
+> The color spectrum that is part of the branding of the Harvard Art Museums.
 
 ## Feedback
 
