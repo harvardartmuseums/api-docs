@@ -4,7 +4,7 @@ Contains information on the classifications used to categorize items in the Harv
 
 ## Get Classifications
 
-`GET /classification` will get list of the classifications used to categorize items in the collection.
+`GET /classification` will get all classifications.
 
 Include one or more of the following parameters to filter the items.
 
@@ -32,7 +32,7 @@ Include one or more of the following parameters to filter the items.
 
 ## Get Classification
 
-`GET /classification/CLASSIFICATION_ID` will get detailed info about a classification.
+`GET /classification/CLASSIFICATION_ID` will get the full record of the specified classification.
 
 #### Examples
 

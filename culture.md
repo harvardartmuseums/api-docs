@@ -2,9 +2,9 @@
 
 Contains information on the cultures used to describe items in the Harvard Art Museums.
 
-## Get Culture
+## Get Cultures
 
-`GET /culture` will get list of culture used to describe items in the collection.
+`GET /culture` will get all cultures.
 
 Include one or more of the following parameters to filter the items.
 
@@ -32,7 +32,7 @@ Include one or more of the following parameters to filter the items.
 
 ## Get Culture
 
-`GET /culture/CULTURE_ID` will get detailed info about a culture.
+`GET /culture/CULTURE_ID` will get the full record of the specified culture.
 
 #### Examples
 

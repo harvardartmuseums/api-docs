@@ -4,7 +4,7 @@ Contains information on the types of works in the Harvard Art Museums collection
 
 ## Get Worktypes
 
-`GET /worktype` will get list of worktypes used to describe items in the collection.
+`GET /worktype` will get all worktypes.
 
 Include one or more of the following parameters to filter the items.
 
@@ -32,7 +32,7 @@ Include one or more of the following parameters to filter the items.
 
 ## Get Worktype
 
-`GET /worktype/WORKTYPE_ID` will get detailed info about a worktype.
+`GET /worktype/WORKTYPE_ID` will get the full record of the specified worktype.
 
 #### Examples
 
