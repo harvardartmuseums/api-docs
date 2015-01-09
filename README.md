@@ -20,7 +20,7 @@ http://api.harvardartmuseums.org?apikey=00000000-0000-0000-0000-000000000000
 
 ## Responses and data format
 
-All data comes out in [JSON](http://json.org) format. Here is a typical response:
+All data is in [JSON](http://json.org) format. Here is a typical response:
 
 ```json
 {
