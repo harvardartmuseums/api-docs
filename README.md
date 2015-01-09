@@ -75,7 +75,7 @@ Several primary museum resources are accessible in this API. They include the fo
 * Medium
 * Period
 * Place
-* [Techique](https://github.com/harvardartmuseums/api-docs/blob/master/technique.md)
+* [Technique](https://github.com/harvardartmuseums/api-docs/blob/master/technique.md)
 * [Worktype](https://github.com/harvardartmuseums/api-docs/blob/master/worktype.md)
 
 ## Example projects
