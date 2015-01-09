@@ -12,9 +12,38 @@ http://api.harvardartmuseums.org
 
 The API uses keys to authenticate requests. Every request must be accompanied by the `apikey` parameter and an API key. [Send a request](https://docs.google.com/forms/d/1Fe1H4nOhFkrLpaeBpLAnSrIMYvcAxnYWm0IU9a6IkFA/viewform) to obtain your key.
 
+```shell
+http://api.harvardartmuseums.org?apikey=00000-000000-000000-0000-0000-00000-000000
+```
+
+## Responses and the data format
+
+All data comes out in [JSON](http://json.org) format. Here is a typical response:
+
+```json
+{
+    "info": {
+        "totalrecordsperquery": 10,
+        "totalrecords": 224111,
+        "pages": 22412,
+        "page": 1
+    },
+    "records": [
+
+    ],
+    "facets": [
+
+    ]
+}
+```
+
 ## Paging through data
 
-By default, list requests return 10 records at a time. You can increase the number of records per page up to a maximum of 100 by setting the size parameter. Use the page parameter to page through large record sets.
+By default, list requests return 10 records at a time. You can increase the number of records per page up to a maximum of 100 by setting the `size` parameter. Use the `page` parameter to page through large record sets.
+
+```shell
+http://api.harvardartmuseums.org/object?size=5&page=42
+```
 
 ## Images
 

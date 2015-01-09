@@ -21,7 +21,7 @@ Include one or more of the following parameters to filter the items.
 
 #### Examples
 
-> http://api.harvardartmuseums.org/spectrum?q=month:1&sort=daynumber
+> http://api.harvardartmuseums.org/spectrum?q=month:1&sort=daynumber  
 > Returns the colors assigned to the month of January.
 
 #### Response
