@@ -67,16 +67,16 @@ Several primary museum resources are accessible in this API. They include the fo
 * [Publication](https://github.com/harvardartmuseums/api-docs/blob/master/publication.md)
 * [Gallery](https://github.com/harvardartmuseums/api-docs/blob/master/gallery.md)
 * [Spectrum](https://github.com/harvardartmuseums/api-docs/blob/master/spectrum.md)
-* Classification
+* [Classification](https://github.com/harvardartmuseums/api-docs/blob/master/classification.md)
 * Century
 * Color
-* Culture
+* [Culture](https://github.com/harvardartmuseums/api-docs/blob/master/culture.md)
 * Group
 * Medium
 * Period
 * Place
 * [Techique](https://github.com/harvardartmuseums/api-docs/blob/master/technique.md)
-* Worktype
+* [Worktype](https://github.com/harvardartmuseums/api-docs/blob/master/worktype.md)
 
 ## Example projects
 
