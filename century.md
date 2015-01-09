@@ -32,7 +32,7 @@ Include one or more of the following parameters to filter the items.
 
 ## Get Century
 
-`GET /century/CLASSIFICATION_ID` will get detailed info about a century.
+`GET /century/CENTURY_ID` will get detailed info about a century.
 
 #### Examples
 
