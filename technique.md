@@ -1,10 +1,10 @@
 # Technique
 
-Contains a list of the colors used in the color spectrum that is part of the branding of the Harvard Art Museums
+Contains information on the techniques used in the production of items in the Harvard Art Museums.
 
 ## Get Techniques
 
-`GET /technique` will get list of techniques used to make items in the collection..
+`GET /technique` will get list of techniques used to make items in the collection.
 
 Include one or more of the following parameters to filter the items.
 
@@ -20,7 +20,7 @@ Include one or more of the following parameters to filter the items.
 
 #### Examples
 
->   
+> [[COMING SOON]]    
 >  
 
 #### Response
