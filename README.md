@@ -47,7 +47,7 @@ You can do a lot with the API. Here are few examples.
 > [Suns Explorer](http://apps.harvardartmuseums.org/suns-explorer/)  
 > A simple abstract use of the color information supplied with some of the object records.  
 >   
-> [Spectrum Explorer](http://apps.harvardartmuseums.org/spectrum-explorer)
+> [Spectrum Explorer](http://apps.harvardartmuseums.org/spectrum-explorer)  
 > The color spectrum that is part of the branding of the Harvard Art Museums.
 
 ## Feedback

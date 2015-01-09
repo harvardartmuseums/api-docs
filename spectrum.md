@@ -1,6 +1,6 @@
 # Spectrum
 
-Contains detailed information on the items in the Harvard Art Museums collections.
+Contains a list of the colors used in the color spectrum that is part of the branding of the Harvard Art Museums
 
 ## Get spectrum
 
