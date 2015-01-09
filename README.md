@@ -18,13 +18,13 @@ By default, list requests return 10 records at a time. You can increase the numb
 
 ## Images
 
-Some of the data includes URLS to images of objects in the collection. URLs for images of objects that have rights restrictions are excluded for most users. This means images for many 20th and 21st century works of art will not be available to you at the present time. We are working on a solution to this.
-
-Our images are served to you by an image delivery service that is capable of resizing images on the fly. Append ?height=[PIXEL_DIMS]&width=[PIXEL_DIMS] to image URLs to get an image sized to fit to the supplied dimensions. For example, if you want a JPEG image scaled to 150 pixels on the longest side construct the URL as follows.
+Some of the datasets include URLS to images. Our images are served to you by an image delivery service that is capable of resizing images on the fly. Append ?height=[PIXEL_DIMS]&width=[PIXEL_DIMS] to image URLs to get an image sized to fit to the supplied dimensions. For example, if you want a JPEG image scaled to 150 pixels on the longest side construct the URL as follows.
 
 ```shell
 http://nrs.harvard.edu/urn-3:HUAM:OCP16703_dynmc?height=150&width=150
 ```
+
+Please note that URLs for images of objects that have rights restrictions are excluded for most API users. This means images for many 20th and 21st century works of art will not be available to you at the present time. We are working on a solution to this.
 
 ## Resources that are available
 
@@ -35,6 +35,22 @@ Several primary museum resources are accessible in this API. They include the fo
 * [Exhibition](https://github.com/harvardartmuseums/api-docs/blob/master/exhibition.md)
 * [Publication](https://github.com/harvardartmuseums/api-docs/blob/master/publication.md)
 * [Gallery](https://github.com/harvardartmuseums/api-docs/blob/master/gallery.md)
+
+## Example projects
+
+You can do a lot with the API. Here are few examples. 
+
+> Art Explorer  
+> http://apps.harvardartmuseums.org/art-explorer/  
+> Press the left and right arrows to scroll through a set of random images. Swipe left or right on a touch screen to scroll. Press the up and down arrows to show and hide the grid of images.  
+>  
+> Suns Explorer  
+> http://apps.harvardartmuseums.org/suns-explorer/  
+> Just a simple example of how you could use the color information supplied with some of the object records.  
+>   
+> Spectrum Explorer  
+> http://apps.harvardartmuseums.org/spectrum-explorer  
+> The color spectrum of the Harvard Art Museums brand.
 
 ## Feedback
 
