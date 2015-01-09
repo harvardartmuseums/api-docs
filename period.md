@@ -4,7 +4,7 @@ Contains information on the periods used to describe items in the Harvard Art Mu
 
 ## Get Periods
 
-`GET /period` will get list of the periods used to describe items in the collection.
+`GET /period` will get all periods.
 
 Include one or more of the following parameters to filter the items.
 
@@ -32,7 +32,7 @@ Include one or more of the following parameters to filter the items.
 
 ## Get Period
 
-`GET /period/PERIOD_ID` will get detailed info about a period.
+`GET /period/PERIOD_ID` will get the full record of the specified period.
 
 #### Examples
 
