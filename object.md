@@ -41,7 +41,7 @@ Include one or more of the following parameters to filter the items.
 
 #### Examples
 
-> http://api.harvardartmuseums.org/object?q=totalpageviews:0&size=10
+> http://api.harvardartmuseums.org/object?q=totalpageviews:0&size=10  
 > Returns ten objects that have never been viewed on the Art Museums main public website.  
 >  
 > http://api.harvardartmuseums.org/object?person=33430  
@@ -51,6 +51,8 @@ Include one or more of the following parameters to filter the items.
 > Finds all of the objects classified as prints that have been viewed only once on the Art Museums main public website.
 
 #### Response
+
+To keep responses reasonably sized, the output from a get objects request contains a subset of fields. To get all of data fields for a given record, use a get object request.
 
 ```json
 {
