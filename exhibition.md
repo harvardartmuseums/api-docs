@@ -124,19 +124,9 @@ Include one or more of the following parameters to filter the items.
     "shortdescription": "A brilliant display of some 150 objects from the Persian cultural sphere, including fine ceramics, illustrated manuscripts, drawings, and lacquerware.",
     "primaryimageurl": "http://nrs.harvard.edu/urn-3:HUAM:61350_dynmc",
     "color": "#DF7845",
-    "temporalorder": 4378,
+    "temporalorder": 3911,
     "id": 4236,
-    "lastupdate": "2015-01-09T04:09:30-0500",
-    "media": [
-        {
-            "thumbnailimageurl": null,
-            "fileurl": "http://vimeo.com/58571319",
-            "publiccaption": "Recreation of a Medieval Ceramic Sweetmeat Dish from Kashan, Iran",
-            "filetype": "Video File",
-            "copyright": null,
-            "renditionnumber": "VID0012"
-        }
-    ],
+    "lastupdate": "2015-01-20T09:00:45-0500",
     "publications": [
         {
             "title": "In Harmony: The Norma Jean Calderwood Collection of Islamic Art",
@@ -164,6 +154,18 @@ Include one or more of the following parameters to filter the items.
             "fullname": "Harvard Art Museums",
             "country": "USA",
             "city": "Cambridge"
+        }
+    ],
+    "videos": [
+        {
+            "primaryurl": "http://vimeo.com/58321192",
+            "description": "Take a behind-the-scenes look at how the special exhibition \"In Harmony: The Norma Jean Calderwood Collection of Islamic Art\" came together, from wood framework to colorful display. ",
+            "videoid": 4920987
+        },
+        {
+            "primaryurl": "http://vimeo.com/58571319",
+            "description": "Recreation of a Medieval Ceramic Sweetmeat Dish from Kashan, Iran",
+            "videoid": 4948387
         }
     ]
 }
