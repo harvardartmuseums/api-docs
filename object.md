@@ -31,7 +31,7 @@ Include one or more of the following parameters to filter the items.
 | objectnumber | 1 or more terms |
 | period | PERIOD or pipe separated list of periods or "any" |
 | person | PERSON ID or PERSON NAME or "any" |
-| place | PLACE or pipe separated list of places or "any" |
+| place | PLACE ID or PLACE or pipe separated list of values or "any" |
 | relatedto | OBJECT ID |
 | technique | TECHNIQUE or pipe separated list of techniques or "any" |
 | title | 1 or more terms |
