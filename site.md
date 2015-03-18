@@ -1,0 +1,77 @@
+# Site
+
+Contains information on the sites that are part of the Harvard Art Museums.
+
+## Get sites
+
+`GET /site` will get all of the museums sites.
+
+Include one or more of the following parameters to filter the items.
+
+| Parameter | Value |
+| :--------- | :----- |
+| apikey | YOUR API KEY required |
+| q | FIELD:VALUE |
+| size | 0-9+ |
+| page | 0-9+ |
+| sort | FIELD NAME or "random" or "random:[SEED NUMBER]" |
+| sortorder | asc or desc |
+| fields | comma separated list of data fields you want in the output |
+
+#### Examples
+
+> http://api.harvardartmuseums.org/site  
+> Returns all sites records for the Harvard Art Museums. 
+
+#### Response
+
+```json
+{
+    "info": {
+        "totalrecordsperquery": 10,
+        "totalrecords": 3,
+        "pages": 1,
+        "page": 1
+    },
+    "records": [
+        {
+            "id": 37536066,
+            "lastupdate": "2015-03-18T04:07:12-0400",
+            "name": "Adolphus Busch Hall",
+            "siteid": 37536066
+        },
+        {
+            "id": 37536057,
+            "lastupdate": "2015-03-18T04:07:12-0400",
+            "name": "Harvard Art Museums",
+            "siteid": 37536057
+        },
+        {
+            "id": 37536075,
+            "lastupdate": "2015-03-18T04:07:12-0400",
+            "name": "Somerville Research Facility",
+            "siteid": 37536075
+        }
+    ]
+}
+```
+
+## Get site
+
+`GET /site/SITE_ID` will get detailed info about a specific site.
+
+#### Examples
+
+> http://api.harvardartmuseums.org/site/37536057  
+> Returns the full record for the site “Harvard Art Museums”.
+
+#### Response
+
+```json
+{
+    "siteid": 37536057,
+    "name": "Harvard Art Museums",
+    "id": 37536057,
+    "lastupdate": "2015-03-18T04:07:12-0400"
+}
+```

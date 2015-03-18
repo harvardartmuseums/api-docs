@@ -78,6 +78,7 @@ Several primary museum resources are accessible in this API. They include the fo
 * [Technique](https://github.com/harvardartmuseums/api-docs/blob/master/technique.md)
 * [Worktype](https://github.com/harvardartmuseums/api-docs/blob/master/worktype.md)
 * [Activity](https://github.com/harvardartmuseums/api-docs/blob/master/activity.md)
+* [Site](https://github.com/harvardartmuseums/api-docs/blob/master/site.md)
 
 ## Example projects
 
