@@ -72,6 +72,14 @@ Include one or more of the following parameters to filter the items.
 
 `GET /person/PERSON_ID` will get detailed info about a specific person.
 
+Some fields contain numeric values that have special meaning and can help connect our records to other data sets. Not all records have these fields because we couldn't always find a match. 
+
+**ulan_id** contains the identifier for the matching entry in the [ULAN](http://www.getty.edu/research/tools/vocabularies/ulan/) vocabulary
+
+**viaf_id** contains the identifier for the matching entry in [VIAF](https://viaf.org/)
+
+**wikipedia_id** contains the identifier for the matching entry in [Wikipedia](http://www.wikipedia.org/)
+
 #### Examples
 
 > http://api.harvardartmuseums.org/person/28241  
