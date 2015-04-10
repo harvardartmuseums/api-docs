@@ -20,7 +20,7 @@ Include one or more of the following parameters to filter the items.
 
 #### Examples
 
-> http://api.harvardartmuseums.org/person?q=culture:Dutch 
+> http://api.harvardartmuseums.org/person?q=culture:Dutch  
 > Finds all of the people with that are Dutch.    
 
 #### Response
