@@ -17,7 +17,6 @@ Include one or more of the following parameters to filter the items.
 | sort | FIELD NAME or "random" or "random:[SEED NUMBER]" |
 | sortorder | asc or desc |
 | fields | comma separated list of data fields you want in the output |
-| facet | FIELD NAME or comma separated list of fields |
 | hasimage | 0 or 1 |
 
 #### Examples

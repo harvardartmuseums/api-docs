@@ -17,9 +17,7 @@ Include one or more of the following parameters to filter the items.
 | sort | FIELD NAME or "random" or "random:[SEED NUMBER]" |
 | sortorder | asc or desc |
 | fields | comma separated list of data fields you want in the output |
-| facet | FIELD NAME or comma separated list of fields |
 | hasimage | 0 or 1 |
-| facet | FIELD NAME or comma separated list of fields |
 | venue | “HAM” |
 | exact_title | EXACT URL ENCODED TITLE |
 | before | YYYY-MM-DD or “begindate:YYYY-MM-DD” or “enddate:YYYY-MM-DD” or “temporalorder:1234” |
