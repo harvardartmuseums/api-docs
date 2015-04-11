@@ -33,9 +33,9 @@ All data is in [JSON](http://json.org) format. Here is a typical response:
     "records": [
 
     ],
-    "aggregations": [
-
-    ]
+    "aggregations": {
+    	
+    }
 }
 ```
 
