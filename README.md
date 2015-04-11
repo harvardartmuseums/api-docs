@@ -59,7 +59,7 @@ Please note that URLs for images of objects that have rights restrictions are ex
 
 ## Analysis
 
-Slice and dice the data any way you like at our expense with the `aggregation` parameter. You can ask for aggregations on every endpoint. They are the best way to gather statistics and analyze the data. The aggregration parameter accepts the structure and syntax of [Elasticsearch aggregations](http://www.elastic.co/guide/en/elasticsearch/reference/1.4/search-aggregations.html#_structuring_aggregations). Output from aggregations will appear as an additional array of data in the response.
+Slice and dice the data any way you like at our expense with the `aggregation` parameter. You can ask for aggregations on every resource. They are the best way to gather statistics and analyze the data. The aggregration parameter accepts the structure and syntax of [Elasticsearch aggregations](http://www.elastic.co/guide/en/elasticsearch/reference/1.4/search-aggregations.html#_structuring_aggregations). Output from aggregations will appear as an additional block of data in the response.
 
 ```shell
 http://api.harvardartmuseums.org/object?aggregation={"by_division":{"terms":{"field":"division"}}}
