@@ -49,10 +49,22 @@ http://api.harvardartmuseums.org/object?size=5&page=42
 
 ## Images
 
-Some of the datasets include URLs to images in JPEG format. Our images are served to you by an image delivery service that is capable of resizing images on the fly. Append `height` and `width` parameters to image URLs to get an image sized to fit to the supplied dimensions. For example, if you want an image scaled to 150 pixels on the longest side construct the URL as follows.
+Some of the datasets include image URLs as part of a block of image information in each record. Our images are served to you by an image server that supports a number of interfaces including [IIIF](http://iiif.io). 
+
+Default service
+
+The default service is accessed through the URLs found in the fields `baseimageurl` and `primaryimageurl`. This service is capable of resizing images on the fly. Append `height` and `width` parameters to image URLs to get an image sized to fit to the supplied dimensions. For example, if you want an image scaled to 150 pixels on the longest side construct the URL as follows.
 
 ```shell
 http://nrs.harvard.edu/urn-3:HUAM:OCP16703_dynmc?height=150&width=150
+```
+
+IIIF 
+
+The IIIF service is accessed through the data found in the field `iiifbaseuri`. Read more about the capabilities of the IIIF Image API at http://iiif.io/api/image/1.1/. 
+
+```shell
+http://ids.lib.harvard.edu/ids/iiif/18483392/full/full/0/native.jpg
 ```
 
 Please note that URLs for images of objects that have rights restrictions are excluded for most API users. This means images for many 20th and 21st century works of art will not be available to you at the present time. We are working on a solution to this.
