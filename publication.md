@@ -104,6 +104,14 @@ Include one or more of the following parameters to filter the items.
 
 `GET /publication/PUBLICATION_ID` will get detailed info about a specific publication.
 
+The identifiers array contains numeric ID values that have special meaning and can help connect our records to other data sets. Not all records have these fields because we couldn't always find a match. 
+
+**Hollis Number** is the identifier for the matching entry in the [HOLLIS](http://hollis.harvard.edu/) catalogue
+
+**ISBN** is a commercial unique book identifier the can be used to match entries in sites like [Amazon](http://amazon.com) and [LibraryThing](https://www.librarything.com)
+
+**Shopify Product ID** is the identifier for the matching entry in the [Harvard Art Museums' Shop](http://shop.harvardartmuseums.org/)
+
 #### Examples
 
 > http://api.harvardartmuseums.org/publication/19947  
