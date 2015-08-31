@@ -18,7 +18,21 @@ Include one or more of the following parameters to filter the items.
 | sortorder | asc or desc |
 | aggregation |  see [Elasticsearch aggregations](http://www.elastic.co/guide/en/elasticsearch/reference/1.4/search-aggregations.html#_structuring_aggregations) |
 | object | OBJECT ID |
-| type | TYPE |
+| type | "edits", "pageviews", "uniquepageviews", "moves", "conservation", "studycenterviews" |
+
+Several types of activites are available via this endpoint. They are described in the `activitytype` field. 
+
+**Edits** refers to the number of times the descriptive data for an object has changed on a given day. This gives you no indication of what specifically has changed. 
+
+**Pageviews** refers to the number of times an object was visited on the [museum's public website](http://www.harvardartmuseums.org) on a given day.
+
+**Unique Pageviews** refers to the number of unique times an object was visited on the [museum's public website](http://www.harvardartmuseums.org) on a given day. This number is equal to or lower than pageviews.
+
+**Conservation** refers to the number of times an object had a conservation report written about on a given day.
+
+**Moves** refers to the number of times an object was physically moved on a given day. A move could be from one storage to location to another storage location. It could be storage to a gallery and so on.
+
+**Study Center Views** refers to the number of times an object was viewed in the [Art Study Center](http://www.harvardartmuseums.org/teaching-and-research/art-study-center) on a given day.
 
 #### Examples
 
