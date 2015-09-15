@@ -14,12 +14,13 @@ Include one or more of the following parameters to filter the items.
 | q | FIELD:VALUE |
 | size | 0-9+ |
 | page | 0-9+ |
-| sort | FIELD NAME or "random" or "random:[SEED NUMBER]" |
+| sort | FIELD NAME or "chronological" or "random" or "random:[SEED NUMBER]" |
 | sortorder | asc or desc |
 | fields | comma separated list of data fields you want in the output |
 | aggregation |  see [Elasticsearch aggregations](http://www.elastic.co/guide/en/elasticsearch/reference/1.4/search-aggregations.html#_structuring_aggregations) |
 | hasimage | 0 or 1 |
 | venue | “HAM” |
+| status | “current”, “past”, “upcoming” |
 | exact_title | EXACT URL ENCODED TITLE |
 | before | YYYY-MM-DD or “begindate:YYYY-MM-DD” or “enddate:YYYY-MM-DD” or “temporalorder:1234” |
 | after | YYYY-MM-DD or “begindate:YYYY-MM-DD” or “enddate:YYYY-MM-DD” or “temporalorder:1234” |
