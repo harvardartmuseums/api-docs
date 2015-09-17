@@ -35,19 +35,18 @@ Include one or more of the following parameters to filter the items.
 ```json
 {
     "info": {
-        "totalrecordsperquery": 10,
-        "totalrecords": 462,
-        "pages": 47,
+        "totalrecordsperquery": 2,
+        "totalrecords": 470,
+        "pages": 235,
         "page": 1
     },
     "records": [
         {
             "id": 225,
-            "lastupdate": "2015-01-09T04:09:29-0500",
+            "lastupdate": "2015-09-17T08:43:08-0400",
             "title": "Colors of the Caucasus",
-            "temporalorder": 2740,
+            "temporalorder": 2785,
             "exhibitionid": 225,
-            "primaryimageurl": null,
             "color": null,
             "description": null,
             "venues": [
@@ -71,14 +70,7 @@ Include one or more of the following parameters to filter the items.
             "shortdescription": null
         },
         {
-            "id": 249,
-            "lastupdate": "2015-01-09T04:09:29-0500",
-            "title": "David Smith: \"This work is my identity\"",
-            "temporalorder": 2993,
-            "exhibitionid": 249,
             "primaryimageurl": "http://nrs.harvard.edu/urn-3:huam:GS04997_dynmc",
-            "color": null,
-            "description": null,
             "venues": [
                 {
                     "ishamvenue": 1,
@@ -95,9 +87,31 @@ Include one or more of the following parameters to filter the items.
                     "country": null
                 }
             ],
-            "begindate": "1995-06-03",
+            "shortdescription": null,
+            "id": 249,
+            "lastupdate": "2015-09-17T08:43:08-0400",
+            "title": "David Smith: \"This work is my identity\"",
+            "temporalorder": 3045,
+            "exhibitionid": 249,
+            "color": null,
+            "description": null,
+            "poster": {
+                "caption": null,
+                "imageurl": "http://nrs.harvard.edu/urn-3:huam:GS04997_dynmc"
+            },
+            "images": [
+                {
+                    "iiifbaseuri": "http://ids.lib.harvard.edu/ids/iiif/20480582",
+                    "baseimageurl": "http://nrs.harvard.edu/urn-3:huam:GS04997_dynmc",
+                    "caption": null,
+                    "displayorder": 1,
+                    "idsid": "20480582",
+                    "copyright": null,
+                    "renditionnumber": "GS04997"
+                }
+            ],
             "enddate": "1996-05-05",
-            "shortdescription": null
+            "begindate": "1995-06-03"
         }
     ]
 }
@@ -122,11 +136,26 @@ Include one or more of the following parameters to filter the items.
     "enddate": "2013-06-01",
     "description": "This special exhibition showcases some 150 works from the Norma Jean Calderwood Collection of Islamic Art. Largely unpublished and little known, the collection includes important objects from the Persian cultural sphere, such as luxury glazed ceramics of the early Islamic era, illustrated manuscripts of medieval epic poems, and lacquerware of the early modern era. Among the manuscripts are folios of the Shahnama, by Firdawsi, and the Khamsa, by Nizami. The accompanying catalogue, published by the Harvard Art Museums and distributed by Yale University Press, offers illustrated entries and nine essays written by distinguished scholars and conservation scientists from a broad range of specialties. Curated by Mary McWilliams, Norma Jean Calderwood Curator of Islamic and Later Indian Art, Division of Asian and Mediterranean Art, Harvard Art Museums.\r\nIn Harmony marks the first time the museums are using an augmented reality app called Layar in the galleries. The free app, available for iPhone, iPad, or Android devices, gives visitors access to audio, video, and web links for several objects on display. \r\n\r\nSpecial docent-led tours of the exhibition will be offered on Wednesdays, February 13–May 29, 2013. These tours start in the Sackler Museum lobby at 2pm, last approximately an hour, and are included with admission. Special notice: The docent tour of In Harmony on Wednesday, May 1, has been canceled.\r\nIn conjunction with Harvard's Arts First celebration, special talks by undergraduate students on selected artworks in the exhibition will be given on Saturday, April 27, 2013, 11am to noon and 1pm to 2pm. Please note that attendance for these talks is limited and included with admission.\r\nThis exhibition and its accompanying catalogue have been made possible through the generous support of the late Stanford Calderwood.",
     "shortdescription": "A brilliant display of some 150 objects from the Persian cultural sphere, including fine ceramics, illustrated manuscripts, drawings, and lacquerware.",
-    "primaryimageurl": "http://nrs.harvard.edu/urn-3:HUAM:61350_dynmc",
     "color": "#DF7845",
-    "temporalorder": 3911,
+    "temporalorder": 3971,
     "id": 4236,
-    "lastupdate": "2015-01-20T09:00:45-0500",
+    "lastupdate": "2015-09-17T08:43:09-0400",
+    "primaryimageurl": "http://nrs.harvard.edu/urn-3:HUAM:61350_dynmc",
+    "poster": {
+        "caption": "interior",
+        "imageurl": "http://nrs.harvard.edu/urn-3:HUAM:61350_dynmc"
+    },
+    "images": [
+        {
+            "iiifbaseuri": "http://ids.lib.harvard.edu/ids/iiif/17389005",
+            "baseimageurl": "http://nrs.harvard.edu/urn-3:HUAM:61350_dynmc",
+            "idsid": "17389005",
+            "displayorder": 1,
+            "caption": "interior",
+            "copyright": "President and Fellows of Harvard College",
+            "renditionnumber": "61350"
+        }
+    ],
     "publications": [
         {
             "title": "In Harmony: The Norma Jean Calderwood Collection of Islamic Art",
@@ -166,6 +195,11 @@ Include one or more of the following parameters to filter the items.
             "primaryurl": "http://vimeo.com/58571319",
             "description": "Recreation of a Medieval Ceramic Sweetmeat Dish from Kashan, Iran",
             "videoid": 4948387
+        },
+        {
+            "primaryurl": "http://vimeo.com/59683170",
+            "description": "Opening Lecture: In Harmony: The Norma Jean Calderwood Collection of Islamic Art\r\n\r\nOya Pancaroglu, Associate Professor of History at Bogaziçi University in Turkey, presents the lecture \"Tables and Other Social Settings in 9th–11th Century Eastern Iran,\" as part of the opening celebration for the exhibition \"In Harmony: The Norma Jean Calderwood Collection of Islamic Art.\"\r\n\r\n\"In Harmony: The Norma Jean Calderwood Collection of Islamic Art\" was on view January 31—June 1, 2013 at the Arthur M. Sackler Museum. Learn more about the exhibition at harvardartmuseums.org/calderwood.\r\n\r\nVideo: Harvard Media Production Center",
+            "videoid": 4974848
         }
     ]
 }
