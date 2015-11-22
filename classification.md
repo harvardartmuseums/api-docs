@@ -20,13 +20,42 @@ Include one or more of the following parameters to filter the items.
 
 #### Examples
 
-> [[COMING SOON]]  
->  
+> http://api.harvardartmuseums.org/classification  
+> Returns all of the classifications.  
 
 #### Response
 
 ```json
 {
+    "info": {
+        "totalrecordsperquery": 3,
+        "totalrecords": 62,
+        "pages": 21,
+        "page": 1
+    },
+    "records": [
+        {
+            "objectcount": 24,
+            "id": 162,
+            "lastupdate": "2015-11-22T03:17:45-0500",
+            "name": "Portfolios",
+            "classificationid": 162
+        },
+        {
+            "objectcount": 69081,
+            "id": 23,
+            "lastupdate": "2015-11-22T03:17:45-0500",
+            "name": "Prints",
+            "classificationid": 23
+        },
+        {
+            "objectcount": 5623,
+            "id": 30,
+            "lastupdate": "2015-11-22T03:17:45-0500",
+            "name": "Sculpture",
+            "classificationid": 30
+        }
+    ]
 }
 ```
 
@@ -36,12 +65,17 @@ Include one or more of the following parameters to filter the items.
 
 #### Examples
 
-> [[COMING SOON]]   
-> 
+> http://api.harvardartmuseums.org/classification/30   
+> Returns the full record for the classification Prints.  
 
 #### Response
 
 ```json
 {
+    "classificationid": 23,
+    "name": "Prints",
+    "objectcount": 69081,
+    "id": 23,
+    "lastupdate": "2015-11-22T03:17:45-0500"
 }
 ```
