@@ -65,7 +65,7 @@ Include one or more of the following parameters to filter the items.
 
 #### Examples
 
-> http://api.harvardartmuseums.org/classification/30   
+> http://api.harvardartmuseums.org/classification/23   
 > Returns the full record for the classification Prints.  
 
 #### Response
