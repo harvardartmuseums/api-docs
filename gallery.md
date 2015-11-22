@@ -24,7 +24,7 @@ Include one or more of the following parameters to filter the items.
 #### Examples
 
 > http://api.harvardartmuseums.org/gallery?floor=2  
-> Returns all records for galleries that are on Level 2 in the Harvard Art Museums building. 
+> Returns all records for galleries that are on floor (Level) 2 in the Harvard Art Museums building. 
 
 #### Response
 

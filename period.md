@@ -20,13 +20,42 @@ Include one or more of the following parameters to filter the items.
 
 #### Examples
 
-> [[COMING SOON]]  
->  
+> http://api.harvardartmuseums.org/period  
+> Returns all of the periods. 
 
 #### Response
 
 ```json
 {
+    "info": {
+        "totalrecordsperquery": 3,
+        "totalrecords": 298,
+        "pages": 100,
+        "page": 1
+    },
+    "records": [
+        {
+            "objectcount": 2,
+            "id": 7056,
+            "lastupdate": "2015-11-22T03:17:48-0500",
+            "name": "Helladic period, Late Helladic I",
+            "periodid": 7056
+        },
+        {
+            "objectcount": 171,
+            "id": 345,
+            "lastupdate": "2015-11-22T03:17:48-0500",
+            "name": "Hellenistic period, Late",
+            "periodid": 345
+        },
+        {
+            "objectcount": 1,
+            "id": 3237,
+            "lastupdate": "2015-11-22T03:17:48-0500",
+            "name": "Jômon period, Middle, c. 2500-c. 1500 BCE",
+            "periodid": 3237
+        }
+    ]
 }
 ```
 
@@ -36,12 +65,17 @@ Include one or more of the following parameters to filter the items.
 
 #### Examples
 
-> [[COMING SOON]]   
-> 
+> http://api.harvardartmuseums.org/period/345  
+> Returns the full record for the period Hellenistic period, Late.  
 
 #### Response
 
 ```json
 {
+    "periodid": 345,
+    "name": "Hellenistic period, Late",
+    "objectcount": 171,
+    "id": 345,
+    "lastupdate": "2015-11-22T03:17:48-0500"
 }
 ```

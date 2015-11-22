@@ -19,13 +19,42 @@ Include one or more of the following parameters to filter the items.
 
 #### Examples
 
-> [[COMING SOON]]  
->  
+> http://api.harvardartmuseums.org/color  
+> Returns all of the colors. 
 
 #### Response
 
 ```json
 {
+    "info": {
+        "totalrecordsperquery": 3,
+        "totalrecords": 147,
+        "pages": 49,
+        "page": 1
+    },
+    "records": [
+        {
+            "id": 34838386,
+            "lastupdate": "2015-11-22T03:17:53-0500",
+            "hex": "#f5f5dc",
+            "name": "beige",
+            "colorid": 34838386
+        },
+        {
+            "id": 34838398,
+            "lastupdate": "2015-11-22T03:17:53-0500",
+            "hex": "#a52a2a",
+            "name": "brown",
+            "colorid": 34838398
+        },
+        {
+            "id": 34838406,
+            "lastupdate": "2015-11-22T03:17:53-0500",
+            "hex": "#d2691e",
+            "name": "chocolate",
+            "colorid": 34838406
+        }
+    ]
 }
 ```
 
@@ -35,12 +64,17 @@ Include one or more of the following parameters to filter the items.
 
 #### Examples
 
-> [[COMING SOON]]   
-> 
+> http://api.harvardartmuseums.org/color/34838406  
+> Returns the full record for the color chocolate.  
 
 #### Response
 
 ```json
 {
+    "colorid": 34838406,
+    "name": "chocolate",
+    "hex": "#d2691e",
+    "id": 34838406,
+    "lastupdate": "2015-11-22T03:17:53-0500"
 }
 ```
