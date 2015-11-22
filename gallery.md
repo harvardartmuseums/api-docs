@@ -74,19 +74,24 @@ Include one or more of the following parameters to filter the items.
 
 ```json
 {
-    "galleryid": 1740,
-    "gallerynumber": "1740",
-    "name": "Early Chinese Art",
+    "galleryid": 1220,
+    "gallerynumber": "1220",
+    "name": "European Art, 19th–20th century",
     "floor": 1,
-    "theme": "Arts of Ancient China from the Neolithic to the Bronze Age",
-    "objectcount": 166,
-    "id": 1740,
-    "lastupdate": "2015-01-09T04:07:36-0500",
+    "theme": "Collection of Maurice Wertheim, Class of 1906",
+    "objectcount": 31,
+    "labeltext": "Maurice Wertheim (1886–1950), Harvard Class of 1906, was an investment banker from New York. He began amassing his renowned collection in the 1930s, acquiring masterpieces by famed artists like Edgar Degas, Claude Monet, and Pierre-Auguste Renoir, as well as contemporary figures such as Aristide Maillol, Henri Matisse, and Pablo Picasso. His interest in modern art was informed by recommendations from advisors, who included Alfred M. Frankfurter, editor of the highly read periodical Art News, and Paul J. Sachs, associate director of the Fogg Art Museum from 1923–45.\r\nWertheim’s decision to focus on nineteenth- and twentieth-century art also derived from practical considerations. Like other American collectors purchasing art after World War I, Wertheim perceived that art from this era was both critically acclaimed and financially accessible. An added benefit, for him, was the fact that its scale and varied styles were well suited to his modern penthouse apartment on the Upper East Side of New York City, where the works were first installed.\r\nWertheim bequeathed his collection to Harvard, to be studied and enjoyed by students and scholars, with the stipulation that it be shown together in a single gallery.",
+    "id": 1220,
+    "lastupdate": "2015-11-22T03:11:38-0500",
     "contains": {
         "groups": [
             {
                 "name": "Collection Highlights",
                 "groupid": 2039923
+            },
+            {
+                "name": "Art and Science",
+                "groupid": 2040113
             },
             {
                 "name": "Hotspots",
