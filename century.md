@@ -20,13 +20,42 @@ Include one or more of the following parameters to filter the items.
 
 #### Examples
 
-> [[COMING SOON]]  
->  
+> http://api.harvardartmuseums.org/century  
+> Returns all of the centuries.  
 
 #### Response
 
 ```json
 {
+    "info": {
+        "totalrecordsperquery": 3,
+        "totalrecords": 47,
+        "pages": 16,
+        "page": 1
+    },
+    "records": [
+        {
+            "id": 37525374,
+            "objectcount": 28,
+            "lastupdate": "2015-11-22T03:17:52-0500",
+            "temporalorder": 3,
+            "name": "6th millennium BCE"
+        },
+        {
+            "id": 37525437,
+            "objectcount": 378,
+            "lastupdate": "2015-11-22T03:17:52-0500",
+            "temporalorder": 9,
+            "name": "18th century BCE"
+        },
+        {
+            "id": 37525482,
+            "objectcount": 581,
+            "lastupdate": "2015-11-22T03:17:52-0500",
+            "temporalorder": 13,
+            "name": "14th century BCE"
+        }
+    ]
 }
 ```
 
@@ -36,12 +65,17 @@ Include one or more of the following parameters to filter the items.
 
 #### Examples
 
-> [[COMING SOON]]   
-> 
+> http://api.harvardartmuseums.org/century/37525482   
+> Returns the full record for the century 14th century BCE.  
 
 #### Response
 
 ```json
 {
+    "id": 37525482,
+    "name": "14th century BCE",
+    "objectcount": 581,
+    "temporalorder": 13,
+    "lastupdate": "2015-11-22T03:17:52-0500"
 }
 ```

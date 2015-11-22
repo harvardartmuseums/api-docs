@@ -20,13 +20,42 @@ Include one or more of the following parameters to filter the items.
 
 #### Examples
 
-> [[COMING SOON]]    
->  
+> http://api.harvardartmuseums.org/technique    
+> Returns all of the techniques.  
 
 #### Response
 
 ```json
 {
+    "info": {
+        "totalrecordsperquery": 3,
+        "totalrecords": 306,
+        "pages": 102,
+        "page": 1
+    },
+    "records": [
+        {
+            "objectcount": 171,
+            "id": 585,
+            "lastupdate": "2015-11-22T03:17:52-0500",
+            "name": "Softground etching",
+            "techniqueid": 585
+        },
+        {
+            "objectcount": 6,
+            "id": 2568,
+            "lastupdate": "2015-11-22T03:17:52-0500",
+            "name": "Woven, twill",
+            "techniqueid": 2568
+        },
+        {
+            "objectcount": 7,
+            "id": 2809,
+            "lastupdate": "2015-11-22T03:17:52-0500",
+            "name": "Assemblage",
+            "techniqueid": 2809
+        }
+    ]
 }
 ```
 
