@@ -25,13 +25,13 @@ Include one or more of the following parameters to filter the items.
 | culture | CULTURE or pipe separated list of cultures or "any" |
 | exhibition | EXHIBITION ID or "any" |
 | gallery | GALLERY NUMBER or pipe separated list of gallery numbers or "any" |
-| group | GROUP NAME or "any" |
+| group | GROUP ID or pipe separated list of GROUP IDs or GROUP NAME or "any" |
 | keyword | 1 or more terms |
 | medium | MEDIUM or pipe separated list of mediums or "any" |
 | objectnumber | 1 or more terms |
 | period | PERIOD or pipe separated list of periods or "any" |
-| person | PERSON ID or PERSON NAME or "any" |
-| place | PLACE ID or PLACE or pipe separated list of values or "any" |
+| person | PERSON ID or pipe separated list of PERSON IDs or PERSON NAME or "any" |
+| place | PLACE ID or pipe separated list of PLACE IDs or PLACE NAME or "any" |
 | relatedto | OBJECT ID |
 | technique | TECHNIQUE or pipe separated list of techniques or "any" |
 | title | 1 or more terms |
