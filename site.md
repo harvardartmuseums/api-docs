@@ -36,19 +36,34 @@ Include one or more of the following parameters to filter the items.
     "records": [
         {
             "id": 37536066,
-            "lastupdate": "2015-03-18T04:07:12-0400",
+            "lastupdate": "2015-12-22T04:13:22-0500",
+            "geo": {
+                "longitude": -71.114137,
+                "latitude": 42.376841
+            },
+            "address": "29 Kirkland Street, Cambridge, MA 02138",
             "name": "Adolphus Busch Hall",
             "siteid": 37536066
         },
         {
             "id": 37536057,
-            "lastupdate": "2015-03-18T04:07:12-0400",
+            "lastupdate": "2015-12-22T04:13:22-0500",
+            "geo": {
+                "longitude": -71.114101,
+                "latitude": 42.374029
+            },
+            "address": "32 Quincy Street, Cambridge, MA 02138",
             "name": "Harvard Art Museums",
             "siteid": 37536057
         },
         {
             "id": 37536075,
-            "lastupdate": "2015-03-18T04:07:12-0400",
+            "lastupdate": "2015-12-22T04:13:22-0500",
+            "geo": {
+                "longitude": -71.084585,
+                "latitude": 42.378
+            },
+            "address": "200 Inner Belt Road, Somerville, MA 02143",
             "name": "Somerville Research Facility",
             "siteid": 37536075
         }
@@ -69,9 +84,14 @@ Include one or more of the following parameters to filter the items.
 
 ```json
 {
-    "siteid": 37536057,
-    "name": "Harvard Art Museums",
     "id": 37536057,
-    "lastupdate": "2015-03-18T04:07:12-0400"
+    "lastupdate": "2015-12-22T04:13:22-0500",
+    "name": "Harvard Art Museums",
+    "siteid": 37536057,
+    "address": "32 Quincy Street, Cambridge, MA 02138",
+    "geo": {
+        "latitude": 42.374029,
+        "longitude": -71.114101
+    }
 }
 ```
