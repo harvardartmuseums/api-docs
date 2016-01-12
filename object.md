@@ -22,12 +22,12 @@ Include one or more of the following parameters to filter the items.
 | century | CENTURY or pipe separated list of centuries or "any" |
 | classification | CLASSIFICATION or pipe separated list of classifications or "any" |
 | color | COLOR or pipe separated list of colors or "any" |
-| culture | CULTURE or pipe separated list of cultures or "any" |
+| culture | CULTURE ID or pipe separated list of CULTURE IDs or CULTURE NAME or pipe separated list of CULTURE NAMES or "any" |
 | exhibition | EXHIBITION ID or "any" |
 | gallery | GALLERY NUMBER or pipe separated list of gallery numbers or "any" |
 | group | GROUP ID or pipe separated list of GROUP IDs or GROUP NAME or "any" |
 | keyword | 1 or more terms |
-| medium | MEDIUM or pipe separated list of mediums or "any" |
+| medium | MEDIUM ID or pipe separated list of MEDIUM IDs or MEDIUM NAME or pipe separated list of MEDIUM NAMES or "any" |
 | objectnumber | 1 or more terms |
 | period | PERIOD or pipe separated list of periods or "any" |
 | person | PERSON ID or pipe separated list of PERSON IDs or PERSON NAME or "any" |
