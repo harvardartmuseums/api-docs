@@ -33,7 +33,7 @@ Include one or more of the following parameters to filter the items.
 | person | PERSON ID or pipe separated list of PERSON IDs or PERSON NAME or "any" |
 | place | PLACE ID or pipe separated list of PLACE IDs or PLACE NAME or "any" |
 | relatedto | OBJECT ID |
-| technique | TECHNIQUE or pipe separated list of techniques or "any" |
+| technique | TECHNIQUE ID or pipe separated list of TECHNIQUE IDs or TECHNIQUE NAME or pipe separated list of TECHNIQUE NAMES or "any" |
 | title | 1 or more terms |
 | exact_title | EXACT URL ENCODED TITLE |
 | worktype | WORKTYPE or pipe separated list of worktypes or "any" |
@@ -151,6 +151,11 @@ To keep responses reasonably sized, the output from a get objects request contai
 ## Get object
 
 `GET /object/OBJECT_ID` will get the full record of the specified object.
+
+In many cases the fields are pretty self-explanatory but in other cases they are a bit fuzzy. Sometimes you need to know the history of the institution and some of its inner workings in order to understand some of the data. This is because our data is often based on our particular cataloguing preferences and not necessarily universally accepted cataloguing standards for cultural objects. Here is a partial list of those fields with explanations.  
+
+**accessionyear** describes the year the object was acquired.  
+In some cases it represents the year the object officially became part of the museums collection. In other cases it reflects the year Harvard acquired it. Many objects have accession years that predate the existence of the Fogg Museum (1895), the first museum of the three museums that are part of Harvard Art Museums, and thus can be thought of as being acquired by Harvard itself.  
 
 Some fields contain numeric values that have special meaning.
 
