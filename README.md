@@ -83,7 +83,7 @@ The **IIIF presentation service** is accessed through a separate service. Read m
 http://iiif.harvardartmuseums.org/manifests
 ```
 
-You can request a manifest for any object by appending /object/OBJECT_ID to the base URL. For example the primary manifest for the object [Self-Portrait Dedicated to Paul Gauguin](http://www.harvardartmuseums.org/collections/object/299843) is at:
+You can request a manifest for any object by appending `/object/OBJECT_ID` to the base URL. For example the primary manifest for the object [Self-Portrait Dedicated to Paul Gauguin](http://www.harvardartmuseums.org/collections/object/299843) is at:
 
 ```
 http://iiif.harvardartmuseums.org/manifests/object/299843
@@ -91,7 +91,7 @@ http://iiif.harvardartmuseums.org/manifests/object/299843
 
 At the present a manifest for an object contains one sequence and each image of that object is contained in its own canvas within that sequence.  
 
-Please note that our IIIF presentation service is still very much a work in progress. The code for the server is availabe at https://github.com/harvardartmuseums/iiif-manifest-server and is based on work that was done at HarvardX. If you have any comments, suggestions, or questions about this service feel free to submit then through the feedback form link listed below.  
+Please note that our IIIF presentation service is still very much a work in progress. The code for the server is availabe at https://github.com/harvardartmuseums/iiif-manifest-server and is based on work that was done at HarvardX. If you have any comments, suggestions, or questions about this service feel free to submit them through the feedback form link listed below.  
 
 ## Analysis
 
