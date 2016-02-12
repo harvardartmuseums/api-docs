@@ -157,6 +157,14 @@ In many cases the fields are pretty self-explanatory but in other cases they are
 **accessionyear** describes the year the object was acquired  
 In some cases it represents the year the object officially became part of the museums collection. In other cases it reflects the year Harvard acquired it. Many objects have accession years that predate the existence of the Fogg Museum (1895), the first museum of the three museums that are part of Harvard Art Museums, and thus can be thought of as being acquired by Harvard itself.  
 
+**colors** describes the colors programmatically extracted from the primary image of the object  
+The color of each pixel is read and then sorted in to buckets. Brightness and gradient variants are reduced so similar colors group together and to keep the number of buckets under 20. Then the those colors are mapped to the museums' color palette, the CSS3 color listing, and hue names.  
+percent - is the amount, between the range of 0 to 1, of the color found in the image  
+color - is the color found in the image  
+spectrum - is the closest match of the color value to the museums' design color [spectrum](https://github.com/harvardartmuseums/api-docs/blob/master/spectrum.md)  
+css3 - is the closest match to the colors listed in the [CSS3 color module specification](https://www.w3.org/TR/css3-color/)  
+hue - is the color value mapped to the name of a hue (Red, Orange, Yellow, Green, Blue, Violet, Brown, Grey, Black, White)  
+
 **objectnumber** describes the unique identifier for a record  
 This field is also known as accession number. For information on the structure and meaning of these numbers see the article [A Numbers Game](http://magazine.harvardartmuseums.org/article/2015/06/23/numbers-game).
 

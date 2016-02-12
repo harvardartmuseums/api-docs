@@ -1,6 +1,6 @@
 # Spectrum
 
-Contains a list of the colors used in the color spectrum that is part of the branding of the Harvard Art Museums
+Contains a list of the colors used in the color spectrum that is part of the branding of the Harvard Art Museums. Read more about the spectrum at http://magazine.harvardartmuseums.org/article/2013/10/01/index-color-spectrum.  
 
 ## Get spectrum
 
