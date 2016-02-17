@@ -171,7 +171,7 @@ import urllib3
 
 http = urllib3.PoolManager()
 
-// Find all of the objects with the word "cat" in the title and return only a few fields per record
+# Find all of the objects with the word "cat" in the title and return only a few fields per record
 r = http.request('GET', 'http://api.harvardartmuseums.org/object',
     fields = {
         'apikey': 'YOUR APIKEY HERE',
