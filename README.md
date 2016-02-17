@@ -143,6 +143,45 @@ You can do a lot with the API. Here are a few examples.
 > [ARTphone](https://github.com/harvardartmuseums/ARTphone)  
 > Call or text the word "random" to 1-617-500-1866 to listen to the collection.  
 
+## Example code snippets
+
+You can talk with the API using almost any language that speaks HTTP. Here are a few snippets to get you started. Just make sure to substitute your own API key in the `apikey` parameter before running them.
+
+#### Node.js
+
+```javascript
+var rest = require("restler");
+
+// Find all of the objects with the word "dog" in the title and return only a few fields per record
+rest.get("http://api.harvardartmuseums.org/object", {
+    query: {
+        apikey: "YOUR APIKEY HERE",
+        title: "dog",
+        fields: "objectnumber,title,dated",
+    }
+}).on("complete", function(data, response) {
+    console.log(data);
+});
+```
+
+#### Python 3
+
+```python
+import urllib3
+
+http = urllib3.PoolManager()
+
+// Find all of the objects with the word "cat" in the title and return only a few fields per record
+r = http.request('GET', 'http://api.harvardartmuseums.org/object',
+    fields = {
+        'apikey': 'YOUR APIKEY HERE',
+        'title': 'cat',
+        'fields': 'objectnumber,title,dated'
+    })
+
+print(r.status, r.data)
+```
+
 ## Feedback
 
 Have you tried the API? [Let us know what you think.](https://docs.google.com/forms/d/118WjSPgKEYBjLU3B3iUkELwHbgeWryVb_5hw3o6_3K8/viewform)
