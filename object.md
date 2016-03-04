@@ -20,7 +20,7 @@ Include one or more of the following parameters to filter the items.
 | aggregation |  see [Elasticsearch aggregations](http://www.elastic.co/guide/en/elasticsearch/reference/1.4/search-aggregations.html#_structuring_aggregations) |
 | hasimage | 0 or 1 |
 | century | CENTURY or pipe separated list of centuries or "any" |
-| classification | CLASSIFICATION or pipe separated list of classifications or "any" |
+| classification | CLASSIFICATION ID or pipe separated list of CLASSIFICATION IDs or CLASSIFICATION NAME or pipe separated list of CLASSIFICATION NAMES or "any" |
 | color | COLOR or pipe separated list of colors or "any" |
 | culture | CULTURE ID or pipe separated list of CULTURE IDs or CULTURE NAME or pipe separated list of CULTURE NAMES or "any" |
 | exhibition | EXHIBITION ID or "any" |
