@@ -36,7 +36,7 @@ Include one or more of the following parameters to filter the items.
 | technique | TECHNIQUE ID or pipe separated list of TECHNIQUE IDs or TECHNIQUE NAME or pipe separated list of TECHNIQUE NAMES or "any" |
 | title | 1 or more terms |
 | exact_title | EXACT URL ENCODED TITLE |
-| worktype | WORKTYPE or pipe separated list of worktypes or "any" |
+| worktype | WORKTYPE ID or pipe separated list of WORKTYPE IDs or WORKTYPE NAME or pipe separated list of WORKTYPE NAMES or "any" |
 
 
 #### Examples
