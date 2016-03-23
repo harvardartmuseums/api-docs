@@ -34,7 +34,7 @@ To see aggregations in action, take a look at the object activity graphs in the 
 #### Tips and tricks
 
 * Include the parameter `size=0` if you don't want records in your results set. The records block will return as an empty array.
-* It's not always obvious which field to use when running an aggregation. For example the classification field on the object endpoint is indexed both as `classification` and `classification.exact`. We are adding field definitions for each endpoint but it will take some time for us to cover everything. In the meantime, don't hesitate to [ask us](https://docs.google.com/forms/d/118WjSPgKEYBjLU3B3iUkELwHbgeWryVb_5hw3o6_3K8/viewform) for clarificaiton on fields.
+* It's not always obvious which field to use when running an aggregation. For example the classification field on the object endpoint is indexed both as `classification` and `classification.exact`. We are adding field definitions for each endpoint but it will take some time for us to cover everything. In the meantime, don't hesitate to [ask us](https://docs.google.com/forms/d/118WjSPgKEYBjLU3B3iUkELwHbgeWryVb_5hw3o6_3K8/viewform) for clarification on fields.
 * It is possible to ask for multiple aggregations in a single request.
 * It is possible to subdivide an aggregation.
 
@@ -48,7 +48,7 @@ Here are a few basic examples.
 > http://api.harvardartmuseums.org/object?&aggregation={"by_classification":{"terms":{"field":"classification.exact","size":0},"aggs":{"by_century":{"terms":{"field":"century"}}}}}  
 > Tell me how many objects are in each classification and then subdivide each classification by century.
 
-Here is more advanced example. This request fetches data from the activity endpoint for a specific object. The data is first group by activity type. Then for each activity type the data is tallied for each month/year. The aggregation parameter is expanded to make it more readable.
+Here is more advanced example. This request fetches data from the activity endpoint for a specific object. The data is first grouped by activity type. Then for each activity type the data is tallied for each month/year. The aggregation parameter is expanded to make it more readable.
 
 ```json
 http://api.harvardartmuseums.org/activity?object=299843&aggregation={
