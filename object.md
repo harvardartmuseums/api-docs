@@ -52,7 +52,7 @@ Include one or more of the following parameters to filter the items.
 
 #### Response
 
-To keep responses reasonably sized, the output from a get objects request contains a subset of fields. To get all of data fields for a given record, use a get object request.
+To keep responses reasonably sized, the output from a get objects request contains a subset of fields. To get all of the data fields for a given record, use a get object request.
 
 ```json
 {
