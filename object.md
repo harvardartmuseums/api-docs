@@ -158,7 +158,7 @@ In many cases the fields are pretty self-explanatory but in other cases they are
 In some cases it represents the year the object officially became part of the museums collection. In other cases it reflects the year Harvard acquired it. Many objects have accession years that predate the existence of the Fogg Museum (1895), the first museum of the three museums that are part of Harvard Art Museums, and thus can be thought of as being acquired by Harvard itself.  
 
 **colors** describes the colors programmatically extracted from the primary image of the object  
-The color of each pixel is read and then sorted in to buckets. Brightness and gradient variants are reduced so similar colors group together and to keep the number of buckets under 20. Then the those colors are mapped to the museums' color palette, the CSS3 color listing, and hue names.  
+An object may have zero or more colors. The color of each pixel is read and then sorted in to buckets. Brightness and gradient variants are reduced so similar colors group together and to keep the number of buckets under 20. Then the those colors are mapped to the museums' color palette, the CSS3 color listing, and hue names.  
 
 `percent` - is the amount, between the range of 0 to 1, of the color found in the image  
 `color` - is the color found in the image  
