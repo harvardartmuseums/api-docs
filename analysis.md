@@ -48,7 +48,7 @@ Here are a few basic examples.
 > http://api.harvardartmuseums.org/object?&aggregation={"by_classification":{"terms":{"field":"classification.exact","size":0},"aggs":{"by_century":{"terms":{"field":"century"}}}}}  
 > Tell me how many objects are in each classification and then subdivide each classification by century.
 
-Here is more advanced example. This request fetches data from the activity endpoint for a specific object. The data is first grouped by activity type. Then for each activity type the data is tallied for each month/year. The aggregation parameter is expanded to make it more readable.
+Here is a more advanced example. This request fetches data from the activity endpoint for a specific object. The data is first grouped by activity type. Then for each activity type the data is tallied for each month/year. The aggregation parameter is expanded to make it more readable.
 
 ```json
 http://api.harvardartmuseums.org/activity?object=299843&aggregation={
