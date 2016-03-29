@@ -176,6 +176,17 @@ Some fields contain numeric values that have special meaning.
 1 – images have restrictions; display at a maximum pixel dimension of 256px  
 2 – do not display any images
 
+**images** describes the images of the object  
+An object may have zero or more images. As of March 2016, 91% of our objects have at least one image.  
+
+`baseimageurl` - is the primary internet address for the image and is delivered through our [default image delivery service](https://github.com/harvardartmuseums/api-docs#default-service)  
+`copyright` - is the copyright for the image  
+`displayorder` - is the preferred sequence number for the image within a group of images in the context of the object record; sequencing is especially important for manuscripts and books; an image with displayorder = 1 can be thought of as the current canonical image for the object  
+`idsid` - is the unique numeric identifier for the image in the Harvard Digital Repository    
+`iiifbaseuri` - is the root of the address for accessing the image through our [IIIF image delivery service](https://github.com/harvardartmuseums/api-docs#iiif)  
+`publiccaption` - is a descriptive note about the content of the media often listing information about the view (recto, verso, profile, 3/4 view)  
+`renditionnumber` - is the unique name for the image; this often takes the form of a prefix + serial number; the prefix can provide hints as to when, why, and how we made the image  
+
 **verificationlevel** describes the completeness and vetting status of information in a record  
 0 - Unchecked. Object information has not been verified for completeness and has not been vetted  
 1 - Poor. Object information is likely incomplete and has not been vetted  
