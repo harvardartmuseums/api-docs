@@ -67,8 +67,8 @@ Include one or more of the following parameters to filter the items.
 
 #### Examples
 
-> http://api.harvardartmuseums.org/gallery/1740  
-> Returns the full record for the gallery “Early Chinese Art”.
+> http://api.harvardartmuseums.org/gallery/1220  
+> Returns the full record for the gallery “European Art, 19th–20th century”.
 
 #### Response
 
