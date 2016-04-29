@@ -19,7 +19,7 @@ Include one or more of the following parameters to filter the items.
 | fields | comma separated list of data fields you want in the output |
 | aggregation |  see [Elasticsearch aggregations](http://www.elastic.co/guide/en/elasticsearch/reference/1.4/search-aggregations.html#_structuring_aggregations) |
 | usedby | FIELD NAME:ID |
-| floor | 0-5 |
+| floor | FLOOR NUMBER or pipe separated list of FLOOR NUMBERS; acceptable floor numbers are 0 through 5 |
 
 #### Examples
 
