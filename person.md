@@ -48,7 +48,8 @@ Include one or more of the following parameters to filter the items.
             "personid": 18135,
             "gender": "male",
             "culture": "Dutch",
-            "displayname": "Gérald Van Der Kaap"
+            "displayname": "Gérald Van Der Kaap",
+            "url": "http://www.harvardartmuseums.org/collections/person/18135"
         },
         {
             "dateend": 1633,
@@ -63,7 +64,8 @@ Include one or more of the following parameters to filter the items.
             "personid": 18301,
             "gender": null,
             "culture": "Dutch",
-            "displayname": "David Vinckboons"
+            "displayname": "David Vinckboons",
+            "url": "http://www.harvardartmuseums.org/collections/person/18301"
         }
     ]
 }
@@ -100,6 +102,7 @@ Some fields contain numeric values that have special meaning and can help connec
     "birthplace": "Leiden",
     "deathplace": "Amsterdam",
     "alphasort": "Rembrandt Harmensz van Rijn",
+    "url": "http://www.harvardartmuseums.org/collections/person/28241",
     "objectcount": 691,
     "id": 28241,
     "lastupdate": "2015-01-09T04:08:25-0500",
