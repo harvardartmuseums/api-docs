@@ -77,7 +77,7 @@ http://ids.lib.harvard.edu/ids/iiif/18483392/full/full/0/native.jpg
 
 Please note that URLs for images of objects that have rights restrictions are excluded for most API users. This means images for many 20th and 21st century works of art will not be available to you at the present time. We are working on a solution to this.  
 
-The **IIIF presentation service** is accessed through a separate service. Read more about the capabilities of the IIIF Presentation API at http://iiif.io/api/presentation/2.0/. The base URL for all presentation manifests begins with:
+The **IIIF presentation service** is accessed through a separate service. Read more about the capabilities of the IIIF Presentation API at http://iiif.io/api/presentation/2.1/. The base URL for all presentation manifests begins with:
 
 ```
 http://iiif.harvardartmuseums.org/manifests
