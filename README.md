@@ -66,13 +66,13 @@ Some of the museums' data is also accessible through [IIIF](http://iiif.io) comp
 The **IIIF image service** is accessed through the data found in the field `iiifbaseuri`. Read more about the capabilities of the IIIF Image API at http://iiif.io/api/image/1.1/. The service we provide access to adheres to version 1.1 of the API. A typical base URI for an image looks like this:  
 
 ```shell
-http://ids.lib.harvard.edu/ids/iiif/18483392
+https://ids.lib.harvard.edu/ids/iiif/18483392
 ```
 
 A fully formed IIIF request for a full resolution JPEG version of the image looks like this:
 
 ```shell
-http://ids.lib.harvard.edu/ids/iiif/18483392/full/full/0/native.jpg
+https://ids.lib.harvard.edu/ids/iiif/18483392/full/full/0/native.jpg
 ```
 
 Please note that URLs for images of objects that have rights restrictions are excluded for most API users. This means images for many 20th and 21st century works of art will not be available to you at the present time. We are working on a solution to this.  
