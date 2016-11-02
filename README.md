@@ -120,6 +120,12 @@ Several primary museum resources are accessible in this API. They include the fo
 * [Activity](https://github.com/harvardartmuseums/api-docs/blob/master/activity.md)
 * [Site](https://github.com/harvardartmuseums/api-docs/blob/master/site.md)
 
+## Experimental data
+
+There is a small amount of experimental data available at this endpoint.
+
+* [Experimental](https://github.com/harvardartmuseums/api-docs/blob/master/experimental.md)
+
 ## Example projects
 
 You can do a lot with the API. Here are a few examples. 
