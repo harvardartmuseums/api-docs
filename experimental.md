@@ -10,12 +10,13 @@ We don't guarantee the stability of this data. That being said, there is some fu
 
 #### Examples
 
-> http://api.harvardartmuseums.org/experimental/object?q=googlevision.responses.faceAnnotations.joyLikelihood:VERY_LIKELY
-> Returns all records for object that were processed with Google Vision and contain a person's face expressing joy. 
+> http://api.harvardartmuseums.org/experimental/object?q=googlevision.responses.faceAnnotations.joyLikelihood:VERY_LIKELY  
+> Returns all records for object that were processed with Google Vision and contain a person's face expressing joy.  
 
 #### Response
 
 ```json
+[SAMPLE RESPONSE GOES HERE]
 ```
 
 ## Get experimental object
@@ -24,10 +25,16 @@ We don't guarantee the stability of this data. That being said, there is some fu
 
 #### Examples
 
-> http://api.harvardartmuseums.org/experimental/object/155597 
-> Returns the full record for the object with ID 155597.
+> http://api.harvardartmuseums.org/experimental/object/155597  
+> Returns the full record for the object with ID 155597.  
 
 #### Response
 
 ```json
+[SAMPLE RESPONSE GOES HERE]
 ```
+
+## Example projects
+
+> [Machine Tag Explorer](http://apps.harvardartmuseums.org/machine-tag-explorer/)  
+> A simple rendering of the data produced by machine processing photographs.    
