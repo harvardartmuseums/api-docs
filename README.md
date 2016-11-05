@@ -186,7 +186,9 @@ print(r.status, r.data)
 
 ## Feedback
 
-Have you tried the API? [Let us know what you think.](https://docs.google.com/forms/d/118WjSPgKEYBjLU3B3iUkELwHbgeWryVb_5hw3o6_3K8/viewform)
+Have you tried the API? [Let us know what you think.](https://docs.google.com/forms/d/118WjSPgKEYBjLU3B3iUkELwHbgeWryVb_5hw3o6_3K8/viewform)  
+
+If you have a specific feature request or find a bug, [please open a GitHub issue](https://github.com/harvardartmuseums/api-docs/issues/new).
 
 ## About the API
 
