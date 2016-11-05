@@ -37,6 +37,7 @@ Include one or more of the following parameters to filter the items.
 | title | 1 or more terms |
 | exact_title | EXACT URL ENCODED TITLE |
 | worktype | WORKTYPE ID or pipe separated list of WORKTYPE IDs or WORKTYPE NAME or pipe separated list of WORKTYPE NAMES or "any" |
+| yearmade | four digit year |
 
 
 #### Examples
