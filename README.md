@@ -149,6 +149,22 @@ You can do a lot with the API. Here are a few examples.
 
 You can talk with the API using almost any language that speaks HTTP. Here are a few snippets to get you started. Just make sure to substitute your own API key in the `apikey` parameter before running them.
 
+#### Javascript + jQuery
+
+```javascript
+// Find all of the objects that are paintings and have the word "rabbit" in the title
+var apiEndpointBaseURL = "http://api.harvardartmuseums.org/object";
+var queryString = $.param({
+    apikey: "YOUR APIKEY HERE",
+    title: "rabbit",
+    classification: "Paintings"
+});
+
+$.getJSON(apiEndpointBaseURL + "?" + queryString, function(data) {
+   console.log(data); 
+});
+```
+
 #### Node.js
 
 ```javascript
