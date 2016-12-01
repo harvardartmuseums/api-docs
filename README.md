@@ -61,7 +61,7 @@ http://nrs.harvard.edu/urn-3:HUAM:OCP16703_dynmc?height=150&width=150
 
 #### IIIF 
 
-Some of the museums' data is also accessible through [IIIF](http://iiif.io) compatible image and presention services.   
+Some of the museums' data is also accessible through [IIIF](http://iiif.io) image and presentation services.   
 
 The **IIIF image service** is accessed through the data found in the field `iiifbaseuri`. Read more about the capabilities of the IIIF Image API at http://iiif.io/api/image/1.1/. The service we provide access to adheres to version 1.1 of the API. A typical base URI for an image looks like this:  
 
@@ -69,7 +69,7 @@ The **IIIF image service** is accessed through the data found in the field `iiif
 https://ids.lib.harvard.edu/ids/iiif/18483392
 ```
 
-A fully formed IIIF request for a full resolution JPEG version of the image looks like this:
+A fully formed IIIF request for a full resolution JPEG version of that same image looks like this:
 
 ```shell
 https://ids.lib.harvard.edu/ids/iiif/18483392/full/full/0/native.jpg
@@ -91,7 +91,7 @@ http://iiif.harvardartmuseums.org/manifests/object/299843
 
 At the present a manifest for an object contains one sequence and each image of that object is contained in its own canvas within that sequence.  
 
-Please note that our IIIF presentation service is still very much a work in progress. The code for the server is availabe at https://github.com/harvardartmuseums/iiif-manifest-server and is based on work that was done at HarvardX. If you have any comments, suggestions, or questions about this service feel free to submit them through the feedback form link listed below.  
+Please note that our IIIF presentation service is still very much a work in progress. The code for the server is availabe at https://github.com/harvardartmuseums/iiif-manifest-server and is based on work that was done at HarvardX. If you have any comments, suggestions, or questions about this service feel free to submit them through the feedback links listed below.  
 
 ## Analysis
 
