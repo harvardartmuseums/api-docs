@@ -2,7 +2,7 @@
 
 USE AT YOUR OWN RISK
 
-We don't guarantee the stability of this data. That being said, there is some fun stuff to play with here. This endpoint does not cover all object records. The data is a result of machine processing data and images through external services including [Google Vision](https://cloud.google.com/vision/), [Imagga](https://imagga.com/), and [Clarifai](https://clarifai.com/). The services perform face detection, text detection, and automatic feature detection/tagging of images.
+We don't guarantee the stability of this data. That being said, there is some fun stuff to play with here. This endpoint does not cover all object records. The data is a result of machine processing data and images through external services including [Google Vision](https://cloud.google.com/vision/), [Microsoft Cognitive Services](https://www.microsoft.com/cognitive-services), [Imagga](https://imagga.com/), and [Clarifai](https://clarifai.com/). The services perform face detection, text detection, color analysis, and automatic feature detection/tagging of images.
 
 ## Get experimental objects
 
