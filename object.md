@@ -23,8 +23,8 @@ Include one or more of the following parameters to filter the items.
 | classification | CLASSIFICATION ID or pipe separated list of CLASSIFICATION IDs or CLASSIFICATION NAME or pipe separated list of CLASSIFICATION NAMES or "any" |
 | color | COLOR or pipe separated list of colors or "any" |
 | culture | CULTURE ID or pipe separated list of CULTURE IDs or CULTURE NAME or pipe separated list of CULTURE NAMES or "any" |
-| exhibition | EXHIBITION ID or "any" |
-| gallery | GALLERY NUMBER or pipe separated list of gallery numbers or "any" |
+| exhibition | EXHIBITION ID or "any" or "none" |
+| gallery | GALLERY NUMBER or pipe separated list of gallery numbers or "any" or "none" |
 | group | GROUP ID or pipe separated list of GROUP IDs or GROUP NAME or "any" |
 | keyword | 1 or more terms |
 | medium | MEDIUM ID or pipe separated list of MEDIUM IDs or MEDIUM NAME or pipe separated list of MEDIUM NAMES or "any" |
