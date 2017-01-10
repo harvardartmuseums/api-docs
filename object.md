@@ -32,6 +32,7 @@ Include one or more of the following parameters to filter the items.
 | period | PERIOD or pipe separated list of periods or "any" |
 | person | PERSON ID or pipe separated list of PERSON IDs or PERSON NAME or "any" |
 | place | PLACE ID or pipe separated list of PLACE IDs or PLACE NAME or "any" |
+| publication | PUBLICATION ID or "any" or "none" |
 | relatedto | OBJECT ID |
 | technique | TECHNIQUE ID or pipe separated list of TECHNIQUE IDs or TECHNIQUE NAME or pipe separated list of TECHNIQUE NAMES or "any" |
 | title | 1 or more terms |
