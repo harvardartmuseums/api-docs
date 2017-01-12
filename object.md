@@ -355,8 +355,10 @@ An object may have zero or more images. As of March 2016, 91% of our objects hav
         }
     ],
     "gallery": {
+        "galleryid": 3400,
         "gallerynumber": "3400",
         "floor": 3,
+        "theme": "Ancient Greece in Black and Orange",
         "name": "Ancient Mediterranean and Near Eastern Art"
     },
     "groupings": [
