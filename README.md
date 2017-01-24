@@ -137,10 +137,10 @@ You can do a lot with the API. Here are a few examples.
 > A simple abstract use of the color information supplied with some of the object records.  
 >   
 > [Spectrum Explorer](http://apps.harvardartmuseums.org/spectrum-explorer)  
-> The color spectrum that is part of the branding of the Harvard Art Museums.  
+> See color spectrum that is part of the branding of the Harvard Art Museums.  
 >  
 > [Museum Explorer](http://apps.harvardartmuseums.org/museum-explorer)  
-> See the entire museum through tree and pack graphs.
+> See the entire museum through tree and pack graphs and floor plans.
 >  
 > [ARTphone](https://github.com/harvardartmuseums/ARTphone)  
 > Call or text the word "random" to 1-617-500-1866 to listen to the collection.  
