@@ -26,7 +26,7 @@ Include one or more of the following parameters to filter the items.
 | exhibition | EXHIBITION ID or "any" or "none" |
 | gallery | GALLERY NUMBER or pipe separated list of gallery numbers or "any" or "none" |
 | group | GROUP ID or pipe separated list of GROUP IDs or GROUP NAME or "any" |
-| keyword | 1 or more terms |
+| keyword | a keyword search string; this parameter searches object titles, artists, description, classification, culture, and worktype |
 | medium | MEDIUM ID or pipe separated list of MEDIUM IDs or MEDIUM NAME or pipe separated list of MEDIUM NAMES or "any" |
 | objectnumber | 1 or more terms |
 | period | PERIOD or pipe separated list of periods or "any" |
