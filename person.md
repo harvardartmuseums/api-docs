@@ -75,6 +75,12 @@ Include one or more of the following parameters to filter the items.
 
 `GET /person/PERSON_ID` will get detailed info about a specific person.
 
+**alphasort** describes the form of the persons name to be used for sorting names alphabetically 
+This often takes the form of "lastname, firstname" and is our preferred way to sort names.  
+
+**displayname** describes the form of persons name used for display purposes
+This often takes the form of "firstname lastname" and is our preferred way to display names.  
+
 Some fields contain numeric values that have special meaning and can help connect our records to other data sets. Not all records have these fields because we couldn't always find a match. 
 
 **ulan_id** contains the identifier for the matching entry in the [ULAN](http://www.getty.edu/research/tools/vocabularies/ulan/) vocabulary
