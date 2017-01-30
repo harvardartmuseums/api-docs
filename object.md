@@ -159,6 +159,10 @@ In many cases the fields are pretty self-explanatory but in other cases they are
 **accessionyear** describes the year the object was acquired  
 In some cases it represents the year the object officially became part of the museums collection. In other cases it reflects the year Harvard acquired it. Many objects have accession years that predate the existence of the Fogg Museum (1895), the first museum of the three museums that are part of Harvard Art Museums, and thus can be thought of as being acquired by Harvard itself.  
 
+**accesslevel** describes the accessibility of a record  
+0 – Restricted. Object record is restricted to certain API keys  
+1 – Public. Object record is available to all API keys  
+
 **colors** describes the colors programmatically extracted from the primary image of the object  
 An object may have zero or more colors. The color of each pixel is read and then sorted in to buckets. Brightness and gradient variants are reduced so similar colors group together and to keep the number of buckets under 20. Then the those colors are mapped to the museums' color palette, the CSS3 color listing, and hue names.  
 
@@ -167,6 +171,11 @@ An object may have zero or more colors. The color of each pixel is read and then
 `spectrum` - is the closest match of the color value to the museums' design color [spectrum](https://github.com/harvardartmuseums/api-docs/blob/master/spectrum.md)  
 `css3` - is the closest match to the colors listed in the [CSS3 color module specification](https://www.w3.org/TR/css3-color/)  
 `hue` - is the color value mapped to the name of a hue (Red, Orange, Yellow, Green, Blue, Violet, Brown, Grey, Black, White)  
+
+**imagepermissionlevel** describes the level of image copyright permissions for a record  
+0 – ok to display images at any size  
+1 – images have restrictions; display at a maximum pixel dimension of 256px  
+2 – do not display any images
 
 **images** describes the images of the object  
 An object may have zero or more images. As of March 2016, 91% of our objects have at least one image.  
@@ -184,13 +193,6 @@ An object may have zero or more images. As of March 2016, 91% of our objects hav
 **objectnumber** describes the unique identifier for a record  
 This field is also known as accession number. For information on the structure and meaning of these numbers see the article [A Numbers Game](http://magazine.harvardartmuseums.org/article/2015/06/23/numbers-game).
 
-Some fields contain numeric values that have special meaning.
-
-**imagepermissionlevel** describes the level of image copyright permissions for a record  
-0 – ok to display images at any size  
-1 – images have restrictions; display at a maximum pixel dimension of 256px  
-2 – do not display any images
-
 **verificationlevel** describes the completeness and vetting status of information in a record  
 0 - Unchecked. Object information has not been verified for completeness and has not been vetted  
 1 - Poor. Object information is likely incomplete and has not been vetted  
@@ -198,9 +200,6 @@ Some fields contain numeric values that have special meaning.
 3 - Good. Object is well described and information is vetted  
 4 - Best. Object is extensively researched, well described and information is vetted
 
-**accesslevel** describes the accessibility of a record  
-0 – Restricted. Object record is restricted to certain API keys  
-1 – Public. Object record is available to all API keys
 
 #### Examples
 
