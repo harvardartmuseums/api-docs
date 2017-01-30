@@ -168,16 +168,6 @@ An object may have zero or more colors. The color of each pixel is read and then
 `css3` - is the closest match to the colors listed in the [CSS3 color module specification](https://www.w3.org/TR/css3-color/)  
 `hue` - is the color value mapped to the name of a hue (Red, Orange, Yellow, Green, Blue, Violet, Brown, Grey, Black, White)  
 
-**objectnumber** describes the unique identifier for a record  
-This field is also known as accession number. For information on the structure and meaning of these numbers see the article [A Numbers Game](http://magazine.harvardartmuseums.org/article/2015/06/23/numbers-game).
-
-Some fields contain numeric values that have special meaning.
-
-**imagepermissionlevel** describes the level of image copyright permissions for a record  
-0 – ok to display images at any size  
-1 – images have restrictions; display at a maximum pixel dimension of 256px  
-2 – do not display any images
-
 **images** describes the images of the object  
 An object may have zero or more images. As of March 2016, 91% of our objects have at least one image.  
 
@@ -188,6 +178,18 @@ An object may have zero or more images. As of March 2016, 91% of our objects hav
 `iiifbaseuri` - is the root of the address for accessing the image through our [IIIF image delivery service](https://github.com/harvardartmuseums/api-docs#iiif)  
 `publiccaption` - is a descriptive note about the content of the media often listing information about the view (recto, verso, profile, 3/4 view)  
 `renditionnumber` - is the unique name for the image; this often takes the form of a prefix + serial number; the prefix can provide hints as to when, why, and how we made the image  
+
+**objectid** describes the numeric unique identifier for a record  
+
+**objectnumber** describes the unique identifier for a record  
+This field is also known as accession number. For information on the structure and meaning of these numbers see the article [A Numbers Game](http://magazine.harvardartmuseums.org/article/2015/06/23/numbers-game).
+
+Some fields contain numeric values that have special meaning.
+
+**imagepermissionlevel** describes the level of image copyright permissions for a record  
+0 – ok to display images at any size  
+1 – images have restrictions; display at a maximum pixel dimension of 256px  
+2 – do not display any images
 
 **verificationlevel** describes the completeness and vetting status of information in a record  
 0 - Unchecked. Object information has not been verified for completeness and has not been vetted  
