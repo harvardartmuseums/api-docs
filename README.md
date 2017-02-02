@@ -208,13 +208,21 @@ If you have a specific feature request or find a bug, [please open a GitHub issu
 
 ## About the API
 
+#### Background information
+
+There are many reasons why the API is important to us and why it exists. They can be summed up as this: Data is at the heart of the work we do and we need an efficient and stable system for tapping in to it. Several articles have been published on our magazine about how access to data (through APIs) changes the way we think about and use collections. See [Technology in the Museums](http://magazine.harvardartmuseums.org/article/2014/01/24/technology-museums) and [The Beauty—and Complexity—of Data](http://magazine.harvardartmuseums.org/article/2014/08/12/beauty%E2%80%94and-complexity%E2%80%94-data) to dive a bit deeper.
+
 #### Technical specs
 
 The two core pieces of software behind the API are [Node.js](https://nodejs.org/en/) and [Elasticsearch](http://www.elastic.co). The API is a Node.js application running on [Heroku](https://www.heroku.com/). It talks to an Elasticsearch instance running on [AWS](http://aws.amazon.com/).
 
-#### Background information
+#### The data
 
-There are many reasons why the API is important to us and why it exists. They can be summed up as this: Data is at the heart of the work we do and we need an efficient and stable system for tapping in to it. Several articles have been published on our magazine about how access to data (through APIs) changes the way we think about and use collections. See [Technology in the Museums](http://magazine.harvardartmuseums.org/article/2014/01/24/technology-museums) and [The Beauty—and Complexity—of Data](http://magazine.harvardartmuseums.org/article/2014/08/12/beauty%E2%80%94and-complexity%E2%80%94-data) to dive a bit deeper.
+The bulk of the data derives from our internal collections management systems. Our primary system is The Museum System (TMS) by [Gallery Systems](http://www.gallerysystems.com/). We enhance the data in TMS with data from other sources such as Google Analytics and through machine processing.  
+
+We refresh the dataset every day around 6am.  
+
+Keep in mind that the data is not perfect. There are many gaps and a lot of ambiguity. Consider it a never ending work in progress and check back often. 
 
 ## Terms of use
 - If you make a request to this service you are deemed to have accepted the terms and conditions listed here.
