@@ -39,9 +39,14 @@ Include one or more of the following parameters to filter the items.
         {
             "objectcount": 3,
             "id": 2036944,
-            "lastupdate": "2015-01-09T04:12:18-0500",
+            "lastupdate": "2017-02-02T04:18:45-0500",
+            "tgn_id": 7013343,
             "haschildren": 0,
             "level": 4,
+            "geo": {
+                "lon": -76.55,
+                "lat": 42.916
+            },
             "placeid": 2036944,
             "pathforward": "North America\\United States\\New York\\",
             "parentplaceid": 2028439,
@@ -50,20 +55,30 @@ Include one or more of the following parameters to filter the items.
         {
             "objectcount": 14,
             "id": 2036956,
-            "lastupdate": "2015-01-09T04: 12: 18-0500",
+            "lastupdate": "2017-02-02T04:18:45-0500",
+            "tgn_id": 7014317,
             "haschildren": 0,
             "level": 4,
+            "geo": {
+                "lon": -76.5,
+                "lat": 43.45
+            },
             "placeid": 2036956,
-            "pathforward": "NorthAmerica\\UnitedStates\\NewYork\\",
+            "pathforward": "North America\\United States\\New York\\",
             "parentplaceid": 2028439,
             "name": "Oswego"
         },
         {
-            "objectcount": 77,
+            "objectcount": 78,
             "id": 2036963,
-            "lastupdate": "2015-01-09T04:12:18-0500",
+            "lastupdate": "2017-02-02T04:18:45-0500",
+            "tgn_id": 7015822,
             "haschildren": 0,
             "level": 4,
+            "geo": {
+                "lon": -73.966,
+                "lat": 40.683
+            },
             "placeid": 2036963,
             "pathforward": "North America\\United States\\New York\\",
             "parentplaceid": 2028439,
@@ -76,6 +91,8 @@ Include one or more of the following parameters to filter the items.
 ## Get Place
 
 `GET /place/PLACE_ID` will get the full record of the specified place.
+
+**tgn_id** contains the ID of the equivilent record in the [Getty Thesaurus of Geographic Names](http://www.getty.edu/research/tools/vocabularies/tgn/)
 
 #### Examples
 
@@ -93,7 +110,12 @@ Include one or more of the following parameters to filter the items.
     "haschildren": 1,
     "level": 2,
     "objectcount": 12,
+    "tgn_id": 1000088,
     "id": 2028422,
-    "lastupdate": "2015-01-09T04:12:17-0500"
+    "geo": {
+        "lat": 62,
+        "lon": 10
+    },
+    "lastupdate": "2017-02-02T04:18:42-0500"
 }
 ```
