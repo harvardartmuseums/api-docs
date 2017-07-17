@@ -80,13 +80,13 @@ Please note that URLs for images of objects that have rights restrictions are ex
 The **IIIF presentation service** is accessed through a separate service. Read more about the capabilities of the IIIF Presentation API at http://iiif.io/api/presentation/2.1/. The base URL for all presentation manifests begins with:
 
 ```
-http://iiif.harvardartmuseums.org/manifests
+https://iiif.harvardartmuseums.org/manifests
 ```
 
 You can request a manifest for any object by appending `/object/OBJECT_ID` to the base URL. For example the primary manifest for the object [Self-Portrait Dedicated to Paul Gauguin](http://www.harvardartmuseums.org/collections/object/299843) is at:
 
 ```
-http://iiif.harvardartmuseums.org/manifests/object/299843
+https://iiif.harvardartmuseums.org/manifests/object/299843
 ```
 
 At the present a manifest for an object contains one sequence and each image of that object is contained in its own canvas within that sequence.  
