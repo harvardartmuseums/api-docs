@@ -36,7 +36,7 @@ Several types of activites are available via this endpoint. They are described i
 
 #### Examples
 
-> http://api.harvardartmuseums.org/activity?object=299843  
+> https://api.harvardartmuseums.org/activity?object=299843  
 > Returns all of the activity for the [Van Gogh's Self-Portrait](www.harvardartmuseums.org/collections/object/299843).  
 
 #### Response

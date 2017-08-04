@@ -22,7 +22,7 @@ Include one or more of the following parameters to filter the items.
 
 #### Examples
 
-> http://api.harvardartmuseums.org/place?parent=2028439  
+> https://api.harvardartmuseums.org/place?parent=2028439  
 > Returns all records for places that are in New York state.  
 
 #### Response
@@ -96,7 +96,7 @@ Include one or more of the following parameters to filter the items.
 
 #### Examples
 
-> http://api.harvardartmuseums.org/place/2028422  
+> https://api.harvardartmuseums.org/place/2028422  
 > Returns the full record for the country Norway.  
 
 #### Response

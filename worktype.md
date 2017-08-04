@@ -20,7 +20,7 @@ Include one or more of the following parameters to filter the items.
 
 #### Examples
 
-> http://api.harvardartmuseums.org/worktype  
+> https://api.harvardartmuseums.org/worktype  
 > Returns all of the work types. 
 
 #### Response
@@ -65,7 +65,7 @@ Include one or more of the following parameters to filter the items.
 
 #### Examples
 
-> http://api.harvardartmuseums.org/worktype/25   
+> https://api.harvardartmuseums.org/worktype/25   
 > Returns the full record for the work type astrolabe.  
 
 #### Response

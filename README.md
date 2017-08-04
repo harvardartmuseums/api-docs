@@ -7,13 +7,13 @@ The Harvard Art Museums API is a REST-style service designed for developers who 
 All requests to the API begin with: 
 
 ```shell
-http://api.harvardartmuseums.org
+https://api.harvardartmuseums.org
 ```
 
 The API uses keys to authenticate requests. Every request must be accompanied by the `apikey` parameter and an API key. 
 
 ```shell
-http://api.harvardartmuseums.org?apikey=00000000-0000-0000-0000-000000000000
+https://api.harvardartmuseums.org?apikey=00000000-0000-0000-0000-000000000000
 ```
 
 [Send a request](https://docs.google.com/forms/d/1Fe1H4nOhFkrLpaeBpLAnSrIMYvcAxnYWm0IU9a6IkFA/viewform) to obtain your key.
@@ -44,7 +44,7 @@ All data is in [JSON](http://json.org) format. Here is a typical response:
 By default, requests return 10 records at a time. You can increase the number of records per page up to a maximum of 100 by setting the `size` parameter. Use the `page` parameter to page through large record sets.
 
 ```shell
-http://api.harvardartmuseums.org/object?size=5&page=42
+https://api.harvardartmuseums.org/object?size=5&page=42
 ```
 
 ## Images
@@ -153,7 +153,7 @@ You can talk with the API using almost any language that speaks HTTP. Here are a
 
 ```javascript
 // Find all of the objects that are paintings and have the word "rabbit" in the title
-var apiEndpointBaseURL = "http://api.harvardartmuseums.org/object";
+var apiEndpointBaseURL = "https://api.harvardartmuseums.org/object";
 var queryString = $.param({
     apikey: "YOUR APIKEY HERE",
     title: "rabbit",
@@ -171,7 +171,7 @@ $.getJSON(apiEndpointBaseURL + "?" + queryString, function(data) {
 var rest = require("restler");
 
 // Find all of the objects with the word "dog" in the title and return only a few fields per record
-rest.get("http://api.harvardartmuseums.org/object", {
+rest.get("https://api.harvardartmuseums.org/object", {
     query: {
         apikey: "YOUR APIKEY HERE",
         title: "dog",
@@ -190,7 +190,7 @@ import urllib3
 http = urllib3.PoolManager()
 
 # Find all of the objects with the word "cat" in the title and return only a few fields per record
-r = http.request('GET', 'http://api.harvardartmuseums.org/object',
+r = http.request('GET', 'https://api.harvardartmuseums.org/object',
     fields = {
         'apikey': 'YOUR APIKEY HERE',
         'title': 'cat',

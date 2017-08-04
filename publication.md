@@ -22,7 +22,7 @@ Include one or more of the following parameters to filter the items.
 
 #### Examples
 
-> http://api.harvardartmuseums.org/publication?q=publicationyear:2013
+> https://api.harvardartmuseums.org/publication?q=publicationyear:2013
 > Returns all records for publications that were published in 2013. 
 
 #### Response
@@ -114,7 +114,7 @@ The identifiers array contains numeric ID values that have special meaning and c
 
 #### Examples
 
-> http://api.harvardartmuseums.org/publication/19947  
+> https://api.harvardartmuseums.org/publication/19947  
 > Returns the full record for the exhibition catalogue “Jasper Johns / In Press: The Crosshatch Works and the Logic of Print”.
 
 #### Response

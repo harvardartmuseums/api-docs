@@ -20,7 +20,7 @@ Include one or more of the following parameters to filter the items.
 
 #### Examples
 
-> http://api.harvardartmuseums.org/site  
+> https://api.harvardartmuseums.org/site  
 > Returns all sites records for the Harvard Art Museums. 
 
 #### Response
@@ -77,7 +77,7 @@ Include one or more of the following parameters to filter the items.
 
 #### Examples
 
-> http://api.harvardartmuseums.org/site/37536057  
+> https://api.harvardartmuseums.org/site/37536057  
 > Returns the full record for the site “Harvard Art Museums”.
 
 #### Response

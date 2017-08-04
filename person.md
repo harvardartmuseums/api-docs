@@ -21,7 +21,7 @@ Include one or more of the following parameters to filter the items.
 
 #### Examples
 
-> http://api.harvardartmuseums.org/person?q=culture:Dutch  
+> https://api.harvardartmuseums.org/person?q=culture:Dutch  
 > Finds all of the people that are Dutch.    
 
 #### Response
@@ -91,7 +91,7 @@ Some fields contain numeric values that have special meaning and can help connec
 
 #### Examples
 
-> http://api.harvardartmuseums.org/person/28241  
+> https://api.harvardartmuseums.org/person/28241  
 > Returns the full record for Rembrandt.
 
 #### Response

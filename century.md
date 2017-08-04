@@ -20,7 +20,7 @@ Include one or more of the following parameters to filter the items.
 
 #### Examples
 
-> http://api.harvardartmuseums.org/century  
+> https://api.harvardartmuseums.org/century  
 > Returns all of the centuries.  
 
 #### Response
@@ -65,7 +65,7 @@ Include one or more of the following parameters to filter the items.
 
 #### Examples
 
-> http://api.harvardartmuseums.org/century/37525482   
+> https://api.harvardartmuseums.org/century/37525482   
 > Returns the full record for the century 14th century BCE.  
 
 #### Response
