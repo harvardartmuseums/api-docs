@@ -119,6 +119,7 @@ Several primary museum resources are accessible in this API. They include the fo
 * [Worktype](https://github.com/harvardartmuseums/api-docs/blob/master/worktype.md)
 * [Activity](https://github.com/harvardartmuseums/api-docs/blob/master/activity.md)
 * [Site](https://github.com/harvardartmuseums/api-docs/blob/master/site.md)
+* [Video](https://github.com/harvardartmuseums/api-docs/blob/master/video.md)
 
 ## Experimental data
 
