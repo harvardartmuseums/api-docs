@@ -666,6 +666,7 @@ This field is also known as accession number. For information on the structure a
 | images | an array of the images of the object |
 | people | an array of the people associated with the creation of the object |
 | publications | an array of the publications featuring this object |
+| videos | an array of videos about or featuring this object |
 
 
 #### Examples 
