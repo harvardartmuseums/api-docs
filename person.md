@@ -1,6 +1,6 @@
 # Person
 
-Contains information on entities that have some association to works of art in the collection. Associations include artists, sitters, printers, donors, and more.
+Contains information on entities that have some association to works of art in the collection or publications. Associations include artists, sitters, printers, donors, authors, publishers, and more.
 
 ## Get people
 
