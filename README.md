@@ -10,10 +10,16 @@ All requests to the API begin with:
 http://api.harvardartmuseums.org
 ```
 
-The API uses keys to authenticate requests. Every request must be accompanied by the `apikey` parameter and an API key. 
+And all requests must also specify the resource you want to retrieve:
 
 ```shell
-http://api.harvardartmuseums.org?apikey=00000000-0000-0000-0000-000000000000
+http://api.harvardartmuseums.org/RESOURCE_TYPE
+```
+
+And every request must be accompanied by the `apikey` parameter and an API key. The API uses keys to authenticate requests. API keys take the form `00000000-0000-0000-0000-000000000000`. Here is the full structure of a typical request:
+
+```shell
+http://api.harvardartmuseums.org/RESOURCE_TYPE?apikey=YOUR_API_KEY
 ```
 
 [Send a request](https://docs.google.com/forms/d/1Fe1H4nOhFkrLpaeBpLAnSrIMYvcAxnYWm0IU9a6IkFA/viewform) to obtain your key.
@@ -224,7 +230,7 @@ The bulk of the data derives from our internal collections management systems. O
 
 We refresh the dataset every day around 6am.  
 
-Keep in mind that the data is not perfect. There are many gaps and a lot of ambiguity. Consider it a never ending work in progress and check back often. 
+Keep in mind that the data is not perfect. There are many gaps and a lot of ambiguity. Consider it a living document and work in progress. Check back often. 
 
 ## Terms of use
 - If you make a request to this service you are deemed to have accepted the terms and conditions listed here.
