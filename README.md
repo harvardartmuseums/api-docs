@@ -10,7 +10,7 @@ All requests to the API begin with:
 http://api.harvardartmuseums.org
 ```
 
-And all requests must also specify the resource you want to retrieve:
+And all requests must also specify the [resource](https://github.com/harvardartmuseums/api-docs#resources-that-are-available) you want to retrieve:
 
 ```shell
 http://api.harvardartmuseums.org/RESOURCE_TYPE
