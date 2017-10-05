@@ -156,7 +156,7 @@ To keep responses reasonably sized, the output from a get objects request contai
 
 In many cases the fields are pretty self-explanatory but in other cases they are a bit fuzzy. Sometimes you need to know the history of the institution and some of its inner workings in order to understand some of the data. This is because our data is often based on our particular cataloguing preferences and not necessarily universally accepted cataloguing standards for cultural objects. Here is a partial list of those fields with explanations.  
 
-**accessionmethod** describes how the work came to be part of the collection
+**accessionmethod** describes how the work came to be part of the collection  
 The list of methods includes Gift, Purchase, Transfer, Bequest, and Commission. This information, along with additional details, is also found in an object's provenance and credit line.  
 
 **accessionyear** describes the year the object was acquired  
