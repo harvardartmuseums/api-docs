@@ -190,6 +190,26 @@ rest.get("http://api.harvardartmuseums.org/object", {
 });
 ```
 
+#### PHP 
+
+```php
+use GuzzleHttp\Client;
+
+$client = new Client();
+// Find all of the objects with the word "squirrel" in the title and return only a few fields per record
+$response = $client->get("http://api.harvardartmuseums.org/object", 
+    [
+        "query" => [
+            "apikey" => "YOUR APIKEY HERE",
+            "title" => "squirrel",
+            "fields" => "objectnumber,title,dated"
+        ]
+    ]
+);
+$records = json_decode($response->getBody());
+print_r($records);
+```
+
 #### Python 3
 
 ```python
