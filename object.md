@@ -196,6 +196,9 @@ An object may have zero or more images. As of March 2016, 91% of our objects hav
 **objectnumber** describes the unique identifier for a record  
 This field is also known as accession number. For information on the structure and meaning of these numbers see the article [A Numbers Game](http://magazine.harvardartmuseums.org/article/2015/06/23/numbers-game).
 
+**provenance** describes the history of ownership of the work  
+This field is a record of the history of all the people/institutions who have owned the work from its creation until the present. Whenever possible it documents the legal title to a work at any particular time. This field often contains names of people along with the dates and location of ownership.  
+
 **verificationlevel** describes the completeness and vetting status of information in a record  
 0 - Unchecked. Object information has not been verified for completeness and has not been vetted  
 1 - Poor. Object information is likely incomplete and has not been vetted  
