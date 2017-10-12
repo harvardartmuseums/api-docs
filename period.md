@@ -20,7 +20,7 @@ Include one or more of the following parameters to filter the items.
 
 #### Examples
 
-> http://api.harvardartmuseums.org/period  
+> https://api.harvardartmuseums.org/period  
 > Returns all of the periods. 
 
 #### Response
@@ -65,7 +65,7 @@ Include one or more of the following parameters to filter the items.
 
 #### Examples
 
-> http://api.harvardartmuseums.org/period/345  
+> https://api.harvardartmuseums.org/period/345  
 > Returns the full record for the period Hellenistic period, Late.  
 
 #### Response

@@ -43,13 +43,13 @@ Include one or more of the following parameters to filter the items.
 
 #### Examples
 
-> http://api.harvardartmuseums.org/object?q=totalpageviews:0&size=10  
+> https://api.harvardartmuseums.org/object?q=totalpageviews:0&size=10  
 > Returns ten objects that have never been viewed on the Art Museums main public website.  
 >  
-> http://api.harvardartmuseums.org/object?person=33430  
+> https://api.harvardartmuseums.org/object?person=33430  
 > Finds all of the objects that involve a specific person.  
 >   
-> http://api.harvardartmuseums.org/object?classification=Prints&q=totalpageviews:1  
+> https://api.harvardartmuseums.org/object?classification=Prints&q=totalpageviews:1  
 > Finds all of the objects classified as prints that have been viewed only once on the Art Museums main public website.
 
 #### Response
@@ -209,7 +209,7 @@ This field is a record of the history of all the people/institutions who have ow
 
 #### Examples
 
-> http://api.harvardartmuseums.org/object/304069  
+> https://api.harvardartmuseums.org/object/304069  
 > Returns the full record for Greek vessel titled "Hydria (water jar) with Siren Attachment".
 
 #### Response
@@ -677,7 +677,7 @@ This field is a record of the history of all the people/institutions who have ow
 
 #### Examples 
 
-> http://api.harvardartmuseums.org/object/299843/publications  
+> https://api.harvardartmuseums.org/object/299843/publications  
 > Returns an array containing all the publications related to van Gogh’s "Self-Portrait Dedicated to Paul Gauguin".
 
 #### Response

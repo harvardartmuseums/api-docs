@@ -20,7 +20,7 @@ Include one or more of the following parameters to filter the items.
 
 #### Examples
 
-> http://api.harvardartmuseums.org/technique    
+> https://api.harvardartmuseums.org/technique    
 > Returns all of the techniques.  
 
 #### Response
@@ -65,7 +65,7 @@ Include one or more of the following parameters to filter the items.
 
 #### Examples
 
-> http://api.harvardartmuseums.org/technique/7317  
+> https://api.harvardartmuseums.org/technique/7317  
 > Returns the full record for the technique “Red-figure”.
 
 #### Response

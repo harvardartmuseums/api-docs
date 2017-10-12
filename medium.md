@@ -22,7 +22,7 @@ Include one or more of the following parameters to filter the items.
 
 #### Examples
 
-> http://api.harvardartmuseums.org/medium  
+> https://api.harvardartmuseums.org/medium  
 > Returns all of the mediums. 
 
 #### Response
@@ -79,7 +79,7 @@ Include one or more of the following parameters to filter the items.
 
 #### Examples
 
-> http://api.harvardartmuseums.org/medium/2028206   
+> https://api.harvardartmuseums.org/medium/2028206   
 > Returns the full record for the medium Watercolor.  
 
 #### Response

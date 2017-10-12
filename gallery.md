@@ -23,7 +23,7 @@ Include one or more of the following parameters to filter the items.
 
 #### Examples
 
-> http://api.harvardartmuseums.org/gallery?floor=2  
+> https://api.harvardartmuseums.org/gallery?floor=2  
 > Returns all records for galleries that are on floor (Level) 2 in the Harvard Art Museums building. 
 
 #### Response
@@ -67,7 +67,7 @@ Include one or more of the following parameters to filter the items.
 
 #### Examples
 
-> http://api.harvardartmuseums.org/gallery/1220  
+> https://api.harvardartmuseums.org/gallery/1220  
 > Returns the full record for the gallery “European Art, 19th–20th century”.
 
 #### Response

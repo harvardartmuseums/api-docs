@@ -27,7 +27,7 @@ Include one or more of the following parameters to filter the items.
 
 #### Examples
 
-> http://api.harvardartmuseums.org/exhibition?venue=HAM  
+> https://api.harvardartmuseums.org/exhibition?venue=HAM  
 > Returns all records for exhibitions that take place at a Harvard Art Museums venue. 
 
 #### Response
@@ -123,7 +123,7 @@ Include one or more of the following parameters to filter the items.
 
 #### Examples
 
-> http://api.harvardartmuseums.org/exhibition/4236  
+> https://api.harvardartmuseums.org/exhibition/4236  
 > Returns the full record for the exhibition “In Harmony: The Norma Jean Calderwood Collection of Islamic Art”.
 
 #### Response

@@ -1,25 +1,25 @@
 # Harvard Art Museums API Documentation
 
-The Harvard Art Museums API is a REST-style service designed for developers who wish to explore and integrate the museums’ collections in their projects. The API provides direct access to the data that powers the [museums' website](http://www.harvardartmuseums.org) and many other aspects of the museums. 
+The Harvard Art Museums API is a REST-style service designed for developers who wish to explore and integrate the museums’ collections in their projects. The API provides direct access to the data that powers the [museums' website](https://www.harvardartmuseums.org) and many other aspects of the museums. 
 
 ## Access to the API
 
 All requests to the API begin with: 
 
 ```shell
-http://api.harvardartmuseums.org
+https://api.harvardartmuseums.org
 ```
 
 And all requests must also specify the [resource](https://github.com/harvardartmuseums/api-docs#resources-that-are-available) you want to retrieve:
 
 ```shell
-http://api.harvardartmuseums.org/RESOURCE_TYPE
+https://api.harvardartmuseums.org/RESOURCE_TYPE
 ```
 
 And every request must be accompanied by the `apikey` parameter and an API key. The API uses keys to authenticate requests. API keys take the form `00000000-0000-0000-0000-000000000000`. Here is the full structure of a typical request:
 
 ```shell
-http://api.harvardartmuseums.org/RESOURCE_TYPE?apikey=YOUR_API_KEY
+https://api.harvardartmuseums.org/RESOURCE_TYPE?apikey=YOUR_API_KEY
 ```
 
 [Send a request](https://docs.google.com/forms/d/1Fe1H4nOhFkrLpaeBpLAnSrIMYvcAxnYWm0IU9a6IkFA/viewform) to obtain your key.
@@ -50,7 +50,7 @@ All data is in [JSON](http://json.org) format. Here is a typical response:
 By default, requests return 10 records at a time. You can increase the number of records per page up to a maximum of 100 by setting the `size` parameter. Use the `page` parameter to page through large record sets.
 
 ```shell
-http://api.harvardartmuseums.org/object?size=5&page=42
+https://api.harvardartmuseums.org/object?size=5&page=42
 ```
 
 ## Images
@@ -62,7 +62,7 @@ Some of the datasets include image URLs as part of a block of image information 
 The default service is accessed through the URLs found in the fields `baseimageurl` and `primaryimageurl`. This service is capable of resizing images on the fly. Append `height` and `width` parameters to image URLs to get an image sized to fit to the supplied dimensions. For example, if you want an image scaled to 150 pixels on the longest side construct the URL as follows.
 
 ```shell
-http://nrs.harvard.edu/urn-3:HUAM:OCP16703_dynmc?height=150&width=150
+https://nrs.harvard.edu/urn-3:HUAM:OCP16703_dynmc?height=150&width=150
 ```
 
 #### IIIF 
@@ -161,7 +161,7 @@ You can talk with the API using almost any language that speaks HTTP. Here are a
 
 ```javascript
 // Find all of the objects that are paintings and have the word "rabbit" in the title
-var apiEndpointBaseURL = "http://api.harvardartmuseums.org/object";
+var apiEndpointBaseURL = "https://api.harvardartmuseums.org/object";
 var queryString = $.param({
     apikey: "YOUR APIKEY HERE",
     title: "rabbit",
@@ -179,7 +179,7 @@ $.getJSON(apiEndpointBaseURL + "?" + queryString, function(data) {
 var rest = require("restler");
 
 // Find all of the objects with the word "dog" in the title and return only a few fields per record
-rest.get("http://api.harvardartmuseums.org/object", {
+rest.get("https://api.harvardartmuseums.org/object", {
     query: {
         apikey: "YOUR APIKEY HERE",
         title: "dog",
@@ -218,7 +218,7 @@ import urllib3
 http = urllib3.PoolManager()
 
 # Find all of the objects with the word "cat" in the title and return only a few fields per record
-r = http.request('GET', 'http://api.harvardartmuseums.org/object',
+r = http.request('GET', 'https://api.harvardartmuseums.org/object',
     fields = {
         'apikey': 'YOUR APIKEY HERE',
         'title': 'cat',

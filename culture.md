@@ -20,7 +20,7 @@ Include one or more of the following parameters to filter the items.
 
 #### Examples
 
-> http://api.harvardartmuseums.org/culture  
+> https://api.harvardartmuseums.org/culture  
 > Returns all of the cultures. 
 
 #### Response
@@ -62,7 +62,7 @@ Include one or more of the following parameters to filter the items.
 
 #### Examples
 
-> http://api.harvardartmuseums.org/culture/37527705   
+> https://api.harvardartmuseums.org/culture/37527705   
 > Returns the full record for the culture Indonesian.
 
 #### Response

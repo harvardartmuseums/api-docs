@@ -19,7 +19,7 @@ Include one or more of the following parameters to filter the items.
 
 #### Examples
 
-> http://api.harvardartmuseums.org/color  
+> https://api.harvardartmuseums.org/color  
 > Returns all of the colors. 
 
 #### Response
@@ -64,7 +64,7 @@ Include one or more of the following parameters to filter the items.
 
 #### Examples
 
-> http://api.harvardartmuseums.org/color/34838406  
+> https://api.harvardartmuseums.org/color/34838406  
 > Returns the full record for the color chocolate.  
 
 #### Response
