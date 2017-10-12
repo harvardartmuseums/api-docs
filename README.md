@@ -197,7 +197,7 @@ use GuzzleHttp\Client;
 
 $client = new Client();
 // Find all of the objects with the word "squirrel" in the title and return only a few fields per record
-$response = $client->get("http://api.harvardartmuseums.org/object", 
+$response = $client->get("https://api.harvardartmuseums.org/object", 
     [
         "query" => [
             "apikey" => "YOUR APIKEY HERE",
