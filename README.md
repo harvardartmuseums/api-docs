@@ -85,7 +85,7 @@ Please note that URLs for images of objects that have rights restrictions are ex
 
 The **IIIF presentation service** is accessed through a separate service. Read more about the capabilities of the IIIF Presentation API at http://iiif.io/api/presentation/2.1/. 
 
-A top level collection is at:
+The top level collection is at:
 
 ```
 https://iiif.harvardartmuseums.org/collections/top
