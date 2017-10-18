@@ -97,7 +97,7 @@ The base URL for all presentation manifests begins with:
 https://iiif.harvardartmuseums.org/manifests
 ```
 
-You can request a manifest for any object by appending `/object/OBJECT_ID` to the base URL. For example the primary manifest for the object [Self-Portrait Dedicated to Paul Gauguin](http://www.harvardartmuseums.org/collections/object/299843) is at:
+You can request a manifest for any object by appending `/object/OBJECT_ID` to the base URL. For example the primary manifest for the object [Self-Portrait Dedicated to Paul Gauguin](https://www.harvardartmuseums.org/collections/object/299843) is at:
 
 ```
 https://iiif.harvardartmuseums.org/manifests/object/299843
