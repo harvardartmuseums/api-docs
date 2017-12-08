@@ -34,7 +34,9 @@ All data is in [JSON](http://json.org) format. Here is a typical response:
         "totalrecordsperquery": 10,
         "totalrecords": 224111,
         "pages": 22412,
-        "page": 1
+        "page": 1,
+        "next": "",
+        "prev": ""
     },
     "records": [
 
@@ -47,11 +49,14 @@ All data is in [JSON](http://json.org) format. Here is a typical response:
 
 ## Paging through data
 
-By default, requests return 10 records at a time. You can increase the number of records per page up to a maximum of 100 by setting the `size` parameter. Use the `page` parameter to page through large record sets.
+Requests that return large numbers of records will be spread across multiple pages. By default, a request returns 10 records per page. You can increase this number (up to 100) by adding the `size` parameter to a request. For example add `&size=100` to get 100 records per page. To move through a large record set, add the `page` parameter and set it some value greater than 1 (i.e. `&page=2`).
 
 ```shell
 https://api.harvardartmuseums.org/object?size=5&page=42
 ```
+
+The `next` and `prev` fields in the info block provide a handy shortcut for paging forward and backward through records. They will contain a fully formed URL to the next and previous pages of records. Send a new request to the value in the `next` field to move forward. Check for the existance of the `next` and `prev` fields to determine if you are at the begining or end of your results.
+
 
 ## Images
 
