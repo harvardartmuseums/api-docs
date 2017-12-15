@@ -66,6 +66,7 @@ Include one or more of the following parameters to filter the items.
             "baseimageurl": "https://nrs.harvard.edu/urn-3:HUAM:755710",
             "idsid": 400107499
         }
+    ]
 }
 ```
 
