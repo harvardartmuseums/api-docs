@@ -19,13 +19,53 @@ Include one or more of the following parameters to filter the items.
 
 #### Examples
 
-> [[COMING SOON]]  
->  
+> https://api.harvardartmuseums.org/image?q=width:>2000  
+> Finds all images that are wider than 2000 pixels.  
 
 #### Response
 
 ```json
 {
+    "info": {
+        "totalrecordsperquery": 2,
+        "totalrecords": 5274,
+        "pages": 1056,
+        "page": 1,
+        "next": "https://api.harvardartmuseums.org/image?q=width%3A%3E2000&page=2&size=2"
+    },
+    "records": [
+        {
+            "iiifbaseuri": "https://ids.lib.harvard.edu/ids/iiif/400107495",
+            "width": 2450,
+            "caption": null,
+            "fileid": 4968317,
+            "copyright": "President and Fellows of Harvard College",
+            "date": "2014-06-02",
+            "imageid": 441757,
+            "renditionnumber": "755709",
+            "id": 441757,
+            "lastupdate": "2017-12-15T04:37:38-0500",
+            "accesslevel": 1,
+            "height": 1912,
+            "baseimageurl": "https://nrs.harvard.edu/urn-3:HUAM:755709",
+            "idsid": 400107495
+        },
+        {
+            "iiifbaseuri": "https://ids.lib.harvard.edu/ids/iiif/400107499",
+            "width": 2450,
+            "caption": null,
+            "fileid": 4968319,
+            "copyright": "President and Fellows of Harvard College",
+            "date": "2014-06-02",
+            "imageid": 441758,
+            "renditionnumber": "755710",
+            "id": 441758,
+            "lastupdate": "2017-12-15T04:37:38-0500",
+            "accesslevel": 1,
+            "height": 1945,
+            "baseimageurl": "https://nrs.harvard.edu/urn-3:HUAM:755710",
+            "idsid": 400107499
+        }
 }
 ```
 
