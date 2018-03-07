@@ -57,6 +57,9 @@ https://api.harvardartmuseums.org/object?size=5&page=42
 
 The `next` and `prev` fields in the info block provide a handy shortcut for paging forward and backward through records. They will contain a fully formed URL to the next and previous pages of records. Send a new request to the value in the `next` field to move forward. Check for the existance of the `next` and `prev` fields to determine if you are at the begining or end of your results.
 
+## Errors
+
+Requests that contain a bad, invalid, or missing API key will return a `401 Unauthorized` error. Remember every request requires the `apikey` parameter with a valid key. See the very top of this document for [more information about keys](https://github.com/harvardartmuseums/api-docs#access-to-the-api). Requests for resources other than those listed in the [resources section below](https://github.com/harvardartmuseums/api-docs#resources-that-are-available) will return a `404 Not Found` error.  
 
 ## Images
 
