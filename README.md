@@ -169,6 +169,9 @@ You can do a lot with the API. Here are a few examples.
 >  
 > [ARTphone](https://github.com/harvardartmuseums/ARTphone)  
 > Call or text the word "random" to 1-617-500-1866 to listen to the collection.  
+>  
+> [Magnetic Poetry, Magic Message, Face Match, etc](http://hvrd.art/iiif)  
+> Playful projects that show the possiblities with computer vision and IIIF.  
 
 ## Example code snippets
 
