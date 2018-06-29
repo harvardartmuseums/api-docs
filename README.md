@@ -77,7 +77,7 @@ https://nrs.harvard.edu/urn-3:HUAM:OCP16703_dynmc?height=150&width=150
 
 Some of the museums' data is also accessible through [IIIF](http://iiif.io) image and presentation services.   
 
-The **IIIF image service** is accessed through the data found in the field `iiifbaseuri`. Read more about the capabilities of the IIIF Image API at http://iiif.io/api/image/1.1/. The service we provide access to adheres to version 1.1 of the API. A typical base URI for an image looks like this:  
+The **IIIF image service** is accessed through the data found in the field `iiifbaseuri`. Read more about the capabilities of the IIIF Image API at http://iiif.io/api/image/2.1/. The service we provide access to adheres to version 2.1 of the API. A typical base URI for an image looks like this:  
 
 ```shell
 https://ids.lib.harvard.edu/ids/iiif/18483392
