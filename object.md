@@ -186,10 +186,14 @@ An object may have zero or more images. As of March 2016, 91% of our objects hav
 `baseimageurl` - is the primary internet address for the image and is delivered through our [default image delivery service](https://github.com/harvardartmuseums/api-docs#default-service)  
 `copyright` - is the copyright for the image  
 `displayorder` - is the preferred sequence number for the image within a group of images in the context of the object record; sequencing is especially important for manuscripts and books; an image with displayorder = 1 can be thought of as the current canonical image for the object  
+`format` - is the [media type/MIME type](https://www.iana.org/assignments/media-types/media-types.xhtml) of the image (typically image/jpeg)  
+`height` - is the height of the image in pixels  
 `idsid` - is the unique numeric identifier for the image in the Harvard Digital Repository    
 `iiifbaseuri` - is the root of the address for accessing the image through our [IIIF image delivery service](https://github.com/harvardartmuseums/api-docs#iiif)  
+`imageid` - is the numeric unique identifier for the image which can be used to construct a URI to dereference each image  
 `publiccaption` - is a descriptive note about the content of the media often listing information about the view (recto, verso, profile, 3/4 view)  
 `renditionnumber` - is the unique name for the image; this often takes the form of a prefix + serial number; the prefix can provide hints as to when, why, and how we made the image  
+`width` - is the width of the image in pixels  
 
 **objectid** describes the numeric unique identifier for a record  
 
@@ -201,6 +205,14 @@ This field is a record of the history of all the people/institutions who have ow
 
 **rank** is a number that is a measurement of how inactive the object is  
 The number is computed every time the data in the API is refreshed. A number of factors go in to generating the number including membership in the “Collection Highlight” group, total number of page views (since 2009), and date of last page view. A lower number means the object is less active. We use the rank field to sort objects on our [Browse Our Collections](https://www.harvardartmuseums.org/collections) page. We do this to get the least active objects to rise to the top of search results so more of the collection is seen and used online.  
+
+**seeAlso** is an array of links to alternate machine readable versions of the object  
+An object many have zero or more of these links. The field structure of seeAlso is modelled on the seeAlso block in the [IIIF specification](https://iiif.io/api/presentation/2.1/#seealso)  
+
+`id` - is the URI of the machine readable resource   
+`type` - is the type of resource such as IIIF Manifest
+`format` - is the [media type/MIME type](https://www.iana.org/assignments/media-types/media-types.xhtml) of the resource (typically application/json)   
+`profile` - is the link to the service description for the resource  
 
 **verificationlevel** describes the completeness and vetting status of information in a record  
 0 - Unchecked. Object information has not been verified for completeness and has not been vetted  
