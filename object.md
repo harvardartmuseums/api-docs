@@ -190,7 +190,7 @@ An object may have zero or more images. As of March 2016, 91% of our objects hav
 `height` - is the height of the image in pixels  
 `idsid` - is the unique numeric identifier for the image in the Harvard Digital Repository    
 `iiifbaseuri` - is the root of the address for accessing the image through our [IIIF image delivery service](https://github.com/harvardartmuseums/api-docs#iiif)  
-`imageid` - is the numeric unique identifier for the image which can be used to construct a URI to dereference each image  
+`imageid` - is the numeric unique identifier for the image which can be used to construct a URI to dereference it 
 `publiccaption` - is a descriptive note about the content of the media often listing information about the view (recto, verso, profile, 3/4 view)  
 `renditionnumber` - is the unique name for the image; this often takes the form of a prefix + serial number; the prefix can provide hints as to when, why, and how we made the image  
 `width` - is the width of the image in pixels  
@@ -210,7 +210,7 @@ The number is computed every time the data in the API is refreshed. A number of 
 An object many have zero or more of these links. The field structure of seeAlso is modelled on the seeAlso block in the [IIIF specification](https://iiif.io/api/presentation/2.1/#seealso)  
 
 `id` - is the URI of the machine readable resource   
-`type` - is the type of resource such as IIIF Manifest
+`type` - is the type of resource such as IIIF Manifest  
 `format` - is the [media type/MIME type](https://www.iana.org/assignments/media-types/media-types.xhtml) of the resource (typically application/json)   
 `profile` - is the link to the service description for the resource  
 
