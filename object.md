@@ -221,14 +221,17 @@ The number is computed every time the data in the API is refreshed. A number of 
 {
     "objectid": 304069,
     "objectnumber": "1949.89",
-    "accessionyear": "1949",
+    "accessionyear": 1949,
     "dated": "late 5th century BCE",
     "datebegin": -430,
     "dateend": -400,
     "classification": "Vessels",
+    "classificationid": 57,
     "medium": "Bronze, traces of silvering and possible gilding",
     "technique": "Cast, lost-wax process",
+    "techniqueid": 1311,
     "period": "Classical period, High",
+    "periodid": 416,
     "century": "5th century BCE",
     "culture": "Greek",
     "style": null,
@@ -236,7 +239,7 @@ The number is computed every time the data in the API is refreshed. A number of 
     "state": null,
     "edition": null,
     "standardreferencenumber": null,
-    "dimensions": "41.9 cm h x 28.5 cm diam (37 cm diam with handles) (16 1/2 x 11 1/4 in.; 14 9/16 in. diam with handles)",
+    "dimensions": "h. 41.9 cm x diam. 28.5 cm (37 cm in diam. with handles) (16 1/2 x 11 1/4 in.; 14 9/16 in diam. with handles)",
     "copyright": null,
     "creditline": "Harvard Art Museums/Arthur M. Sackler Museum, Grace Nichols Strong Memorial Fund",
     "department": "Department of Ancient and Byzantine Art & Numismatics",
@@ -245,88 +248,90 @@ The number is computed every time the data in the API is refreshed. A number of 
     "description": "",
     "provenance": "John Edward Taylor Collection, London, (by 1912). [Christie’s, July 1, 1912, lot 367]. H. Oppenheimer collection, London, sold; [through Christie’s, London, July 22-23, 1936, lot 126]; sold; [to the International Studio Art Corp. (William Randolph Hearst), Oct. 24, 1940], sold; [through J. Brummer Gallery, New York, 1940-1949, inv. no. N4736], sold; to Fogg Art Museum, 1949.",
     "commentary": "",
+    "labeltext": null,
     "imagecount": 5,
     "mediacount": 0,
     "colorcount": 9,
     "markscount": 0,
     "peoplecount": 0,
     "titlescount": 1,
-    "publicationcount": 11,
-    "exhibitioncount": 3,
+    "publicationcount": 12,
+    "exhibitioncount": 4,
     "contextualtextcount": 1,
-    "groupcount": 4,
+    "groupcount": 3,
     "relatedcount": 0,
-    "totalpageviews": 149,
-    "totaluniquepageviews": 117,
+    "totalpageviews": 595,
+    "totaluniquepageviews": 486,
     "dateoffirstpageview": "2009-06-03",
-    "dateoflastpageview": "2015-01-24",
+    "dateoflastpageview": "2018-08-22",
     "verificationlevel": 4,
     "verificationleveldescription": "Best. Object is extensively researched, well described and information is vetted",
     "imagepermissionlevel": 0,
     "accesslevel": 1,
-    "rank": 118,
-    "url": "http://harvardartmuseums.org/collections/object/304069",
+    "accessionmethod": "Purchase",
+    "rank": 164,
+    "url": "https://www.harvardartmuseums.org/collections/object/304069",
     "id": 304069,
-    "lastupdate": "2015-01-28T04:19:50-0500",
+    "lastupdate": "2018-08-30T04:40:43-0400",
     "colors": [
         {
-            "percent": 0.44202380952381,
+            "percent": 0.43642857142857,
             "spectrum": "#8c5fa8",
             "color": "#c8c8c8",
             "css3": "#c0c0c0",
             "hue": "Grey"
         },
         {
-            "percent": 0.18071428571429,
+            "percent": 0.1864880952381,
             "spectrum": "#8c5fa8",
             "color": "#afafaf",
             "css3": "#a9a9a9",
             "hue": "Grey"
         },
         {
-            "percent": 0.12672619047619,
+            "percent": 0.12803571428571,
             "spectrum": "#2eb45d",
             "color": "#323232",
             "css3": "#2f4f4f",
             "hue": "Grey"
         },
         {
-            "percent": 0.092559523809524,
+            "percent": 0.092142857142857,
             "spectrum": "#3db657",
             "color": "#4b4b4b",
             "css3": "#2f4f4f",
             "hue": "Grey"
         },
         {
-            "percent": 0.066369047619048,
+            "percent": 0.06297619047619,
             "spectrum": "#7866ad",
             "color": "#646464",
             "css3": "#696969",
             "hue": "Grey"
         },
         {
-            "percent": 0.051369047619048,
+            "percent": 0.051964285714286,
             "spectrum": "#955ba5",
             "color": "#e1e1e1",
             "css3": "#dcdcdc",
             "hue": "Grey"
         },
         {
-            "percent": 0.014940476190476,
-            "spectrum": "#8761aa",
-            "color": "#969696",
-            "css3": "#a9a9a9",
-            "hue": "Grey"
-        },
-        {
-            "percent": 0.014642857142857,
+            "percent": 0.0175,
             "spectrum": "#8362aa",
             "color": "#7d7d7d",
             "css3": "#808080",
             "hue": "Grey"
         },
         {
-            "percent": 0.010654761904762,
+            "percent": 0.014345238095238,
+            "spectrum": "#8761aa",
+            "color": "#969696",
+            "css3": "#a9a9a9",
+            "hue": "Grey"
+        },
+        {
+            "percent": 0.010119047619048,
             "spectrum": "#1eb264",
             "color": "#191919",
             "css3": "#000000",
@@ -336,6 +341,7 @@ The number is computed every time the data in the API is refreshed. A number of 
     "contextualtext": [
         {
             "text": "This three-handled water jar, or hydria, is of the kalpis type, which has a continuous curving profile and originated c. 500 BCE, perhaps in Athens. The body was hammered out of a single sheet of bronze to which the cast portions—three handles, the foot, and the rim—were joined with solder. The surface of the vessel is largely a greenish gold, which is reminiscent of its original color, although there are extensive areas of a darker greenish gray. \r\n \r\nThe rim (15.7 cm in diameter) features an overhanging band of egg-and-dart molding. Each egg is surrounded by a single raised ridge. Tiny beads encircle the outside of the flattened rim. The foot (15.5 cm in diameter) displays a concave band of tongues, in between each of which is a narrower convex tongue. \r\n \r\nThe side handles, decorated with four concave flutes with rounded ends, rise from circular plates decorated with concave tongues. The vertical handle, circular in section, bears five flutes separated by narrow ridges divided by fine grooves. The top rises from a base plate situated beneath the rim, identical with the plates of the side handles. \r\n \r\nThe base plate is a siren, whose sickle-shaped wings rise up out of her torso and curve inward symmetrically on either side of her head. Each individual feather, rendered in relief, has a fine incised median line, on either side of which are tiny incisions. The siren’s body is also covered with finely incised scales, which have a median line flanked by tiny incisions. The siren’s feet, each bearing three claws, hang vertically from raised edges below the scales and grasp an oval object, from which a seven-petalled palmette, with concave leaves, projects downward. \r\n \r\nAbove the palmette are two antithetical, concave S-shaped volutes, the smaller ends of which curl under the siren’s wings. The spaces between the volutes, the wings, and the tendrils are left open. The volutes’ centers are filled with small hemispherical oculi, which may be silver (1). Two curls descend in relief, curving symmetrically over the shoulders of the siren. \r\n \r\nThis hydria belongs to a class of vessels with sirens adorning the base plate of the vertical handles (2). They begin c. 480 BCE and continue throughout the rest of the fifth century, perhaps even into the first quarter of the fourth century. The shape of the Harvard hydria suggests that it dates between 430 and 400 BCE. The only intact Greek bronze vessel in the Harvard Art Museums' collection, this vase was used to carry and pour water, as the name hydria implies. Its funerary significance may be inferred from the presence of the siren at the base of this handle. Such expensive metal vases were given as prizes in athletic contests and often later contained the cremated ashes of their owners. Such use probably explains the unusually fine state of preservation of this hydria. Harvard's hydria represents the highest quality of late Classical Greek metalwork.\r\n \r\nNOTES:\r\n \r\n1. For other examples of vessels with silver in the volutes, see E. D. Reeder, Scythian Gold: Treasures from Ancient Ukraine, exh. cat., The Walters Art Gallery (Baltimore, 1999) 193-94, no. 82; and J. M. Padgett, The Centaur’s Smile, exh. cat., Princeton University Art Museum (New Haven, 2003) no. 80.\r\n \r\n2. For comparison, see D. von Bothmer, “Bronze Hydriai,” Bulletin of the Metropolitan Museum of Art 13.6 (1955): 193-200, esp. 197; I. Kouleiman­ē-Vokotopoulou, Chalkai Korinthiourgeis prochoi: Symvolē eis tēn meletēn tēs archaias Hellēnikēs chalkourgias (Athens, 1975) [in Greek]; ead., “Ē hydria tēs Aineias,” in Amētos: Timētikos tomos gia ton kathēgētē Manolē Andronikos 2, eds. M. A. Tiverios, S. Drougou, and Ch. Saatsoglou-Paliadelē (Thessaloniki, 1987) 157-69, esp. pls. 24-26 [in Greek]; L. I. Marangou, Ancient Greek Art: The N. P. Goulandris Collection (Athens, 1985), 162-63; and M. True and K. Hamma, eds., A Passion for Antiquities: Ancient Art from the Collection of Barbara and Lawrence Fleischman, exh. cat., J. Paul Getty Museum, Malibu; Cleveland Museum of Art (Malibu, 1994) 68-70, no. 24.\r\n \r\n \r\nDavid G. Mitten",
+            "textiletext": null,
             "context": "Ancient Mediterranean and Near Eastern Bronzes at the Harvard Art Museums",
             "date": null,
             "type": "Published Catalogue Text"
@@ -350,7 +356,7 @@ The number is computed every time the data in the API is refreshed. A number of 
             "begindate": null
         },
         {
-            "citation": "<em>Master Bronzes from the Classical World</em>, City Art Museum of St. Louis, St. Louis, 03/01/1968 - 04/13/1968; Los Angeles County Museum of Art, Los Angeles, 05/08/1968 - 06/30/1968; Fogg Art Museum, Cambridge, 12/04/1967 - 01/23/1968",
+            "citation": "<em>Master Bronzes from the Classical World</em>, Fogg Art Museum, Cambridge, 12/04/1967 - 01/23/1968; City Art Museum of St. Louis, St. Louis, 03/01/1968 - 04/13/1968; Los Angeles County Museum of Art, Los Angeles, 05/08/1968 - 06/30/1968",
             "title": "Master Bronzes from the Classical World",
             "exhibitionid": 558,
             "enddate": "1968-06-30",
@@ -362,14 +368,22 @@ The number is computed every time the data in the API is refreshed. A number of 
             "exhibitionid": 4902,
             "enddate": "1976-04-14",
             "begindate": "1976-02-14"
+        },
+        {
+            "citation": "<em>32Q: 3400 Greek</em>, Harvard Art Museums, Cambridge, 11/01/2014",
+            "title": "32Q: 3400 Greek",
+            "exhibitionid": 4470,
+            "enddate": null,
+            "begindate": "2014"
         }
     ],
     "gallery": {
-        "galleryid": 3400,
         "gallerynumber": "3400",
         "floor": 3,
         "theme": "Ancient Greece in Black and Orange",
-        "name": "Ancient Mediterranean and Near Eastern Art"
+        "name": "Ancient Mediterranean and Near Eastern Art",
+        "galleryid": 3400,
+        "begindate": "2014-11-16"
     },
     "groupings": [
         {
@@ -381,54 +395,75 @@ The number is computed every time the data in the API is refreshed. A number of 
             "groupid": 2040129
         },
         {
-            "name": "Artstor Digital Library",
-            "groupid": 2040173
-        },
-        {
             "name": "Google Art Project",
             "groupid": 2040174
         }
     ],
-    "primaryimageurl": "http://nrs.harvard.edu/urn-3:HUAM:DDC251092_dynmc",
+    "primaryimageurl": "https://nrs.harvard.edu/urn-3:HUAM:DDC251092_dynmc",
     "images": [
         {
-            "baseimageurl": "http://nrs.harvard.edu/urn-3:HUAM:DDC251092_dynmc",
+            "height": 0,
+            "iiifbaseuri": "https://ids.lib.harvard.edu/ids/iiif/46585832",
+            "baseimageurl": "https://nrs.harvard.edu/urn-3:HUAM:DDC251092_dynmc",
+            "width": 0,
             "publiccaption": null,
-            "idsid": "46585832",
+            "idsid": 46585832,
             "displayorder": 1,
+            "format": "image/jpeg",
             "copyright": "President and Fellows of Harvard College",
+            "imageid": 427747,
             "renditionnumber": "DDC251092"
         },
         {
-            "baseimageurl": "http://nrs.harvard.edu/urn-3:HUAM:LEG252741",
+            "height": 2450,
+            "iiifbaseuri": "https://ids.lib.harvard.edu/ids/iiif/400097623",
+            "baseimageurl": "https://nrs.harvard.edu/urn-3:HUAM:LEG252741",
+            "width": 2351,
             "publiccaption": null,
-            "idsid": "400097623",
+            "idsid": 400097623,
             "displayorder": 2,
+            "format": "image/jpeg",
             "copyright": "President and Fellows of Harvard College",
+            "imageid": 440789,
             "renditionnumber": "LEG252741"
         },
         {
-            "baseimageurl": "http://nrs.harvard.edu/urn-3:HUAM:DDC251030_dynmc",
+            "height": 0,
+            "iiifbaseuri": "https://ids.lib.harvard.edu/ids/iiif/47334808",
+            "baseimageurl": "https://nrs.harvard.edu/urn-3:HUAM:DDC251030_dynmc",
+            "width": 0,
             "publiccaption": null,
-            "idsid": "47334808",
+            "idsid": 47334808,
             "displayorder": 3,
+            "format": "image/jpeg",
             "copyright": "President and Fellows of Harvard College",
+            "imageid": 427746,
             "renditionnumber": "DDC251030"
         },
         {
-            "baseimageurl": "http://nrs.harvard.edu/urn-3:HUAM:DDC105025_dynmc",
+            "height": 0,
+            "iiifbaseuri": "https://ids.lib.harvard.edu/ids/iiif/8385158",
+            "baseimageurl": "https://nrs.harvard.edu/urn-3:HUAM:DDC105025_dynmc",
+            "width": 0,
             "publiccaption": null,
-            "idsid": "8385158",
+            "idsid": 8385158,
             "displayorder": 4,
+            "format": "image/jpeg",
             "copyright": "President and Fellows of Harvard College",
+            "imageid": 291689,
             "renditionnumber": "DDC105025"
         },
         {
-            "baseimageurl": "http://nrs.harvard.edu/urn-3:HUAM:46082_dynmc",
+            "height": 0,
+            "iiifbaseuri": "https://ids.lib.harvard.edu/ids/iiif/43182772",
+            "baseimageurl": "https://nrs.harvard.edu/urn-3:HUAM:46082_dynmc",
+            "width": 0,
             "publiccaption": null,
-            "idsid": "43182772",
+            "idsid": 43182772,
             "displayorder": 5,
+            "format": "image/jpeg",
             "copyright": "President and Fellows of Harvard College",
+            "imageid": 14371,
             "renditionnumber": "46082"
         }
     ],
@@ -465,6 +500,19 @@ The number is computed every time the data in the API is refreshed. A number of 
             "publicationdate": "1936",
             "volumetitle": null,
             "pagenumbers": "p. 41, no. 126."
+        },
+        {
+            "citation": "<em>The Notable Art Collection Belonging to the estate of the late Joseph Brummer</em>, auct. cat., Parke-Bernet Galleries, Inc. (New York, NY, April 20 1940-April 23 1949)",
+            "title": "The Notable Art Collection Belonging to the estate of the late Joseph Brummer",
+            "citationremarks": null,
+            "publicationplace": "New York, NY",
+            "publicationyear": 1940,
+            "volumenumber": null,
+            "format": "Auction/Dealer Catalogue",
+            "publicationid": 2387,
+            "publicationdate": "April 20 1940-April 23 1949",
+            "volumetitle": null,
+            "pagenumbers": "p. 45, no. 185."
         },
         {
             "citation": "George M. A. Hanfmann, <em>Greek Art and Life, An Exhibition Catalogue</em>, exh. cat., Fogg Art Museum (Cambridge, MA, 1950)",
@@ -532,15 +580,15 @@ The number is computed every time the data in the API is refreshed. A number of 
             "pagenumbers": "p. 14, no. 39."
         },
         {
-            "citation": "Kristin A. Mortimer, <em>Harvard University Art Museums: A Guide to the Collections</em>, Harvard University Art Museums/Abbeville Press (Cambridge, MA; New York, NY, 1985)",
+            "citation": "Kristin A. Mortimer and William G. Klingelhofer, <em>Harvard University Art Museums: A Guide to the Collections</em>, Harvard University Art Museums and Abbeville Press (Cambridge and New York, 1986)",
             "title": "Harvard University Art Museums: A Guide to the Collections",
             "citationremarks": null,
-            "publicationplace": "Cambridge, MA; New York, NY",
-            "publicationyear": 1985,
+            "publicationplace": "Cambridge and New York",
+            "publicationyear": 1986,
             "volumenumber": null,
             "format": "Book",
             "publicationid": 9088,
-            "publicationdate": "1985",
+            "publicationdate": "1986",
             "volumetitle": null,
             "pagenumbers": "p. 112, no. 125, ill."
         },
@@ -571,28 +619,30 @@ The number is computed every time the data in the API is refreshed. A number of 
             "pagenumbers": "pp. 164-65, fig. 7.10."
         },
         {
-            "citation": "<em>The Notable Art Collection Belonging to the estate of the late Joseph Brummer</em>, auct. cat., Parke-Bernet Galleries, Inc. (New York, NY, April 20 1940-April 23 1949)",
-            "title": "The Notable Art Collection Belonging to the estate of the late Joseph Brummer",
+            "citation": "Susanne Ebbinghaus, ed., <em>Ancient Bronzes through a Modern Lens: Introductory Essays on the Study of Ancient Mediterranean and Near Eastern Bronzes</em>, Harvard Art Museum/Yale University Press (Cambridge, MA, 2014)",
+            "title": "Ancient Bronzes through a Modern Lens: Introductory Essays on the Study of Ancient Mediterranean and Near Eastern Bronzes",
             "citationremarks": null,
-            "publicationplace": "New York, NY",
-            "publicationyear": 1940,
+            "publicationplace": "Cambridge, MA",
+            "publicationyear": 2014,
             "volumenumber": null,
-            "format": "Auction/Dealer Catalogue",
-            "publicationid": 2387,
-            "publicationdate": "April 20 1940-April 23 1949",
+            "format": "Book",
+            "publicationid": 22172,
+            "publicationdate": "2014",
             "volumetitle": null,
-            "pagenumbers": "p. 45, no. 185."
+            "pagenumbers": "pp. 54, 60, 66, 76, 164-165, fig. 7.10"
         }
     ],
     "details": {
         "technical": [
             {
-                "text": "XRF data from Artax 1\r\nAlloy: Bronze\r\nAlloying Elements: copper, tin\r\nOther Elements: lead, iron, arsenic\r\nComments: Silvering and possible gilding were detected on the decorative elements.\r\nK. Eremin, January 2014",
-                "type": "Chemical Composition"
+                "text": "XRF data from Artax 1\r\nAlloy: Bronze\r\nAlloying Elements: copper, tin\r\nOther Elements: lead, iron, arsenic\r\nComments: Silvering and possible gilding were detected on the decorative elements.\r\n \r\nK. Eremin, January 2014",
+                "type": "Chemical Composition",
+                "formattedtext": "<P class=MsoNormal style=\"MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal\"><SPAN style=\"FONT-SIZE: 12pt; FONT-FAMILY: 'Times New Roman','serif'; mso-fareast-font-family: 'Times New Roman'\">XRF data from <SPAN style=\"mso-no-proof: yes\">Artax 1</SPAN><?xml:namespace prefix = \"o\" ns = \"urn:schemas-microsoft-com:office:office\" /><o:p></o:p></SPAN></P>\r\n<P class=MsoNormal style=\"MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal\"><SPAN style=\"FONT-SIZE: 12pt; FONT-FAMILY: 'Times New Roman','serif'; mso-fareast-font-family: 'Times New Roman'\">Alloy: <SPAN style=\"mso-no-proof: yes\">Bronze</SPAN><o:p></o:p></SPAN></P>\r\n<P class=MsoNormal style=\"MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal\"><SPAN style=\"FONT-SIZE: 12pt; FONT-FAMILY: 'Times New Roman','serif'; mso-fareast-font-family: 'Times New Roman'\">Alloying Elements: <SPAN style=\"mso-no-proof: yes\">copper, tin</SPAN><o:p></o:p></SPAN></P>\r\n<P class=MsoNormal style=\"MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal\"><SPAN style=\"FONT-SIZE: 12pt; FONT-FAMILY: 'Times New Roman','serif'; mso-fareast-font-family: 'Times New Roman'\">Other Elements: lead, <SPAN style=\"mso-no-proof: yes\">iron, arsenic<o:p></o:p></SPAN></SPAN></P>\r\n<P class=MsoNormal style=\"MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal\"><SPAN style=\"FONT-SIZE: 12pt; FONT-FAMILY: 'Times New Roman','serif'; mso-fareast-font-family: 'Times New Roman'; mso-no-proof: yes; mso-ascii-theme-font: major-bidi; mso-hansi-theme-font: major-bidi; mso-bidi-theme-font: major-bidi\">Comments: Silvering and possible gilding were detected on the decorative elements.<o:p></o:p></SPAN></P>\r\n<P class=MsoNormal style=\"MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal\"><SPAN style=\"FONT-SIZE: 12pt; FONT-FAMILY: 'Times New Roman','serif'; mso-fareast-font-family: 'Times New Roman'; mso-ascii-theme-font: major-bidi; mso-hansi-theme-font: major-bidi; mso-bidi-theme-font: major-bidi\"><o:p>&nbsp;</o:p></SPAN></P>\r\n<P class=MsoNormal style=\"MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal\"><SPAN style=\"FONT-SIZE: 12pt; FONT-FAMILY: 'Times New Roman','serif'; mso-fareast-font-family: 'Times New Roman'; mso-ascii-theme-font: major-bidi; mso-hansi-theme-font: major-bidi; mso-bidi-theme-font: major-bidi\"><o:p></o:p></SPAN><SPAN style=\"FONT-SIZE: 12pt; FONT-FAMILY: 'Times New Roman','serif'; mso-fareast-font-family: 'Times New Roman'; mso-no-proof: yes\">K. Eremin, January 2014</SPAN></P>"
             },
             {
                 "text": "The raised portion of the vessel is mostly covered with green and underlying red corrosion products, some in the form of deep-seated warts. However, about one-fourth of the surface is extremely well preserved, with bright metal showing through a thin brown oxide layer, especially at the rim and mouth. The handle and foot castings are more deeply corroded, and small losses show that the mineralization passes completely through the casting in these areas. Brown burial accretions are present on both the vessel and the attached castings. \r\n \r\nThe surface is well preserved in many areas but deeply corroded in others, with two holes (c. 2 x 3 cm) in the middle of the sides of the vessel. These are filled with a modern resin, visible as a large red blob at the interior. The interior otherwise shows a uniform layer of green corrosion products without the warts visible on the exterior. Portions of the thinner periphery of the cast handles are lost and one loss (1 x 3 cm) in the volutes at the edge of the center handle is restored with a resin. The two side handles have been reattached with a threaded rod secured by nuts at the interior.\r\n \r\nHammer marks are visible at the interior, especially at the mouth, and a deep centering punch mark (2 mm in diameter) at the bottom indicates the vessel was formed using a raising process. The handles and foot are cast, with finer details added by cold working using punches and a tracer tool. The castings each correspond perfectly to faint incised lines pre-dating the surface corrosion, which strongly suggests that they do in fact belong to this vessel. In a few areas, there is a vague correspondence in the corrosion products on the casting and the vessel, which further reinforces the match. Some lead residue at two spots point to the use of lead as the original means of attaching the castings. A gap between the cast foot and the vessel at its bottom, now filled with a modern resin, is the only area imperfectly matched. This is understandable as part of the original fabrication in this less visible location. The volute (3 mm in diameter) centers on either side of the center handle decoration, and the entire chest of the siren shows a thin wash of a white metal. This was analyzed by XRF and determined to be silver. Mercury was detected, but at such a low level that a mercury-silver amalgam process is not clearly indicated.\r\n \r\n \r\nHenry Lie (submitted 2008)",
-                "type": "Technical Observations"
+                "type": "Technical Observations",
+                "formattedtext": "<P class=MsoNormal style=\"MARGIN: 0in 0in 3pt\"><SPAN style=\"mso-ascii-font-family: 'Times New Roman'; mso-ascii-theme-font: major-bidi; mso-hansi-font-family: 'Times New Roman'; mso-hansi-theme-font: major-bidi; mso-bidi-font-family: 'Times New Roman'; mso-bidi-theme-font: major-bidi\"><FONT size=3><FONT face=\"Times New Roman\">The raised portion of the vessel is mostly covered with green and underlying red corrosion products, some in the form of deep-seated warts. However, about one-fourth of the surface is extremely well preserved, with bright metal showing through a thin brown oxide layer, especially at the rim and mouth. The handle and foot castings are more deeply corroded, and small losses show that the mineralization passes completely through the casting in these areas. Brown burial accretions are present on both the vessel and the attached castings. <?xml:namespace prefix = \"o\" ns = \"urn:schemas-microsoft-com:office:office\" /><o:p></o:p></FONT></FONT></SPAN></P>\r\n<P class=MsoNormal style=\"MARGIN: 0in 0in 3pt\"><SPAN style=\"mso-ascii-font-family: 'Times New Roman'; mso-ascii-theme-font: major-bidi; mso-hansi-font-family: 'Times New Roman'; mso-hansi-theme-font: major-bidi; mso-bidi-font-family: 'Times New Roman'; mso-bidi-theme-font: major-bidi\"><o:p><FONT size=3 face=\"Times New Roman\">&nbsp;</FONT></o:p></SPAN></P>\r\n<P class=MsoNormal style=\"MARGIN: 0in 0in 3pt\"><SPAN style=\"mso-ascii-font-family: 'Times New Roman'; mso-ascii-theme-font: major-bidi; mso-hansi-font-family: 'Times New Roman'; mso-hansi-theme-font: major-bidi; mso-bidi-font-family: 'Times New Roman'; mso-bidi-theme-font: major-bidi\"><FONT size=3><FONT face=\"Times New Roman\">The surface is well preserved in many areas but deeply corroded in others, with two holes (c. 2 x 3 cm) in the middle of the sides of the vessel. These are filled with a modern resin, visible as a large red blob at the interior. The interior otherwise shows a uniform layer of green corrosion products without the warts visible on the exterior. Portions of the thinner periphery of the cast handles are lost and one loss (1 x 3 cm) in the volutes at the edge of the center handle is restored with a resin. The two side handles have been reattached with a threaded rod secured by nuts at the interior.<o:p></o:p></FONT></FONT></SPAN></P>\r\n<P class=MsoNormal style=\"MARGIN: 0in 0in 3pt\"><SPAN style=\"mso-ascii-font-family: 'Times New Roman'; mso-ascii-theme-font: major-bidi; mso-hansi-font-family: 'Times New Roman'; mso-hansi-theme-font: major-bidi; mso-bidi-font-family: 'Times New Roman'; mso-bidi-theme-font: major-bidi\"><o:p><FONT size=3 face=\"Times New Roman\">&nbsp;</FONT></o:p></SPAN></P>\r\n<P class=MsoNormal style=\"MARGIN: 0in 0in 3pt\"><SPAN style=\"mso-ascii-font-family: 'Times New Roman'; mso-ascii-theme-font: major-bidi; mso-hansi-font-family: 'Times New Roman'; mso-hansi-theme-font: major-bidi; mso-bidi-font-family: 'Times New Roman'; mso-bidi-theme-font: major-bidi\"><FONT size=3><FONT face=\"Times New Roman\">Hammer marks are visible at the interior, especially at the mouth, and a deep centering punch mark (2 mm in diameter) at the bottom indicates the vessel was formed using a raising process. The handles and foot are cast, with finer details added by cold working using punches and a tracer tool. The castings each correspond perfectly to faint incised lines pre-dating the surface corrosion, which strongly suggests that they do in fact belong to this vessel. In a few areas, there is a vague correspondence in the corrosion products on the casting and the vessel, which further reinforces the match. Some lead residue at two spots point to the use of lead as the original means of attaching the castings. A gap between the cast foot and the vessel at its bottom, now filled with a modern resin, is the only area imperfectly matched. This is understandable as part of the original fabrication in this less visible location. The volute (3 mm in diameter) centers on either side of the center handle decoration, and the entire chest of the siren shows a thin wash of a white metal. This was analyzed by XRF and determined to be silver. Mercury was detected, but at such a low level that a mercury-silver amalgam process is not clearly indicated.<o:p></o:p></FONT></FONT></SPAN></P>\r\n<P class=MsoNormal style=\"MARGIN: 0in 0in 3pt\"><SPAN style=\"mso-ascii-font-family: 'Times New Roman'; mso-ascii-theme-font: major-bidi; mso-hansi-font-family: 'Times New Roman'; mso-hansi-theme-font: major-bidi; mso-bidi-font-family: 'Times New Roman'; mso-bidi-theme-font: major-bidi\"><o:p><FONT size=3 face=\"Times New Roman\">&nbsp;</FONT></o:p></SPAN></P>\r\n<P class=MsoNormal style=\"MARGIN: 0in 0in 3pt\"><SPAN style=\"mso-ascii-font-family: 'Times New Roman'; mso-ascii-theme-font: major-bidi; mso-hansi-font-family: 'Times New Roman'; mso-hansi-theme-font: major-bidi; mso-bidi-font-family: 'Times New Roman'; mso-bidi-theme-font: major-bidi\"><o:p><FONT size=3 face=\"Times New Roman\">&nbsp;</FONT></o:p></SPAN></P><SPAN style=\"FONT-SIZE: 12pt; FONT-FAMILY: 'Times New Roman','serif'; mso-ascii-theme-font: major-bidi; mso-hansi-theme-font: major-bidi; mso-bidi-theme-font: major-bidi; mso-fareast-font-family: Calibri; mso-fareast-theme-font: minor-latin; mso-bidi-language: AR-SA; mso-ansi-language: EN-US; mso-fareast-language: EN-US\">Henry Lie (submitted 2008)</SPAN>"
             }
         ]
     },
@@ -644,6 +694,16 @@ The number is computed every time the data in the API is refreshed. A number of 
                 "id": 37527534,
                 "name": "Greek"
             }
+        ],
+        "topic": [
+            {
+                "id": 2040173,
+                "name": "Artstor Digital Library"
+            },
+            {
+                "id": 2040174,
+                "name": "Google Art Project"
+            }
         ]
     },
     "title": "Hydria (water jar) with Siren Attachment",
@@ -657,7 +717,16 @@ The number is computed every time the data in the API is refreshed. A number of 
     ],
     "worktypes": [
         {
+            "worktypeid": "387",
             "worktype": "vessel"
+        }
+    ],
+    "seeAlso": [
+        {
+            "id": "https://iiif.harvardartmuseums.org/manifests/object/304069",
+            "type": "IIIF Manifest",
+            "format": "application/json",
+            "profile": "http://iiif.io/api/presentation/2/context.json"
         }
     ]
 }
