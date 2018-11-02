@@ -2,9 +2,16 @@
 
 Contains information on the annotations in the Harvard Art Museums collections.
 
-An annotation indicates a region of interest in an image in our dataset. We annotate two types of regions. One, a region that contains a persons face. Two, a region that contains words. 
+Each annotation indicates an area of interest in an image in our dataset. An area can be a small portion of an image or it can be the entire image. Small regions typically contain a persons face or words. Annotations on the full image are typically tags (e.g. cat, watermelon, rock) and descriptions (e.g. a cow standing in a field).
 
-Annotations come from a number of different sources. Some of the annotations are created by humans. Some of the data is a result of machine processing images through two external services: [Google Vision](https://cloud.google.com/vision/) and [Microsoft Cognitive Services](https://www.microsoft.com/cognitive-services). We are using the services to perform face detection and text detection. We have not created training sets for these services. We are feeding in our images and data as-is to see what comes out.  
+Annotations come from a number of different sources. Some of the annotations are created by humans. Most of the data is a result of machine processing images through external services. We use the following services.
+
+- [Google Vision](https://cloud.google.com/vision/) 
+- [Microsoft Cognitive Services](https://www.microsoft.com/cognitive-services)
+- [Imagga](https://imagga.com/)
+- [Clarifai](https://clarifai.com/)
+
+We use the services to perform face detection, text detection, tagging, categorization, and captioning. We have not created training sets for these services. We feed in our images and data as-is. We then process and server whatever comes out.  
 
 ## Get Annotations
 
@@ -20,7 +27,6 @@ Include one or more of the following parameters to filter the items.
 | page | 0-9+ |
 | sort | FIELD NAME or "random" or "random:[SEED NUMBER]" |
 | sortorder | asc or desc |
-| usedby | FIELD NAME:ID |
 
 #### Examples
 
@@ -33,46 +39,83 @@ Include one or more of the following parameters to filter the items.
 {
     "info": {
         "totalrecordsperquery": 2,
-        "totalrecords": 63196,
-        "pages": 31598,
+        "totalrecords": 6274466,
+        "pages": 3137233,
         "page": 1
     },
     "records": [
         {
-            "id": 250614,
-            "body": "<p>surprise: VERY_UNLIKELY<br/>anger: VERY_UNLIKELY<br/>sorrow: VERY_UNLIKELY<br/>joy: VERY_UNLIKELY<br/>headwear: VERY_UNLIKELY<br/>blurred: VERY_UNLIKELY</p>",
-            "lastupdate": "2018-07-05T11:08:37-0400",
-            "annotationid": 250614,
-            "source": "Google Vision",
+            "raw": {
+                "id": "ai_4Qjv5PTH",
+                "name": "modern",
+                "value": 0.88892984,
+                "app_id": "main"
+            },
+            "body": "modern",
+            "createdate": "2018-03-22T21:30:54-04:00",
+            "fileid": 359384,
+            "confidence": 0.88893,
+            "type": "tag",
+            "imageid": 371197,
+            "id": 1798459,
+            "lastupdate": "2018-10-30T14:33:18-0400",
+            "annotationid": 1798459,
+            "source": "Clarifai",
             "selectors": [
                 {
-                    "value": "xywh=501,194,91,106",
+                    "value": "xywh=0,0,1024,916",
                     "type": "FragmentSelector"
                 }
             ],
-            "target": "https://ids.lib.harvard.edu/ids/iiif/43156801/full/full/0/native.jpg",
-            "idsid": 43156801,
-            "feature": "face",
-            "fileid": 4858720,
-            "imageid": 76521
+            "target": "https://ids.lib.harvard.edu/ids/iiif/15865142/full/full/0/native.jpg",
+            "feature": "full",
+            "idsid": 15865142
         },
         {
-            "id": 9329,
-            "body": "Düsseldorf",
-            "lastupdate": "2018-07-05T11:11:25-0400",
-            "annotationid": 9329,
+            "raw": {
+                "annotationFragment": "xywh=171,458,33,29",
+                "description": "A",
+                "boundingPoly": {
+                    "vertices": [
+                        {
+                            "y": 458,
+                            "x": 171
+                        },
+                        {
+                            "y": 458,
+                            "x": 199
+                        },
+                        {
+                            "y": 482,
+                            "x": 199
+                        },
+                        {
+                            "y": 482,
+                            "x": 171
+                        }
+                    ]
+                },
+                "iiifTextImageURL": "https://ids.lib.harvard.edu/ids/iiif/5021442/171,458,33,29/full/0/native.jpg"
+            },
+            "body": "A",
+            "createdate": "2018-06-27T22:53:39-04:00",
+            "fileid": 155102,
+            "confidence": -1,
+            "type": "text",
+            "imageid": 188184,
+            "id": 333467,
+            "lastupdate": "2018-10-30T13:24:40-0400",
+            "annotationid": 333467,
             "source": "Google Vision",
             "selectors": [
                 {
-                    "value": "xywh=1068,2005,268,77",
+                    "value": "xywh=171,458,33,29",
                     "type": "FragmentSelector"
                 }
             ],
-            "target": "https://ids.lib.harvard.edu/ids/iiif/400098359/full/full/0/native.jpg",
-            "idsid": 400098359,
-            "feature": "text",
-            "fileid": 4967858,
-            "imageid": 441393
+            "target": "https://ids.lib.harvard.edu/ids/iiif/5021442/full/full/0/native.jpg",
+            "feature": "region",
+            "idsid": 5021442
         }
     ]
 }
@@ -94,11 +137,22 @@ Selectors take many forms. By default all of our selectors will conform to the M
 **source** describes how the annotation was generated  
 Google Vision - means the annotation was generated using machine processing  
 Microsoft Cognitve Services - means the annotation was generated using machine processing   
+Imagga - means the annotation was generated using machine processing  
+Clarifai - means the annotation was generated using machine processing   
 Manual - means the annotation was generated by a human  
 
-**feature** describes generally what the annotation contains  
+**feature** describes the size of the annotation in relation to the image it is on    
+region - the annotation describes a portion of the image    
+full - the annotation describes the entire image  
+
+**type** describes generally what the annotation contains  
 face - a face is found within the annotation  
 text - some text is found within the annotation
+category - a broad categorization of the contents of the image  
+description - a full sentence caption of the contents of the image   
+tag - a term or set of terms   
+
+**confidence** describes the services degree of confidence in its thinking. Values range from 0 (no confidence) to 1 (very confident). A value of -1 means confidence is unknown or was not provided by the service for the annotation.  
 
 #### Examples
 
@@ -116,7 +170,33 @@ text - some text is found within the annotation
     "target": "https://ids.lib.harvard.edu/ids/iiif/400098359/full/full/0/native.jpg",
     "body": "Düsseldorf",
     "source": "Google Vision",
-    "feature": "text",
+    "feature": "region",
+    "confidence": -1,
+    "type": "text",
+    "raw": {
+        "description": "Düsseldorf",
+        "boundingPoly": {
+            "vertices": [
+                {
+                    "y": 641,
+                    "x": 341
+                },
+                {
+                    "y": 640,
+                    "x": 425
+                },
+                {
+                    "y": 662,
+                    "x": 425
+                },
+                {
+                    "y": 663,
+                    "x": 341
+                }
+            ]
+        }
+    },
+    "createdate": "2018-02-09T17:10:56-05:00",
     "id": 9329,
     "selectors": [
         {
@@ -124,6 +204,6 @@ text - some text is found within the annotation
             "value": "xywh=1068,2005,268,77"
         }
     ],
-    "lastupdate": "2018-07-05T11:11:25-0400"
+    "lastupdate": "2018-10-30T13:09:18-0400"
 }
 ```
