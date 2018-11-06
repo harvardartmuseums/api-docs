@@ -143,6 +143,7 @@ Several primary museum resources are accessible in this API. They include the fo
 * [Site](https://github.com/harvardartmuseums/api-docs/blob/master/site.md)
 * [Video](https://github.com/harvardartmuseums/api-docs/blob/master/video.md)
 * [Image](https://github.com/harvardartmuseums/api-docs/blob/master/image.md)
+* [Audio](https://github.com/harvardartmuseums/api-docs/blob/master/audio.md)
 * [Annotation](https://github.com/harvardartmuseums/api-docs/blob/master/annotation.md)
 
 ## Experimental data
