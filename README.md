@@ -117,40 +117,40 @@ Please note that our IIIF presentation service is still very much a work in prog
 
 ## Analysis
 
-Slice and dice the data any way you like at our expense with the `aggregation` parameter. You can ask for aggregations on every resource. They are the best way to gather statistics and analyze the data. The aggregration parameter accepts the structure and syntax of [Elasticsearch aggregations](http://www.elastic.co/guide/en/elasticsearch/reference/1.4/search-aggregations.html#_structuring_aggregations). Output from aggregations will appear as an additional block of data in the response. Learn more about analyizing the data via examples in the [analysis section](https://github.com/harvardartmuseums/api-docs/blob/master/analysis.md) of the API documentation.
+Slice and dice the data any way you like at our expense with the `aggregation` parameter. You can ask for aggregations on every resource. They are the best way to gather statistics and analyze the data. The aggregration parameter accepts the structure and syntax of [Elasticsearch aggregations](http://www.elastic.co/guide/en/elasticsearch/reference/1.4/search-aggregations.html#_structuring_aggregations). Output from aggregations will appear as an additional block of data in the response. Learn more about analyizing the data via examples in the [analysis section](https://github.com/harvardartmuseums/api-docs/blob/master/sections/analysis.md) of the API documentation.
 
 ## Resources that are available
 
 Several primary museum resources are accessible in this API. They include the following:
 
-* [Object](https://github.com/harvardartmuseums/api-docs/blob/master/object.md)
-* [Person](https://github.com/harvardartmuseums/api-docs/blob/master/person.md)
-* [Exhibition](https://github.com/harvardartmuseums/api-docs/blob/master/exhibition.md)
-* [Publication](https://github.com/harvardartmuseums/api-docs/blob/master/publication.md)
-* [Gallery](https://github.com/harvardartmuseums/api-docs/blob/master/gallery.md)
-* [Spectrum](https://github.com/harvardartmuseums/api-docs/blob/master/spectrum.md)
-* [Classification](https://github.com/harvardartmuseums/api-docs/blob/master/classification.md)
-* [Century](https://github.com/harvardartmuseums/api-docs/blob/master/century.md)
-* [Color](https://github.com/harvardartmuseums/api-docs/blob/master/color.md)
-* [Culture](https://github.com/harvardartmuseums/api-docs/blob/master/culture.md)
-* [Group](https://github.com/harvardartmuseums/api-docs/blob/master/group.md)
-* [Medium](https://github.com/harvardartmuseums/api-docs/blob/master/medium.md)
-* [Period](https://github.com/harvardartmuseums/api-docs/blob/master/period.md)
-* [Place](https://github.com/harvardartmuseums/api-docs/blob/master/place.md)
-* [Technique](https://github.com/harvardartmuseums/api-docs/blob/master/technique.md)
-* [Worktype](https://github.com/harvardartmuseums/api-docs/blob/master/worktype.md)
-* [Activity](https://github.com/harvardartmuseums/api-docs/blob/master/activity.md)
-* [Site](https://github.com/harvardartmuseums/api-docs/blob/master/site.md)
-* [Video](https://github.com/harvardartmuseums/api-docs/blob/master/video.md)
-* [Image](https://github.com/harvardartmuseums/api-docs/blob/master/image.md)
-* [Audio](https://github.com/harvardartmuseums/api-docs/blob/master/audio.md)
-* [Annotation](https://github.com/harvardartmuseums/api-docs/blob/master/annotation.md)
+* [Object](https://github.com/harvardartmuseums/api-docs/blob/master/sections/object.md)
+* [Person](https://github.com/harvardartmuseums/api-docs/blob/master/sections/person.md)
+* [Exhibition](https://github.com/harvardartmuseums/api-docs/blob/master/sections/exhibition.md)
+* [Publication](https://github.com/harvardartmuseums/api-docs/blob/master/sections/publication.md)
+* [Gallery](https://github.com/harvardartmuseums/api-docs/blob/master/sections/gallery.md)
+* [Spectrum](https://github.com/harvardartmuseums/api-docs/blob/master/sections/spectrum.md)
+* [Classification](https://github.com/harvardartmuseums/api-docs/blob/master/sections/classification.md)
+* [Century](https://github.com/harvardartmuseums/api-docs/blob/master/sections/century.md)
+* [Color](https://github.com/harvardartmuseums/api-docs/blob/master/sections/color.md)
+* [Culture](https://github.com/harvardartmuseums/api-docs/blob/master/sections/culture.md)
+* [Group](https://github.com/harvardartmuseums/api-docs/blob/master/sections/group.md)
+* [Medium](https://github.com/harvardartmuseums/api-docs/blob/master/sections/medium.md)
+* [Period](https://github.com/harvardartmuseums/api-docs/blob/master/sections/period.md)
+* [Place](https://github.com/harvardartmuseums/api-docs/blob/master/sections/place.md)
+* [Technique](https://github.com/harvardartmuseums/api-docs/blob/master/sections/technique.md)
+* [Worktype](https://github.com/harvardartmuseums/api-docs/blob/master/sections/worktype.md)
+* [Activity](https://github.com/harvardartmuseums/api-docs/blob/master/sections/activity.md)
+* [Site](https://github.com/harvardartmuseums/api-docs/blob/master/sections/site.md)
+* [Video](https://github.com/harvardartmuseums/api-docs/blob/master/sections/video.md)
+* [Image](https://github.com/harvardartmuseums/api-docs/blob/master/sections/image.md)
+* [Audio](https://github.com/harvardartmuseums/api-docs/blob/master/sections/audio.md)
+* [Annotation](https://github.com/harvardartmuseums/api-docs/blob/master/sections/annotation.md)
 
 ## Experimental data
 
 There is a small amount of experimental data available at this endpoint.
 
-* [Experimental](https://github.com/harvardartmuseums/api-docs/blob/master/experimental.md)
+* [Experimental](https://github.com/harvardartmuseums/api-docs/blob/master/sections/experimental.md)
 
 ## Example projects
 

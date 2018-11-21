@@ -29,7 +29,7 @@ Output from aggregations will appear as an additional block of data in the respo
 }
 ```
 
-To see aggregations in action, take a look at the object activity graphs in the [Art Explorer](http://apps.harvardartmuseums.org/art-explorer/) demo application. The application fetches aggregation data from the [activity](https://github.com/harvardartmuseums/api-docs/blob/master/activity.md) endpoint. The data is fed in to [D3](https://d3js.org/) to produce the graphs.  
+To see aggregations in action, take a look at the object activity graphs in the [Art Explorer](http://apps.harvardartmuseums.org/art-explorer/) demo application. The application fetches aggregation data from the [activity](https://github.com/harvardartmuseums/api-docs/blob/master/sections/activity.md) endpoint. The data is fed in to [D3](https://d3js.org/) to produce the graphs.  
 
 #### Tips and tricks
 
