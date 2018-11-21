@@ -36,43 +36,49 @@ Several types of activites are available via this endpoint. They are described i
 
 #### Examples
 
-> https://api.harvardartmuseums.org/activity?object=299843  
-> Returns all of the activity for the [Van Gogh's Self-Portrait](www.harvardartmuseums.org/collections/object/299843).  
+> https://api.harvardartmuseums.org/activity?object=6772  
+> Returns all of the activity for the [Marianne Brandt’s "Untitled [with Anna May Wong]"](www.harvardartmuseums.org/collections/object/6772).  
 
 #### Response
 
 ```json
 {
     "info": {
-        "totalrecordsperquery": 10,
-        "totalrecords": 3424,
-        "pages": 343,
+        "totalrecordsperquery": 5,
+        "totalrecords": 710,
+        "pages": 142,
         "page": 1
     },
     "records": [
         {
-            "date": "2009-05-16",
-            "objectid": 299843,
+            "date": "2017-11-01",
+            "objectid": 6772,
             "activitytype": "pageviews",
-            "activitycount": 2
+            "activitycount": 3
         },
         {
-            "date": "2009-06-06",
-            "objectid": 299843,
+            "date": "2010-03-31",
+            "objectid": 6772,
             "activitytype": "pageviews",
             "activitycount": 1
         },
         {
-            "date": "2009-06-22",
-            "objectid": 299843,
+            "date": "2012-09-18",
+            "objectid": 6772,
             "activitytype": "pageviews",
-            "activitycount": 2
+            "activitycount": 1
         },
         {
-            "date": "2009-07-05",
-            "objectid": 299843,
+            "date": "2016-02-22",
+            "objectid": 6772,
             "activitytype": "pageviews",
-            "activitycount": 4
+            "activitycount": 6
+        },
+        {
+            "date": "2018-01-15",
+            "objectid": 6772,
+            "activitytype": "pageviews",
+            "activitycount": 1
         }
     ]
 }
