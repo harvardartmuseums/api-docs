@@ -176,7 +176,15 @@ You can do a lot with the API. Here are a few examples.
 
 ## Example code snippets
 
-You can talk with the API using almost any language that speaks HTTP. Here are a few snippets to get you started. Just make sure to substitute your own API key in the `apikey` parameter before running them.
+You can talk with the API using almost any language or tool that speaks HTTP. Here are a few snippets to get you started. Just make sure to substitute your own API key in the `apikey` parameter before running them.
+
+#### cURL
+
+Find all of the objects in the collection.
+
+```shell
+curl -XGET https://api.harvardartmuseums.org/object?apikey=[YOUR APIKEY HERE]
+```
 
 #### Javascript + jQuery
 
