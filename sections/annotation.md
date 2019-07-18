@@ -28,6 +28,7 @@ Include one or more of the following parameters to filter the items.
 | page | 0-9+ |
 | sort | FIELD NAME or "random" or "random:[SEED NUMBER]" |
 | sortorder | asc or desc |
+| image | [IMAGE ID](image.md)  |
 
 #### Examples
 
