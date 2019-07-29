@@ -74,6 +74,23 @@ Include one or more of the following parameters to filter the items.
 
 `GET /image/IMAGE_ID` will get the full record of the specified image.
 
+A record represents the concept of an image. An image can be represented by one or more files that are accessible via one or more services.
+
+**imageid** describes the numeric unique identifier for a record    
+
+**idsid** describes the unique numeric identifier for a file in the Harvard Digital Repository  
+
+**fileid** describes the unique numeric identifier for a file  
+
+**renditionnumber** describes the unique name for the image; this often takes the form of a prefix + serial number; the prefix can provide hints as to when, why, and how we made the image   
+
+**baseimageurl** describes the primary internet address for the image and is delivered through our [default image delivery service](https://github.com/harvardartmuseums/api-docs#default-service)  
+
+**iiifbaseuri** describes the root of the address for accessing the image through our [IIIF image delivery service](https://github.com/harvardartmuseums/api-docs#iiif)  
+
+**format** describes the [media type/MIME type](https://www.iana.org/assignments/media-types/media-types.xhtml) of the image (typically image/jpeg)  
+
+
 #### Examples
 
 > https://api.harvardartmuseums.org/image/465905  
