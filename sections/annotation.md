@@ -14,6 +14,8 @@ Annotations come from a number of different sources. Some of the annotations are
 
 We use the services to perform face detection, text detection, tagging, categorization, and captioning. We do not use custom training sets with these services. We feed in our images and data as-is. We then process, store, and serve whatever comes out.  
 
+Note: We are paying customers of these services. We do not have partnerships with these services, nor do we endorse any one particular service. All of the services are black boxes so we use them and provide the data, in part, to call attention to the differences and biases inherent in AI services.  
+
 ## Get Annotations
 
 `GET /annotation` will get all annotations.
