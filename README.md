@@ -86,7 +86,7 @@ https://ids.lib.harvard.edu/ids/iiif/18483392
 A fully formed IIIF request for a full resolution JPEG version of that same image looks like this:
 
 ```shell
-https://ids.lib.harvard.edu/ids/iiif/18483392/full/full/0/native.jpg
+https://ids.lib.harvard.edu/ids/iiif/18483392/full/full/0/default.jpg
 ```
 
 Please note that URLs for images of objects that have rights restrictions are excluded for most API users. This means images for many 20th and 21st century works of art will not be available to you at the present time. We are working on a solution to this.  
