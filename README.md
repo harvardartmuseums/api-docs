@@ -166,7 +166,10 @@ You can do a lot with the API. Here are a few examples.
 > See color spectrum that is part of the branding of the Harvard Art Museums.  
 >  
 > [Museum Explorer](http://apps.harvardartmuseums.org/museum-explorer)  
-> See the entire museum through tree and pack graphs and floor plans.
+> See the entire museum through tree and pack graphs and floor plans.  
+>  
+> [AI Explorer](http://ai.harvardartmuseums.org)  
+> Search and browse the collection via machine generated tags and descriptions.  
 >  
 > [ARTphone](https://github.com/harvardartmuseums/ARTphone)  
 > Call or text the word "random" to 1-617-500-1866 to listen to the collection.  
