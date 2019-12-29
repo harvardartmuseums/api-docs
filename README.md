@@ -175,7 +175,10 @@ You can do a lot with the API. Here are a few examples.
 > Call or text the word "random" to 1-617-500-1866 to listen to the collection.  
 >  
 > [Magnetic Poetry, Magic Message, Face Match, etc](http://hvrd.art/iiif)  
-> Playful projects that show the possiblities with computer vision and IIIF.  
+> Playful projects that show the possiblities with computer vision and IIIF.
+>  
+> [Google Play App](https://play.google.com/store/apps/details?id=museum.art&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1)  
+> Unofficial app to search/browse the collection and save favorite objects. 
 
 ## Example code snippets
 
