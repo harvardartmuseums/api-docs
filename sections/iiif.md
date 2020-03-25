@@ -36,6 +36,38 @@ https://iiif.harvardartmuseums.org/manifests
 
 Append object, exhibition, gallery
 
+#### Viewers
+
+Our IIIF service includes two versions of the [Mirador](https://projectmirador.org/) viewer.
+
+Mirador 2 is at:
+
+```
+https://iiif.harvardartmuseums.org/viewers/mirador/v2
+```
+
+Include one or more of the following optional parameters to control the display.
+
+| Parameter | Value |
+| :--------- | :----- |
+| manifest | a valid IIIF manifest |
+| collection | a valid IIIF collection |
+| showmainmenu | 0 (false) or 1 (true) default |
+
+Mirador 3 is at:
+
+```
+https://iiif.harvardartmuseums.org/viewers/mirador/v3
+```
+
+Include one or more of the following optional parameters to control the display.
+
+| Parameter | Value |
+| :--------- | :----- |
+| manifest | a valid IIIF manifest |
+| collection | a valid IIIF collection |
+| showmainmenu | 0 (false) or 1 (true) default |
+
 #### Search
 
 Coming soon
