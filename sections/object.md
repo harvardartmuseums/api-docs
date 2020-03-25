@@ -175,6 +175,15 @@ An object may have zero or more colors. The color of each pixel is read and then
 `css3` - is the closest match to the colors listed in the [CSS3 color module specification](https://www.w3.org/TR/css3-color/)  
 `hue` - is the color value mapped to the name of a hue (Red, Orange, Yellow, Green, Blue, Violet, Brown, Grey, Black, White)  
 
+**dated** describes the time frame in which the object was created  
+This field contains a free text expression of the object’s date of creation. It is most often used for display purposes. We use BC and BCE ([Common Era notation](https://en.wikipedia.org/wiki/Common_Era)) to qualify dates.  
+
+**datebegin** describes the year in which the creation of the object began  
+This field is used to record the earliest year expressed in the dated field. Most often it is used for searching. The value is always a four digit integer. 
+
+**dateend** describes the year in which the creation of the object ended  
+This field is used to record the latest year expressed in the dated field. Most often it is used for searching. The value is always a four digit integer. 
+
 **imagepermissionlevel** describes the level of image copyright permissions for a record  
 0 – ok to display images at any size  
 1 – images have restrictions; display at a maximum pixel dimension of 256px  
