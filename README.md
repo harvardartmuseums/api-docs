@@ -324,6 +324,6 @@ Keep in mind that the data is not perfect. There are many gaps and a lot of ambi
 
 ## Coda
 
-Congratulations! You made it to the end. Over the years the museums' design team made stickers for us to give away as a means to spread enjoy and promote the API. Please enjoy this sampler. 
+Congratulations! You made it to the end. Over the years the museums' design team made stickers for us to give away as a means to spread joy and promote the API. Please enjoy this sampler. 
 
 ![A collage of nine hexagons each containing a part of an image from the musuem's collection](https://user-images.githubusercontent.com/3187493/80253872-1a959780-8648-11ea-826c-fc2a8b6cc082.png)
