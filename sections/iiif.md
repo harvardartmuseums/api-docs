@@ -68,6 +68,3 @@ Include one or more of the following optional parameters to control the display.
 | collection | a valid IIIF collection |
 | showmainmenu | 0 (false) or 1 (true) default |
 
-#### Search
-
-Coming soon
