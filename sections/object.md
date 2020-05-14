@@ -204,6 +204,13 @@ An object may have zero or more images. As of March 2016, 91% of our objects hav
 `renditionnumber` - is the unique name for the image; this often takes the form of a prefix + serial number; the prefix can provide hints as to when, why, and how we made the image  
 `width` - is the width of the image in pixels  
 
+**lendingpermissionlevel** describes the level of lending restrictions for a record  
+0 – ok to lend  
+1 – partial restrictions on lending  
+2 – unable to lend  
+
+Objects have lending restrictions for many different reasons. Sometimes restrictions are part of the terms of a bequests and gifts. Other times lending is restricted because an object is too fragile to move. These are just a few examples.  
+
 **objectid** describes the numeric unique identifier for a record  
 
 **objectnumber** describes the unique identifier for a record  
