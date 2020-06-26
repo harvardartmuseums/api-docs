@@ -1,6 +1,6 @@
 # Analysis
 
-The aggregation parameter provides a method for analyzing the museums data on our end so you have to do less work to use it on yours. You can ask for aggregations on every resource. The aggregration parameter accepts the structure and syntax of [Elasticsearch aggregations](http://www.elastic.co/guide/en/elasticsearch/reference/1.4/search-aggregations.html#_structuring_aggregations). A typical example looks like this.
+The aggregation parameter provides a method for analyzing the museums data on our end so you have to do less work to use it on yours. You can ask for aggregations on every resource. The aggregration parameter accepts the structure and syntax of [Elasticsearch aggregations](https://www.elastic.co/guide/en/elasticsearch/reference/5.6/search-aggregations.html#_structuring_aggregations). A typical example looks like this.
 
 ```json
 aggregation={"by_division":{"terms":{"field":"division"}}}
@@ -45,7 +45,7 @@ Here are a few basic examples.
 > https://api.harvardartmuseums.org/object?aggregation={"by_division":{"terms":{"field":"division"}}}  
 > Tell me how many objects are in each curatorial division.  
 
-> https://api.harvardartmuseums.org/object?&aggregation={"by_classification":{"terms":{"field":"classification.exact","size":0},"aggs":{"by_century":{"terms":{"field":"century"}}}}}  
+> https://api.harvardartmuseums.org/object?&aggregation={"by_classification":{"terms":{"field":"classification.exact","size":100},"aggs":{"by_century":{"terms":{"field":"century"}}}}}  
 > Tell me how many objects are in each classification and then subdivide each classification by century.
 
 Here is a more advanced example. This request fetches data from the activity endpoint for a specific object. The data is first grouped by activity type. Then for each activity type the data is tallied for each month/year. The aggregation parameter is expanded to make it more readable.
