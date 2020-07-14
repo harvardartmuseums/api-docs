@@ -17,7 +17,7 @@ Include one or more of the following parameters to filter the items.
 | sort | FIELD NAME or "chronological" or "random" or "random:[SEED NUMBER]" |
 | sortorder | asc or desc |
 | fields | comma separated list of data fields you want in the output |
-| aggregation |  see [Elasticsearch aggregations](http://www.elastic.co/guide/en/elasticsearch/reference/1.4/search-aggregations.html#_structuring_aggregations) |
+| aggregation |  see [Elasticsearch aggregations](http://www.elastic.co/guide/en/elasticsearch/reference/5.6/search-aggregations.html#_structuring_aggregations) |
 | hasimage | 0 or 1 |
 | venue | “HAM” |
 | status | “current”, “past”, “upcoming” |

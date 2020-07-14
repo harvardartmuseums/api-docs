@@ -16,7 +16,7 @@ Include one or more of the following parameters to filter the items.
 | page | 0-9+ |
 | sort | FIELD NAME or "random" or "random:[SEED NUMBER]" |
 | sortorder | asc or desc |
-| aggregation |  see [Elasticsearch aggregations](http://www.elastic.co/guide/en/elasticsearch/reference/1.4/search-aggregations.html#_structuring_aggregations) |
+| aggregation |  see [Elasticsearch aggregations](http://www.elastic.co/guide/en/elasticsearch/reference/5.6/search-aggregations.html#_structuring_aggregations) |
 | object | OBJECT ID |
 | type | "edits", "pageviews", "uniquepageviews", "moves", "conservation", "studycenterviews" |
 
