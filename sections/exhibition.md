@@ -101,13 +101,21 @@ Include one or more of the following parameters to filter the items.
             },
             "images": [
                 {
-                    "iiifbaseuri": "http://ids.lib.harvard.edu/ids/iiif/20480582",
-                    "baseimageurl": "http://nrs.harvard.edu/urn-3:huam:GS04997_dynmc",
-                    "caption": null,
-                    "displayorder": 1,
-                    "idsid": "20480582",
+                    "date": "2010-11-17",
                     "copyright": null,
-                    "renditionnumber": "GS04997"
+                    "imageid": 400027,
+                    "idsid": 20480582,
+                    "format": "image/jpeg",
+                    "caption": null,
+                    "description": null,
+                    "technique": null,
+                    "renditionnumber": "GS04997",
+                    "displayorder": 1,
+                    "baseimageurl": "https://nrs.harvard.edu/urn-3:huam:GS04997_dynmc",
+                    "alttext": null,
+                    "width": 1024,
+                    "iiifbaseuri": "https://ids.lib.harvard.edu/ids/iiif/20480582",
+                    "height": 712
                 }
             ],
             "enddate": "1996-05-05",
@@ -147,13 +155,21 @@ Include one or more of the following parameters to filter the items.
     },
     "images": [
         {
-            "iiifbaseuri": "http://ids.lib.harvard.edu/ids/iiif/17389005",
-            "baseimageurl": "http://nrs.harvard.edu/urn-3:HUAM:61350_dynmc",
-            "idsid": "17389005",
-            "displayorder": 1,
-            "caption": "interior",
+            "date": "2003-05-06",
             "copyright": "President and Fellows of Harvard College",
-            "renditionnumber": "61350"
+            "imageid": 54323,
+            "idsid": 17389005,
+            "format": "image/jpeg",
+            "caption": "interior",
+            "description": null,
+            "technique": null,
+            "renditionnumber": "61350",
+            "displayorder": 1,
+            "baseimageurl": "https://nrs.harvard.edu/urn-3:HUAM:61350_dynmc",
+            "alttext": null,
+            "width": 2382,
+            "iiifbaseuri": "https://ids.lib.harvard.edu/ids/iiif/17389005",
+            "height": 2400
         }
     ],
     "publications": [
@@ -187,19 +203,19 @@ Include one or more of the following parameters to filter the items.
     ],
     "videos": [
         {
-            "primaryurl": "http://vimeo.com/58321192",
-            "description": "Take a behind-the-scenes look at how the special exhibition \"In Harmony: The Norma Jean Calderwood Collection of Islamic Art\" came together, from wood framework to colorful display. ",
-            "videoid": 4920987
+            "description": "Installation of “In Harmony: The Norma Jean Calderwood Collection of Islamic Art”",
+            "videoid": 418142,
+            "primaryurl": "https://vimeo.com/58321192"
         },
         {
-            "primaryurl": "http://vimeo.com/58571319",
-            "description": "Recreation of a Medieval Ceramic Sweetmeat Dish from Kashan, Iran",
-            "videoid": 4948387
+            "description": "Re-creation of a Medieval Ceramic Sweetmeat Dish from Iran",
+            "videoid": 427454,
+            "primaryurl": "https://vimeo.com/58571319"
         },
         {
-            "primaryurl": "http://vimeo.com/59683170",
-            "description": "Opening Lecture: In Harmony: The Norma Jean Calderwood Collection of Islamic Art\r\n\r\nOya Pancaroglu, Associate Professor of History at Bogaziçi University in Turkey, presents the lecture \"Tables and Other Social Settings in 9th–11th Century Eastern Iran,\" as part of the opening celebration for the exhibition \"In Harmony: The Norma Jean Calderwood Collection of Islamic Art.\"\r\n\r\n\"In Harmony: The Norma Jean Calderwood Collection of Islamic Art\" was on view January 31—June 1, 2013 at the Arthur M. Sackler Museum. Learn more about the exhibition at harvardartmuseums.org/calderwood.\r\n\r\nVideo: Harvard Media Production Center",
-            "videoid": 4974848
+            "description": "Opening Lecture: In Harmony: The Norma Jean Calderwood Collection of Islamic Art",
+            "videoid": 446800,
+            "primaryurl": "https://vimeo.com/59683170"
         }
     ]
 }

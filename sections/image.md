@@ -35,36 +35,44 @@ Include one or more of the following parameters to filter the items.
     },
     "records": [
         {
-            "iiifbaseuri": "https://ids.lib.harvard.edu/ids/iiif/400107495",
-            "width": 2450,
+            "id": 130722,
+            "imageid": 130722,
+            "fileid": 4880475,
+            "idsid": 43183146,
             "caption": null,
-            "fileid": 4968317,
+            "alttext": null,
+            "description": null,
             "copyright": "President and Fellows of Harvard College",
-            "date": "2014-06-02",
-            "imageid": 441757,
-            "renditionnumber": "755709",
-            "id": 441757,
-            "lastupdate": "2017-12-15T04:37:38-0500",
+            "iiifbaseuri": "https://ids.lib.harvard.edu/ids/iiif/43183146",
+            "baseimageurl": "https://nrs.harvard.edu/urn-3:HUAM:48875_dynmc",
+            "renditionnumber": "48875",
+            "date": "1995-05-01",
+            "height": 2550,
+            "width": 2154,
             "accesslevel": 1,
-            "height": 1912,
-            "baseimageurl": "https://nrs.harvard.edu/urn-3:HUAM:755709",
-            "idsid": 400107495
+            "format": "image/jpeg",
+            "technique": "Kodak Ektapan",
+            "lastupdate": "2020-07-17T06:22:49-0400"
         },
         {
-            "iiifbaseuri": "https://ids.lib.harvard.edu/ids/iiif/400107499",
-            "width": 2450,
-            "caption": null,
-            "fileid": 4968319,
-            "copyright": "President and Fellows of Harvard College",
-            "date": "2014-06-02",
-            "imageid": 441758,
-            "renditionnumber": "755710",
             "id": 441758,
-            "lastupdate": "2017-12-15T04:37:38-0500",
-            "accesslevel": 1,
-            "height": 1945,
+            "imageid": 441758,
+            "fileid": 4968319,
+            "idsid": 400107499,
+            "caption": null,
+            "alttext": null,
+            "description": null,
+            "copyright": "President and Fellows of Harvard College",
+            "iiifbaseuri": "https://ids.lib.harvard.edu/ids/iiif/400107499",
             "baseimageurl": "https://nrs.harvard.edu/urn-3:HUAM:755710",
-            "idsid": 400107499
+            "renditionnumber": "755710",
+            "date": "2014-06-02",
+            "height": 1945,
+            "width": 2450,
+            "accesslevel": 1,
+            "format": "image/jpeg",
+            "technique": "Make:Sinar Photography AG;Model:Sinar CMV/ Sinarback eVolution 75H;Orientation:1;Software:Adobe Photoshop CS5 Macintosh;",
+            "lastupdate": "2020-07-17T06:30:22-0400"
         }
     ]
 }
@@ -84,17 +92,27 @@ A record represents the concept of an image. An image can be represented by one 
 
 **renditionnumber** describes the unique name for the image; this often takes the form of a prefix + serial number; the prefix can provide hints as to when, why, and how we made the image   
 
+**date** describes either the date of creation of the image record in our collections management system OR the date of creation of the image itself (this is very fuzzy data)  
+
 **baseimageurl** describes the primary internet address for the image and is delivered through our [default image delivery service](https://github.com/harvardartmuseums/api-docs#default-service)  
 
 **iiifbaseuri** describes the root of the address for accessing the image through our [IIIF image delivery service](https://github.com/harvardartmuseums/api-docs#iiif)  
 
 **format** describes the [media type/MIME type](https://www.iana.org/assignments/media-types/media-types.xhtml) of the image (typically image/jpeg)  
 
+**alttext** describes the most relevant, prominent features or general characteristics of the image  
+ 
+**description** describes the image content in detail  
+
+**caption** describes the image, often listing more technical information about the view (recto, verso, profile, 3/4 view)  
+
+**technique** describes the photography equipment and software used during the production of the image  
+
 
 #### Examples
 
 > https://api.harvardartmuseums.org/image/465905  
-> Returns the full record for the image of the object "Untitled [with Anna May Wong]”.  
+> Returns the full record for image 465905 which depicts the object "Untitled [with Anna May Wong]”.  
 
 #### Response
 
@@ -105,6 +123,8 @@ A record represents the concept of an image. An image can be represented by one 
     "fileid": 4997146,
     "idsid": 423290977,
     "caption": null,
+    "alttext": null,
+    "description": null,
     "copyright": "President and Fellows of Harvard College",
     "iiifbaseuri": "https://ids.lib.harvard.edu/ids/iiif/423290977",
     "baseimageurl": "https://nrs.harvard.edu/urn-3:HUAM:760994",
@@ -113,6 +133,8 @@ A record represents the concept of an image. An image can be represented by one 
     "height": 2550,
     "width": 1955,
     "accesslevel": 1,
-    "lastupdate": "2017-12-15T04:38:46-0500"
-}
+    "format": "image/jpeg",
+    "technique": "Make:Hasselblad;Model:Hasselblad H5D-50c MS;Orientation:1;Software:Adobe Photoshop CS6 (Macintosh);",
+    "lastupdate": "2020-07-17T06:30:34-0400"
+  }
 ```

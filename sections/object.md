@@ -194,8 +194,10 @@ This field is used to record the latest year expressed in the dated field. Most 
 **images** describes the images of the object  
 An object may have zero or more images. As of March 2016, 91% of our objects have at least one image.  
 
+`alttext` - is a short description of the most relevant, prominent features or general characteristics of the image  
 `baseimageurl` - is the primary internet address for the image and is delivered through our [default image delivery service](https://github.com/harvardartmuseums/api-docs#default-service)  
 `copyright` - is the copyright for the image  
+`description` - is a long description of the contents of the image    
 `displayorder` - is the preferred sequence number for the image within a group of images in the context of the object record; sequencing is especially important for manuscripts and books; an image with displayorder = 1 can be thought of as the current canonical image for the object  
 `format` - is the [media type/MIME type](https://www.iana.org/assignments/media-types/media-types.xhtml) of the image (typically image/jpeg)  
 `height` - is the height of the image in pixels  
@@ -204,6 +206,8 @@ An object may have zero or more images. As of March 2016, 91% of our objects hav
 `imageid` - is the numeric unique identifier for the image which can be used to construct a URI to dereference it 
 `publiccaption` - is a descriptive note about the content of the media often listing information about the view (recto, verso, profile, 3/4 view)  
 `renditionnumber` - is the unique name for the image; this often takes the form of a prefix + serial number; the prefix can provide hints as to when, why, and how we made the image  
+`date` - is either the date of creation of the image record in our collections management system OR the date of creation of the image itself (this is very fuzzy data)  
+`technique` - is the photography equipment and software used during the production of the image  
 `width` - is the width of the image in pixels  
 
 **lendingpermissionlevel** describes the level of lending restrictions for a record  
@@ -432,69 +436,89 @@ An object many have zero or more of these links. The field structure of seeAlso 
     "primaryimageurl": "https://nrs.harvard.edu/urn-3:HUAM:DDC251092_dynmc",
     "images": [
         {
-            "height": 0,
-            "iiifbaseuri": "https://ids.lib.harvard.edu/ids/iiif/46585832",
-            "baseimageurl": "https://nrs.harvard.edu/urn-3:HUAM:DDC251092_dynmc",
-            "width": 0,
-            "publiccaption": null,
-            "idsid": 46585832,
-            "displayorder": 1,
-            "format": "image/jpeg",
+            "date": "2013-05-28",
             "copyright": "President and Fellows of Harvard College",
             "imageid": 427747,
-            "renditionnumber": "DDC251092"
+            "idsid": 46585832,
+            "format": "image/jpeg",
+            "description": null,
+            "technique": null,
+            "renditionnumber": "DDC251092",
+            "displayorder": 1,
+            "baseimageurl": "https://nrs.harvard.edu/urn-3:HUAM:DDC251092_dynmc",
+            "alttext": null,
+            "width": 1909,
+            "publiccaption": null,
+            "iiifbaseuri": "https://ids.lib.harvard.edu/ids/iiif/46585832",
+            "height": 2550
         },
         {
-            "height": 2450,
-            "iiifbaseuri": "https://ids.lib.harvard.edu/ids/iiif/400097623",
-            "baseimageurl": "https://nrs.harvard.edu/urn-3:HUAM:LEG252741",
-            "width": 2351,
-            "publiccaption": null,
-            "idsid": 400097623,
-            "displayorder": 2,
-            "format": "image/jpeg",
+            "date": "2014-06-05",
             "copyright": "President and Fellows of Harvard College",
             "imageid": 440789,
-            "renditionnumber": "LEG252741"
+            "idsid": 400097623,
+            "format": "image/jpeg",
+            "description": null,
+            "technique": null,
+            "renditionnumber": "LEG252741",
+            "displayorder": 2,
+            "baseimageurl": "https://nrs.harvard.edu/urn-3:HUAM:LEG252741",
+            "alttext": null,
+            "width": 2351,
+            "publiccaption": null,
+            "iiifbaseuri": "https://ids.lib.harvard.edu/ids/iiif/400097623",
+            "height": 2450
         },
         {
-            "height": 0,
-            "iiifbaseuri": "https://ids.lib.harvard.edu/ids/iiif/47334808",
-            "baseimageurl": "https://nrs.harvard.edu/urn-3:HUAM:DDC251030_dynmc",
-            "width": 0,
-            "publiccaption": null,
-            "idsid": 47334808,
-            "displayorder": 3,
-            "format": "image/jpeg",
+            "date": "2013-05-28",
             "copyright": "President and Fellows of Harvard College",
             "imageid": 427746,
-            "renditionnumber": "DDC251030"
+            "idsid": 47334808,
+            "format": "image/jpeg",
+            "description": null,
+            "technique": null,
+            "renditionnumber": "DDC251030",
+            "displayorder": 3,
+            "baseimageurl": "https://nrs.harvard.edu/urn-3:HUAM:DDC251030_dynmc",
+            "alttext": null,
+            "width": 685,
+            "publiccaption": null,
+            "iiifbaseuri": "https://ids.lib.harvard.edu/ids/iiif/47334808",
+            "height": 1024
         },
         {
-            "height": 0,
-            "iiifbaseuri": "https://ids.lib.harvard.edu/ids/iiif/8385158",
-            "baseimageurl": "https://nrs.harvard.edu/urn-3:HUAM:DDC105025_dynmc",
-            "width": 0,
-            "publiccaption": null,
-            "idsid": 8385158,
-            "displayorder": 4,
-            "format": "image/jpeg",
+            "date": "2008-02-19",
             "copyright": "President and Fellows of Harvard College",
             "imageid": 291689,
-            "renditionnumber": "DDC105025"
+            "idsid": 8385158,
+            "format": "image/jpeg",
+            "description": null,
+            "technique": null,
+            "renditionnumber": "DDC105025",
+            "displayorder": 4,
+            "baseimageurl": "https://nrs.harvard.edu/urn-3:HUAM:DDC105025_dynmc",
+            "alttext": null,
+            "width": 827,
+            "publiccaption": null,
+            "iiifbaseuri": "https://ids.lib.harvard.edu/ids/iiif/8385158",
+            "height": 1024
         },
         {
-            "height": 0,
-            "iiifbaseuri": "https://ids.lib.harvard.edu/ids/iiif/43182772",
-            "baseimageurl": "https://nrs.harvard.edu/urn-3:HUAM:46082_dynmc",
-            "width": 0,
-            "publiccaption": null,
-            "idsid": 43182772,
-            "displayorder": 5,
-            "format": "image/jpeg",
+            "date": null,
             "copyright": "President and Fellows of Harvard College",
             "imageid": 14371,
-            "renditionnumber": "46082"
+            "idsid": 43182772,
+            "format": "image/jpeg",
+            "description": null,
+            "technique": "Super XX",
+            "renditionnumber": "46082",
+            "displayorder": 5,
+            "baseimageurl": "https://nrs.harvard.edu/urn-3:HUAM:46082_dynmc",
+            "alttext": null,
+            "width": 842,
+            "publiccaption": null,
+            "iiifbaseuri": "https://ids.lib.harvard.edu/ids/iiif/43182772",
+            "height": 1024
         }
     ],
     "places": [
