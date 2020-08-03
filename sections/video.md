@@ -62,8 +62,8 @@ Include one or more of the following parameters to filter the items.
 
 #### Examples
 
-> https://api.harvardartmuseums.org/video/451379
-> Returns the full record for video 451379 which is a time-lapse of the construction of the Museum
+> https://api.harvardartmuseums.org/video/451379    
+> Returns the full record for video 451379 which is a time-lapse of the construction of the Museumss
 
 #### Response
 

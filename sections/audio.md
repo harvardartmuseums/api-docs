@@ -66,8 +66,8 @@ Include one or more of the following parameters to filter the items.
 
 #### Examples
 
-> https://api.harvardartmuseums.org/audio/492581
-> Returns the full record for audio 492581 which is an visual description of an artwork titled "Leander's Tower on the Bosporus"
+> https://api.harvardartmuseums.org/audio/492581    
+> Returns the full record for audio 492581 which is an visual description of an artwork titled "Leander's Tower on the Bosporus"  
 
 #### Response
 
