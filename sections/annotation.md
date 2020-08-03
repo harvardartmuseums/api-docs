@@ -6,7 +6,7 @@ Each annotation indicates an area of interest in an image in our dataset. An are
 
 Annotations come from a number of different sources. Some of the annotations are created by humans. Most of the data is a result of machine processing our images with external services. We use the following services.
 
-- [Google Vision](https://cloud.google.com/vision/) 
+- [Google Vision](https://cloud.google.com/vision/)
 - [Microsoft Cognitive Services](https://www.microsoft.com/cognitive-services)
 - [Imagga](https://imagga.com/)
 - [Clarifai](https://clarifai.com/)
@@ -35,7 +35,7 @@ Include one or more of the following parameters to filter the items.
 #### Examples
 
 > https://api.harvardartmuseums.org/annotation  
-> Returns all of the annotations. 
+> Returns all of the annotations.
 
 #### Response
 
