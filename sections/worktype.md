@@ -1,6 +1,6 @@
 # Worktype
 
-Contains information on the types of works in the Harvard Art Museums collections.
+Contains information on the types of works in the Harvard Art Museums collections. Worktype labels are more specific classifications of the object, and they are created and assigned by Harvard Art Museums curators.
 
 ## Get Worktypes
 
@@ -21,7 +21,7 @@ Include one or more of the following parameters to filter the items.
 #### Examples
 
 > https://api.harvardartmuseums.org/worktype  
-> Returns all of the work types. 
+> Returns all of the work types.
 
 #### Response
 

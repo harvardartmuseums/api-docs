@@ -1,6 +1,6 @@
 # Video
 
-Contains information on the videos produced by and associated with the Harvard Art Museums. 
+Contains information on the videos produced by and associated with the Harvard Art Museums.
 
 ## Get Videos
 
@@ -19,13 +19,40 @@ Include one or more of the following parameters to filter the items.
 
 #### Examples
 
-> [[COMING SOON]]  
->  
+> https://api.harvardartmuseums.org/video/
+> Returns all of the video records
 
 #### Response
 
 ```json
 {
+    "info": {
+        "totalrecordsperquery": 2,
+        "totalrecords": 43,
+        "pages": 22,
+        "page": 1,
+        "next": "https://api.harvardartmuseums.org/video/?size=2&page=2"
+    },
+    "records": [
+        {
+            "copyright": "President and Fellows of Harvard College",
+            "description": "Installation of Recent Acquisitions, Part III: Kerry James Marshall",
+            "videoid": 417000,
+            "id": 417000,
+            "lastupdate": "2020-08-01T05:31:09-0400",
+            "fileid": 4919212,
+            "primaryurl": "https://vimeo.com/52099684"
+        },
+        {
+            "copyright": "President and Fellows of Harvard College",
+            "description": "Re-creation of a Medieval Ceramic Sweetmeat Dish from Iran",
+            "videoid": 427454,
+            "id": 427454,
+            "lastupdate": "2020-08-01T05:31:09-0400",
+            "fileid": 4948387,
+            "primaryurl": "https://vimeo.com/58571319"
+        }
+    ]
 }
 ```
 
@@ -35,12 +62,19 @@ Include one or more of the following parameters to filter the items.
 
 #### Examples
 
-> [[COMING SOON]]   
-> 
+> https://api.harvardartmuseums.org/video/451379
+> Returns the full record for video 451379 which is a time-lapse of the construction of the Museum
 
 #### Response
 
 ```json
 {
+    "id": 451379,
+    "videoid": 451379,
+    "fileid": 4979919,
+    "description": "Harvard Art Museums Construction Time-Lapse",
+    "copyright": "President and Fellows of Harvard College",
+    "primaryurl": "https://vimeo.com/111057446",
+    "lastupdate": "2020-08-01T05:31:09-0400"
 }
 ```

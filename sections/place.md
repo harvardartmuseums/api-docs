@@ -1,6 +1,6 @@
 # Place
 
-Contains information on the places used to describe items in the Harvard Art Museums collections. 
+Contains information on the places (states, countries, continents, or historical regions) used to describe items in the Harvard Art Museums collections.
 
 ## Get Places
 
@@ -92,7 +92,7 @@ Include one or more of the following parameters to filter the items.
 
 `GET /place/PLACE_ID` will get the full record of the specified place.
 
-**tgn_id** contains the ID of the equivilent record in the [Getty Thesaurus of Geographic Names](http://www.getty.edu/research/tools/vocabularies/tgn/)
+**tgn_id** contains the ID of the equivalent record in the [Getty Thesaurus of Geographic Names](http://www.getty.edu/research/tools/vocabularies/tgn/)
 
 #### Examples
 

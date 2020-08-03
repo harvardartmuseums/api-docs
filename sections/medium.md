@@ -1,6 +1,6 @@
 # Medium
 
-Contains information on the mediums used to describe items in the Harvard Art Museums collections. 
+Contains information on the mediums (the materials that are applied in the making of an object) used to describe items in the Harvard Art Museums collections. This information is oftentimes provided by the Harvard Art Museums' conservators as a result of their expertise, technical examination, and/or analysis.
 
 ## Get Mediums
 
@@ -23,7 +23,7 @@ Include one or more of the following parameters to filter the items.
 #### Examples
 
 > https://api.harvardartmuseums.org/medium  
-> Returns all of the mediums. 
+> Returns all of the mediums.
 
 #### Response
 

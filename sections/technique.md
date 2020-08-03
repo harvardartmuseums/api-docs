@@ -1,6 +1,6 @@
 # Technique
 
-Contains information on the techniques used in the production of items in the Harvard Art Museums.
+Contains information on the techniques (the process by which an artwork is created) used in the production of items in the Harvard Art Museums. Technique labels are created and assigned by Harvard Art Museums curators.
 
 ## Get Techniques
 

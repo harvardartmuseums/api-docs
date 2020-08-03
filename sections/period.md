@@ -1,6 +1,6 @@
 # Period
 
-Contains information on the periods used to describe items in the Harvard Art Museums collections.
+Contains information on the periods (art movements within a specific period of time) used to describe items in the Harvard Art Museums collections. With some exceptions, the periods typically follow the Getty Research Institute's Art & Architecture Thesaurus.
 
 ## Get Periods
 
@@ -21,7 +21,7 @@ Include one or more of the following parameters to filter the items.
 #### Examples
 
 > https://api.harvardartmuseums.org/period  
-> Returns all of the periods. 
+> Returns all of the periods.
 
 #### Response
 
