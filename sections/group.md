@@ -22,11 +22,11 @@ Include one or more of the following parameters to filter the items.
 
 #### Examples
 
-> https://api.harvardartmuseums.org/group
-> Returns all of the group records
->
-> https://api.harvardartmuseums.org/group/?q=filters.values.name:Typography
-> Returns all groups that contain "Typography" as a topic
+> https://api.harvardartmuseums.org/group   
+> Returns all of the group records    
+>     
+> https://api.harvardartmuseums.org/group/?q=filters.values.name:Typography   
+> Returns all groups that contain "Typography" as a topic   
 
 #### Response
 
@@ -60,8 +60,8 @@ Include one or more of the following parameters to filter the items.
 
 #### Examples
 
-> https://api.harvardartmuseums.org/group/37690641
-> Returns the full record for group "Roman Domestic Art: Terra sigillata"
+> https://api.harvardartmuseums.org/group/37690641    
+> Returns the full record for group "Roman Domestic Art: Terra sigillata"   
 
 #### Response
 

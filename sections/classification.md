@@ -1,6 +1,6 @@
 # Classification
 
-Contains information on the classifications used to categorize items in the Harvard Art Museums collections. Classifications are created and assigned by Harvard Art Museums curators.
+Contains information on the classifications used to categorize items in the Harvard Art Museums collections. Classification labels are created and assigned by Harvard Art Museums curators.
 
 ## Get Classifications
 

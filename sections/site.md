@@ -21,7 +21,7 @@ Include one or more of the following parameters to filter the items.
 #### Examples
 
 > https://api.harvardartmuseums.org/site  
-> Returns all sites records for the Harvard Art Museums. 
+> Returns all sites records for the Harvard Art Museums.
 
 #### Response
 
