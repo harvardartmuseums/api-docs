@@ -115,7 +115,7 @@ At the present a manifest for an object contains one sequence and each image of 
 
 Please note that our IIIF presentation service is very much a work in progress. The code for the server is availabe at https://github.com/harvardartmuseums/iiif-manifest-server and is based on work that was done at HarvardX. If you have any comments, suggestions, or questions about this service feel free to submit them through the feedback links listed below.  
 
-More technical documentation and use cases in the [IIIF section](https://github.com/harvardartmuseums/api-docs/blob/master/sections/iiif.md).
+More technical documentation and use cases are described in the [IIIF section](https://github.com/harvardartmuseums/api-docs/blob/master/sections/iiif.md).
 
 ## Analysis
 
