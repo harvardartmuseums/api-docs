@@ -154,7 +154,13 @@ There is a small amount of experimental data available at this endpoint.
 
 * [Experimental](https://github.com/harvardartmuseums/api-docs/blob/master/sections/experimental.md)
 
-## Example projects
+## Learning the API
+
+### Introduction to APIs
+
+New to APIs? New to museum data? New to coding? Try out our [beginners guide to APIs and museum data](https://hvrd.art/api-toolkit). 
+
+### Example projects
 
 You can do a lot with the API. Here are a few examples. 
 
@@ -179,7 +185,7 @@ You can do a lot with the API. Here are a few examples.
 > [Magnetic Poetry, Magic Message, Face Match, etc](http://hvrd.art/iiif)  
 > Playful projects that show the possiblities with computer vision and IIIF.  
 
-## Example code snippets
+### Example code snippets
 
 You can talk with the API using almost any language or tool that speaks HTTP. Here are a few snippets to get you started. Just make sure to substitute your own API key in the `apikey` parameter before running them.
 
