@@ -83,7 +83,7 @@ This often takes the form of "firstname lastname" and is our preferred way to di
 
 Some fields contain numeric values that have special meaning and can help connect our records to other data sets. Not all records have these fields because we couldn't always find a match. 
 
-**lcnaf_id** contains the identifier for the matching entry in [LCNFA](https://id.loc.gov/authorities/names)
+**lcnaf_id** contains the identifier for the matching entry in [LCNAF](https://id.loc.gov/authorities/names)
 
 **ulan_id** contains the identifier for the matching entry in the [ULAN](http://www.getty.edu/research/tools/vocabularies/ulan/) vocabulary
 
