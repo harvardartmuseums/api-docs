@@ -21,7 +21,7 @@ Include one or more of the following parameters to filter the items.
 | hasimage | 0 or 1 |
 | century | CENTURY or pipe separated list of centuries or "any" |
 | classification | CLASSIFICATION ID or pipe separated list of CLASSIFICATION IDs or CLASSIFICATION NAME or pipe separated list of CLASSIFICATION NAMES or "any" |
-| color | COLOR or pipe separated list of colors or "any" |
+| color | URL encoded COLOR or pipe separated list of URL encoded colors or "any" |
 | culture | CULTURE ID or pipe separated list of CULTURE IDs or CULTURE NAME or pipe separated list of CULTURE NAMES or "any" |
 | exhibition | EXHIBITION ID or "any" or "none" |
 | gallery | GALLERY NUMBER or pipe separated list of gallery numbers or "any" or "none" |
