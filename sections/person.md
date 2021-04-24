@@ -83,6 +83,12 @@ This often takes the form of "firstname lastname" and is our preferred way to di
 
 Some fields contain numeric values that have special meaning and can help connect our records to other data sets. Not all records have these fields because we couldn't always find a match. 
 
+**names** describes the variant names or the person
+A person may have one or more names.
+
+`displayname` - is the displayable variant name    
+`type` - is the type of variant name, such as 'Original Language Name' or 'Alternate Name'  
+
 **lcnaf_id** contains the identifier for the matching entry in [LCNAF](https://id.loc.gov/authorities/names)
 
 **ulan_id** contains the identifier for the matching entry in the [ULAN](http://www.getty.edu/research/tools/vocabularies/ulan/) vocabulary
@@ -95,29 +101,39 @@ Some fields contain numeric values that have special meaning and can help connec
 
 #### Examples
 
-> https://api.harvardartmuseums.org/person/28241  
-> Returns the full record for Rembrandt.
+> https://api.harvardartmuseums.org/person/29481  
+> Returns the full record for Utagawa Yoshikazu.
 
 #### Response
 
 ```json
 {
-    "personid": 28241,
-    "displayname": "Rembrandt Harmensz van Rijn",
-    "datebegin": 1606,
-    "dateend": 1669,
-    "displaydate": "1606 - 1669",
-    "culture": "Dutch",
-    "gender": null,
-    "birthplace": "Leiden",
-    "deathplace": "Amsterdam",
-    "alphasort": "Rembrandt Harmensz van Rijn",
-    "url": "http://www.harvardartmuseums.org/collections/person/28241",
-    "objectcount": 691,
-    "id": 28241,
-    "lastupdate": "2015-01-09T04:08:25-0500",
-    "ulan_id": "500011051",
-    "viaf_id": "64013650",
-    "wikipedia_id": "4254144"
+    "personid": 29481,
+    "displayname": "Utagawa Yoshikazu",
+    "datebegin": 1850,
+    "dateend": 1870,
+    "displaydate": "active 1850 - 1870",
+    "culture": "Japanese",
+    "gender": "male",
+    "birthplace": null,
+    "deathplace": null,
+    "alphasort": "Utagawa, Yoshikazu",
+    "url": "https://www.harvardartmuseums.org/collections/person/29481",
+    "objectcount": 50,
+    "id": 29481,
+    "lastupdate": "2021-04-24T04:10:32-0400",
+    "ulan_id": "500334458",
+    "viaf_id": "252063172",
+    "wikidata_id": "Q11545174",
+    "names": [
+        {
+            "displayname": "一川芳員",
+            "type": "Original Language Name"
+        },
+        {
+            "displayname": "Utagawa Yoshikazu",
+            "type": "Primary Name"
+        }
+    ]
 }
 ```
