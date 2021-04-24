@@ -108,6 +108,15 @@ A record represents the concept of an image. An image can be represented by one 
 
 **technique** describes the photography equipment and software used during the production of the image  
 
+**colors** describes the colors programmatically extracted from the image  
+An image may have zero or more colors. The color of each pixel is read and then sorted in to buckets. Brightness and gradient variants are reduced so similar colors group together, and to keep the number of buckets under 20. Then those colors are mapped to the [museums' color palette](https://github.com/harvardartmuseums/api-docs/blob/master/sections/spectrum.md), the CSS3 color listing, and hue names.  
+
+`percent` - is the amount, between the range of 0 to 1, of the color found in the image  
+`color` - is the color found in the image  
+`spectrum` - is the closest match of the color value to the museums' design color [spectrum](https://github.com/harvardartmuseums/api-docs/blob/master/sections/spectrum.md)  
+`css3` - is the closest match to the colors listed in the [CSS3 color module specification](https://www.w3.org/TR/css3-color/)  
+`hue` - is the color value mapped to the name of a hue (Red, Orange, Yellow, Green, Blue, Violet, Brown, Grey, Black, White)  
+
 
 #### Examples
 

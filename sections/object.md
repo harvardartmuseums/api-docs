@@ -167,7 +167,7 @@ In some cases it represents the year the object officially became part of the mu
 1 – Public. Object record is available to all API keys  
 
 **colors** describes the colors programmatically extracted from the primary image of the object  
-An object may have zero or more colors. The color of each pixel is read and then sorted in to buckets. Brightness and gradient variants are reduced so similar colors group together and to keep the number of buckets under 20. Then the those colors are mapped to the museums' color palette, the CSS3 color listing, and hue names.  
+An object may have zero or more colors. The color of each pixel is read and then sorted in to buckets. Brightness and gradient variants are reduced so similar colors group together, and to keep the number of buckets under 20. Then those colors are mapped to the [museums' color palette](https://github.com/harvardartmuseums/api-docs/blob/master/sections/spectrum.md), the CSS3 color listing, and hue names.  
 
 `percent` - is the amount, between the range of 0 to 1, of the color found in the image  
 `color` - is the color found in the image  
