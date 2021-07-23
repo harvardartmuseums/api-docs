@@ -36,36 +36,70 @@ Include one or more of the following parameters to filter the items.
     },
     "records": [
         {
-            "dateend": 0,
-            "alphasort": "Kaap, Gérald Van Der",
-            "displaydate": "born 1959",
-            "deathplace": null,
-            "objectcount": 1,
-            "id": 18135,
-            "lastupdate": "2015-01-09T04:07:45-0500",
-            "datebegin": 1959,
-            "birthplace": "Enschede, Netherlands",
-            "personid": 18135,
             "gender": "male",
+            "displaydate": "1872 - 1944",
+            "objectcount": 10,
+            "wikidata_id": "Q151803",
+            "dateend": 1944,
+            "url": "https://www.harvardartmuseums.org/collections/person/27650",
+            "names": [
+                {
+                    "displayname": "Pieter Cornelis Mondriaan",
+                    "type": "Alternate Name"
+                },
+                {
+                    "displayname": "Piet Mondrian",
+                    "type": "Primary Name"
+                },
+                {
+                    "displayname": "Piet Mondriaan",
+                    "type": "Alternate Name"
+                }
+            ],
+            "birthplace": "Amersfoort, The Netherlands",
+            "datebegin": 1872,
             "culture": "Dutch",
-            "displayname": "Gérald Van Der Kaap",
-            "url": "http://www.harvardartmuseums.org/collections/person/18135"
+            "displayname": "Piet Mondrian",
+            "alphasort": "Mondrian, Piet",
+            "ulan_id": "500004972",
+            "personid": 27650,
+            "deathplace": "New York, N.Y.",
+            "id": 27650,
+            "lastupdate": "2021-07-23T03:57:30-0400",
+            "lcnaf_id": "n79135254"
         },
         {
-            "dateend": 1633,
-            "alphasort": "Vinckboons, David",
-            "displaydate": "1576 - 1632-1633",
-            "deathplace": "Amsterdam",
-            "objectcount": 9,
-            "id": 18301,
-            "lastupdate": "2015-01-09T04:07:45-0500",
-            "datebegin": 1576,
-            "birthplace": "Mechelen",
-            "personid": 18301,
-            "gender": null,
+            "gender": "male",
+            "displaydate": "1606 - 1669",
+            "objectcount": 709,
+            "dateend": 1669,
+            "url": "https://www.harvardartmuseums.org/collections/person/28241",
+            "viaf_id": "64013650",
+            "names": [
+                {
+                    "displayname": "Rembrandt Harmensz. van Rijn",
+                    "type": "Primary Name"
+                },
+                {
+                    "displayname": "Rembrandt van Rijn",
+                    "type": "Alternate Name"
+                },
+                {
+                    "displayname": "Rembrandt",
+                    "type": "Alternate Name"
+                }
+            ],
+            "birthplace": "Leiden",
+            "wikipedia_id": "4254144",
+            "datebegin": 1606,
             "culture": "Dutch",
-            "displayname": "David Vinckboons",
-            "url": "http://www.harvardartmuseums.org/collections/person/18301"
+            "displayname": "Rembrandt Harmensz. van Rijn",
+            "alphasort": "Rembrandt Harmensz. van Rijn",
+            "ulan_id": "500011051",
+            "personid": 28241,
+            "deathplace": "Amsterdam",
+            "id": 28241,
+            "lastupdate": "2021-07-23T03:51:29-0400"
         }
     ]
 }
