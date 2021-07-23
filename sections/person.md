@@ -117,7 +117,7 @@ This often takes the form of "firstname lastname" and is our preferred way to di
 
 Some fields contain numeric values that have special meaning and can help connect our records to other data sets. Not all records have these fields because we couldn't always find a match. 
 
-**names** describes the variant names or the person
+**names** describes the variant names of the person  
 A person may have one or more names.
 
 `displayname` - is the displayable variant name    
