@@ -167,8 +167,11 @@ You can do a lot with the API. Here are a few examples.
 > [Art Explorer](http://apps.harvardartmuseums.org/art-explorer/)  
 > A different approach to browsing through the collections.  
 >  
-> [Suns Explorer](http://apps.harvardartmuseums.org/suns-explorer/)  
+> [Suns Explorer](https://hvrd.art/suns)  
 > A simple abstract use of the color information supplied with some of the object records.  
+> 
+> [Art Forest](https://hvrd.art/art-forest)  
+> A simple "game" that is part classic text adventure, point-and-click adventure, and walking simulator.
 >   
 > [Spectrum Explorer](http://apps.harvardartmuseums.org/spectrum-explorer)  
 > See color spectrum that is part of the branding of the Harvard Art Museums.  
@@ -182,7 +185,7 @@ You can do a lot with the API. Here are a few examples.
 > [ARTphone](https://github.com/harvardartmuseums/ARTphone)  
 > Call or text the word "random" to 1-617-500-1866 to listen to the collection.  
 >  
-> [Magnetic Poetry, Magic Message, Face Match, etc](http://hvrd.art/iiif)  
+> [Magnetic Poetry, Magic Message, Face Match, etc](https://hvrd.art/iiif)  
 > Playful projects that show the possiblities with computer vision and IIIF.  
 
 ### Example code snippets
