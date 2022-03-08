@@ -19,7 +19,7 @@ Include one or more of the following parameters to filter the items.
 | fields | comma separated list of data fields you want in the output |
 | aggregation |  see [Elasticsearch aggregations](http://www.elastic.co/guide/en/elasticsearch/reference/5.6/search-aggregations.html#_structuring_aggregations) |
 | hasimage | 0 or 1 |
-| century | CENTURY or pipe separated list of centuries or "any" |
+| century | CENTURY ID or pipe separated list of CENTURY IDs or CENTURY NAME or pipe separated list of CENTURY NAMES or "any"  |
 | classification | CLASSIFICATION ID or pipe separated list of CLASSIFICATION IDs or CLASSIFICATION NAME or pipe separated list of CLASSIFICATION NAMES or "any" |
 | color | URL encoded COLOR or pipe separated list of URL encoded colors or "any" |
 | culture | CULTURE ID or pipe separated list of CULTURE IDs or CULTURE NAME or pipe separated list of CULTURE NAMES or "any" |
