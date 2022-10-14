@@ -20,7 +20,7 @@ Include one or more of the following parameters to filter the items.
 | object | OBJECT ID |
 | type | "edits", "pageviews", "uniquepageviews", "moves", "conservation", "studycenterviews" |
 
-Several types of activites are available via this endpoint. They are described in the `activitytype` field. 
+Several types of activities are available via this endpoint. They are described in the `activitytype` field. 
 
 **Edits** refers to the number of times the descriptive data for an object has changed on a given day. This gives you no indication of what specifically has changed. 
 

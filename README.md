@@ -55,7 +55,7 @@ Requests that return large numbers of records will be spread across multiple pag
 https://api.harvardartmuseums.org/object?size=5&page=42
 ```
 
-The `next` and `prev` fields in the info block provide a handy shortcut for paging forward and backward through records. They will contain a fully formed URL to the next and previous pages of records. Send a new request to the value in the `next` field to move forward. Check for the existance of the `next` and `prev` fields to determine if you are at the begining or end of your results.
+The `next` and `prev` fields in the info block provide a handy shortcut for paging forward and backward through records. They will contain a fully formed URL to the next and previous pages of records. Send a new request to the value in the `next` field to move forward. Check for the existance of the `next` and `prev` fields to determine if you are at the beginning or end of your results.
 
 ## Errors
 
@@ -113,7 +113,7 @@ https://iiif.harvardartmuseums.org/manifests/object/299843
 
 At the present a manifest for an object contains one sequence and each image of that object is contained in its own canvas within that sequence.  
 
-Please note that our IIIF presentation service is very much a work in progress. The code for the server is availabe at https://github.com/harvardartmuseums/iiif-manifest-server and is based on work that was done at HarvardX. If you have any comments, suggestions, or questions about this service feel free to submit them through the feedback links listed below.  
+Please note that our IIIF presentation service is very much a work in progress. The code for the server is available at https://github.com/harvardartmuseums/iiif-manifest-server and is based on work that was done at HarvardX. If you have any comments, suggestions, or questions about this service feel free to submit them through the feedback links listed below.  
 
 More technical documentation and use cases are described in the [IIIF section](https://github.com/harvardartmuseums/api-docs/blob/master/sections/iiif.md).
 
@@ -186,7 +186,7 @@ You can do a lot with the API. Here are a few examples.
 > Call or text the word "random" to 1-617-500-1866 to listen to the collection.  
 >  
 > [Magnetic Poetry, Magic Message, Face Match, etc](https://hvrd.art/iiif)  
-> Playful projects that show the possiblities with computer vision and IIIF.  
+> Playful projects that show the possibilities with computer vision and IIIF.  
 
 ### Example code snippets
 
