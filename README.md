@@ -281,7 +281,25 @@ If you have a specific feature request or find a bug, [please open a GitHub issu
 
 #### Background information
 
-There are many reasons why the API is important to us and why it exists. They can be summed up as this: Data is at the heart of the work we do and we need an efficient and stable system for tapping in to it. Several articles have been published on our magazine about how access to data (through APIs) changes the way we think about and use collections. See [Technology in the Museums](https://harvardartmuseums.org/article/technology-in-the-museums) and [The Beauty—and Complexity—of Data](https://harvardartmuseums.org/article/the-beauty-of-data) to dive a bit deeper.
+There are many reasons why the API is important to us and why it exists. They can be summed up as this: Data is at the heart of the work we do and we need an efficient and stable system for tapping in to it. 
+
+A more expansive list of reasons why we have an API goes like this:
+
+- **We want our lives to be easier.** Historically it has been difficult to extract raw data from proprietary collections management systems because of the complexity of database structures and the tools required to extract it. Our API is designed with simplicity in mind. It is designed so that we can use the language of the web (HTML and Javascript) to communicate and interact with the museums' data. We strive to make every bit of data addressable through concise, persistent URLs that are not dependent on a particular language or tool.
+
+- **We want to rapidly prototype and share ideas.** Since the API is designed for the web first, we can bring concepts to life quickly and make them accessible to anyone with a web browser almost instantly.
+
+- **An API allows us to be more fluid.** The design takes in to consideration that we'll need to add data fields, remove data fields, or change the source of data.
+
+- **The API makes the collections accessible to other disciplines.** Some people respond best to visual information as presented through our website. Other people, like computer scientists, might respond best to raw data as presented through the API. 
+
+- **Having more eyes on our data is good.** API users will use our data in ways we never dreamed. They'll be looking at the data from different perspectives. They will see ways in which we can improve the shape of our data and possibly aid us in the creation of new data, and ultimately new knowledge.
+
+- **The API elevates our records to first class citizens on the internet.** The API gives every object, person, exhibition, museum room, publication, etc a permanent, reliable address on the web. It means we can start to pivot away from an object centric view of the museum.
+
+- **The API encourages experimentation.** Imaginative uses of the API will yield alternative approaches to teaching with the museums' collections and the creation of alternative forms of interpretation.
+
+Several articles have been published on our magazine about how access to data (through APIs) changes the way we think about and use collections. See [Technology in the Museums](https://harvardartmuseums.org/article/technology-in-the-museums) and [The Beauty—and Complexity—of Data](https://harvardartmuseums.org/article/the-beauty-of-data) to dive a bit deeper.
 
 #### Technical specs
 
