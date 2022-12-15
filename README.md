@@ -281,7 +281,7 @@ If you have a specific feature request or find a bug, [please open a GitHub issu
 
 #### Background information
 
-There are many reasons why the API is important to us and why it exists. They can be summed up as this: Data is at the heart of the work we do and we need an efficient and stable system for tapping in to it. Several articles have been published on our magazine about how access to data (through APIs) changes the way we think about and use collections. See [Technology in the Museums](http://magazine.harvardartmuseums.org/article/2014/01/24/technology-museums) and [The Beauty—and Complexity—of Data](http://magazine.harvardartmuseums.org/article/2014/08/12/beauty%E2%80%94and-complexity%E2%80%94-data) to dive a bit deeper.
+There are many reasons why the API is important to us and why it exists. They can be summed up as this: Data is at the heart of the work we do and we need an efficient and stable system for tapping in to it. Several articles have been published on our magazine about how access to data (through APIs) changes the way we think about and use collections. See [Technology in the Museums](https://harvardartmuseums.org/article/technology-in-the-museums) and [The Beauty—and Complexity—of Data](https://harvardartmuseums.org/article/the-beauty-of-data) to dive a bit deeper.
 
 #### Technical specs
 
