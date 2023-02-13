@@ -10,7 +10,7 @@ We don't guarantee the stability of this data. That being said, there is some fu
 
 #### Examples
 
-> https://api.harvardartmuseums.org/experimental/object?q=googlevision.responses.faceAnnotations.joyLikelihood:VERY_LIKELY  
+> https://api.harvardartmuseums.org/experimental/object?q=images.googlevision.responses.faceAnnotations.joyLikelihood:VERY_LIKELY  
 > Returns all records for object that were processed with Google Vision and contain a person's face expressing joy.  
 
 #### Response
