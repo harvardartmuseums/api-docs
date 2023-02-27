@@ -119,7 +119,7 @@ More technical documentation and use cases are described in the [IIIF section](h
 
 ## Analysis
 
-Slice and dice the data any way you like at our expense with the `aggregation` parameter. You can ask for aggregations on every resource. They are the best way to gather statistics and analyze the data. The aggregration parameter accepts the structure and syntax of [Elasticsearch aggregations](https://www.elastic.co/guide/en/elasticsearch/reference/5.6/search-aggregations.html#_structuring_aggregations). Output from aggregations will appear as an additional block of data in the response. Learn more about analyizing the data via examples in the [analysis section](https://github.com/harvardartmuseums/api-docs/blob/master/sections/analysis.md) of the API documentation.
+Slice and dice the data any way you like at our expense with the `aggregation` parameter. You can ask for aggregations on every resource. They are the best way to gather statistics and analyze the data. The aggregration parameter accepts the structure and syntax of [Elasticsearch aggregations](https://www.elastic.co/guide/en/elasticsearch/reference/7.17/search-aggregations.html#_structuring_aggregations). Output from aggregations will appear as an additional block of data in the response. Learn more about analyizing the data via examples in the [analysis section](https://github.com/harvardartmuseums/api-docs/blob/master/sections/analysis.md) of the API documentation.
 
 ## Resources that are available
 
@@ -355,4 +355,4 @@ Keep in mind that the data is not perfect. There are many gaps and a lot of ambi
 
 Congratulations! You made it to the end. Over the years the museums' design team made stickers for us to give away as a means to spread joy and promote the API. Please enjoy this sampler. 
 
-![A collage of nine hexagons each containing a part of an image from the musuem's collection](https://user-images.githubusercontent.com/3187493/80253872-1a959780-8648-11ea-826c-fc2a8b6cc082.png)
+![A collage of nine hexagons each containing a part of an image from the museum's collection](https://user-images.githubusercontent.com/3187493/80253872-1a959780-8648-11ea-826c-fc2a8b6cc082.png)

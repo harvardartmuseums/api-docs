@@ -1,6 +1,6 @@
 # Analysis
 
-The aggregation parameter provides a method for analyzing the museums data on our end so you have to do less work to use it on yours. You can ask for aggregations on every resource. The aggregration parameter accepts the structure and syntax of [Elasticsearch aggregations](https://www.elastic.co/guide/en/elasticsearch/reference/5.6/search-aggregations.html#_structuring_aggregations). A typical example looks like this.
+The aggregation parameter provides a method for analyzing the museums data on our end so you have to do less work to use it on yours. You can ask for aggregations on every resource. The aggregration parameter accepts the structure and syntax of [Elasticsearch aggregations](https://www.elastic.co/guide/en/elasticsearch/reference/7.17/search-aggregations.html#_structuring_aggregations). A typical example looks like this.
 
 ```json
 aggregation={"by_division":{"terms":{"field":"division"}}}
@@ -35,7 +35,7 @@ To see aggregations in action, take a look at the object activity graphs in the 
 
 * Aggregation parameter values must be [URL encoded](https://en.wikipedia.org/wiki/Percent-encoding).
 * Include the parameter `size=0` if you don't want records in your results set. The records block will return as an empty array.
-* It's not always obvious which field to use when running an aggregation. For example the classification field on the object endpoint is indexed both as `classification` and `classification.exact`. We are adding field definitions for each endpoint but it will take some time for us to cover everything. In the meantime, don't hesitate to [ask us](https://docs.google.com/forms/d/118WjSPgKEYBjLU3B3iUkELwHbgeWryVb_5hw3o6_3K8/viewform) for clarification on fields.
+* It's not always obvious which field to use when running an aggregation. For example the classification field on the object endpoint is indexed both as `classification` and `classification.exact`. We are adding field definitions for each endpoint but it will take some time for us to cover everything. In the meantime, don't hesitate to [ask us](https://github.com/harvardartmuseums/api-docs/issues) for clarification on fields.
 * It is possible to ask for multiple aggregations in a single request.
 * It is possible to subdivide an aggregation.
 
