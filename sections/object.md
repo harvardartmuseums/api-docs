@@ -34,6 +34,7 @@ Include one or more of the following parameters to filter the items.
 | place | PLACE ID or pipe separated list of PLACE IDs or PLACE NAME or "any" |
 | publication | PUBLICATION ID or "any" or "none" |
 | relatedto | OBJECT ID |
+| support | SUPPORT ID or pipe separated list of SUPPORT IDs or SUPPORT NAME or pipe separated list of SUPPORT NAMES or "any" |
 | technique | TECHNIQUE ID or pipe separated list of TECHNIQUE IDs or TECHNIQUE NAME or pipe separated list of TECHNIQUE NAMES or "any" |
 | title | 1 or more terms |
 | exact_title | EXACT URL ENCODED TITLE |

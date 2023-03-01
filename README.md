@@ -137,6 +137,7 @@ Several primary museum resources are accessible in this API. They include the fo
 * [Culture](https://github.com/harvardartmuseums/api-docs/blob/master/sections/culture.md)
 * [Group](https://github.com/harvardartmuseums/api-docs/blob/master/sections/group.md)
 * [Medium](https://github.com/harvardartmuseums/api-docs/blob/master/sections/medium.md)
+* [Support](https://github.com/harvardartmuseums/api-docs/blob/master/sections/support.md)
 * [Period](https://github.com/harvardartmuseums/api-docs/blob/master/sections/period.md)
 * [Place](https://github.com/harvardartmuseums/api-docs/blob/master/sections/place.md)
 * [Technique](https://github.com/harvardartmuseums/api-docs/blob/master/sections/technique.md)
