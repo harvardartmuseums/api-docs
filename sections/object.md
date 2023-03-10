@@ -59,97 +59,97 @@ To keep responses reasonably sized, the output from a get objects request contai
 
 ```json
 {
-	"info": {
-		"totalrecordsperquery": 10,
-		"totalrecords": 261018,
-		"pages": 26102,
-		"page": 1,
+    "info": {
+        "totalrecordsperquery": 10,
+        "totalrecords": 261018,
+        "pages": 26102,
+        "page": 1,
         "next": "https://api.harvardartmuseums.org/object?size=10&page=2",
         "responsetime": "6 ms"
-	},
-	"records": [
-		{
-			"accessionyear": "1969",
-			"technique": null,
-			"mediacount": 0,
-			"edition": null,
-			"totalpageviews": 98,
-			"groupcount": 0,
-			"people": [
-				{
-					"birthplace": null,
-					"name": "Unknown Artist",
-					"prefix": null,
-					"personid": 23184,
-					"role": "Artist",
-					"displayorder": 1,
-					"culture": null,
-					"displaydate": null,
-					"deathplace": null,
-					"displayname": "Unknown Artist"
-				}
-			],
-			"objectnumber": "1969.172",
-			"colorcount": 10,
-			"lastupdate": "2015-01-07T04:21:10-0500",
-			"rank": 86736,
-			"imagecount": 2,
-			"description": null,
-			"dateoflastpageview": "2014-11-14",
-			"dateoffirstpageview": "2009-05-12",
-			"primaryimageurl": "http://nrs.harvard.edu/urn-3:HUAM:72721_dynmc"
-		},
-		{
-			"accessionyear": null,
-			"technique": "Engraving",
-			"mediacount": 0,
-			"edition": null,
-			"totalpageviews": 98,
-			"groupcount": 0,
-			"people": [
-				{
-					"birthplace": null,
-					"name": "Ignatius Cornelis Marinus",
-					"prefix": null,
-					"personid": 32489,
-					"role": "Artist",
-					"displayorder": 1,
-					"culture": "Flemish",
-					"displaydate": "1599 - 1639",
-					"deathplace": null,
-					"displayname": "Ignatius Cornelis Marinus"
-				},
-				{
-					"birthplace": "Siegen, Westphalia",
-					"name": "Peter Paul Rubens",
-					"prefix": "After",
-					"personid": 28402,
-					"role": "Artist after",
-					"displayorder": 2,
-					"culture": "Flemish",
-					"displaydate": "1577 - 1640",
-					"deathplace": "Antwerp, Belgium",
-					"displayname": "After Peter Paul Rubens"
-				}
-			],
-			"objectnumber": "R5196",
-			"colorcount": 0,
-			"lastupdate": "2015-01-07T04:21:30-0500",
-			"rank": 235396,
-			"imagecount": 1,
-			"description": null,
-			"dateoflastpageview": "2014-12-05",
-			"dateoffirstpageview": "2009-06-19",
-			"primaryimageurl": "http://nrs.harvard.edu/urn-3:HUAM:INV202403_dynmc",
-			"dated": "17th century",
-			"contextualtextcount": 0,
-			"copyright": null,
-			"period": null,
-			"url": "http://harvardartmuseums.org/collections/object/240724",
-			"provenance": "John Witt Randall, bequest to his sister. Belinda Lull Randall, gift to Harvard University, 1892. sister of John Witt Randall ",
-			"publicationcount": 0	
-		}
-	]
+    },
+    "records": [
+        {
+            "accessionyear": "1969",
+            "technique": null,
+            "mediacount": 0,
+            "edition": null,
+            "totalpageviews": 98,
+            "groupcount": 0,
+            "people": [
+                {
+                    "birthplace": null,
+                    "name": "Unknown Artist",
+                    "prefix": null,
+                    "personid": 23184,
+                    "role": "Artist",
+                    "displayorder": 1,
+                    "culture": null,
+                    "displaydate": null,
+                    "deathplace": null,
+                    "displayname": "Unknown Artist"
+                }
+            ],
+            "objectnumber": "1969.172",
+            "colorcount": 10,
+            "lastupdate": "2015-01-07T04:21:10-0500",
+            "rank": 86736,
+            "imagecount": 2,
+            "description": null,
+            "dateoflastpageview": "2014-11-14",
+            "dateoffirstpageview": "2009-05-12",
+            "primaryimageurl": "http://nrs.harvard.edu/urn-3:HUAM:72721_dynmc"
+        },
+        {
+            "accessionyear": null,
+            "technique": "Engraving",
+            "mediacount": 0,
+            "edition": null,
+            "totalpageviews": 98,
+            "groupcount": 0,
+            "people": [
+                {
+                    "birthplace": null,
+                    "name": "Ignatius Cornelis Marinus",
+                    "prefix": null,
+                    "personid": 32489,
+                    "role": "Artist",
+                    "displayorder": 1,
+                    "culture": "Flemish",
+                    "displaydate": "1599 - 1639",
+                    "deathplace": null,
+                    "displayname": "Ignatius Cornelis Marinus"
+                },
+                {
+                    "birthplace": "Siegen, Westphalia",
+                    "name": "Peter Paul Rubens",
+                    "prefix": "After",
+                    "personid": 28402,
+                    "role": "Artist after",
+                    "displayorder": 2,
+                    "culture": "Flemish",
+                    "displaydate": "1577 - 1640",
+                    "deathplace": "Antwerp, Belgium",
+                    "displayname": "After Peter Paul Rubens"
+                }
+            ],
+            "objectnumber": "R5196",
+            "colorcount": 0,
+            "lastupdate": "2015-01-07T04:21:30-0500",
+            "rank": 235396,
+            "imagecount": 1,
+            "description": null,
+            "dateoflastpageview": "2014-12-05",
+            "dateoffirstpageview": "2009-06-19",
+            "primaryimageurl": "http://nrs.harvard.edu/urn-3:HUAM:INV202403_dynmc",
+            "dated": "17th century",
+            "contextualtextcount": 0,
+            "copyright": null,
+            "period": null,
+            "url": "http://harvardartmuseums.org/collections/object/240724",
+            "provenance": "John Witt Randall, bequest to his sister. Belinda Lull Randall, gift to Harvard University, 1892. sister of John Witt Randall ",
+            "publicationcount": 0
+        }
+    ]
 }
 ```
 
