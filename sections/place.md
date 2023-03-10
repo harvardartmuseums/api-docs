@@ -33,7 +33,9 @@ Include one or more of the following parameters to filter the items.
         "totalrecordsperquery": 10,
         "totalrecords": 91,
         "pages": 10,
-        "page": 1
+        "page": 1,
+        "next": "https://api.harvardartmuseums.org/place?parent=2028439&size=10&page=2",
+        "responsetime": "6 ms"
     },
     "records": [
         {

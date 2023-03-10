@@ -31,7 +31,8 @@ Include one or more of the following parameters to filter the items.
         "totalrecords": 5274,
         "pages": 1056,
         "page": 1,
-        "next": "https://api.harvardartmuseums.org/image?q=width%3A%3E2000&page=2&size=2"
+        "next": "https://api.harvardartmuseums.org/image?q=width%3A%3E2000&page=2&size=2",
+        "responsetime": "5 ms"
     },
     "records": [
         {

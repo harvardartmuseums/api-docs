@@ -31,7 +31,9 @@ Include one or more of the following parameters to filter the items.
         "totalrecordsperquery": 3,
         "totalrecords": 394,
         "pages": 132,
-        "page": 1
+        "page": 1,
+        "next": "https://api.harvardartmuseums.org/worktype?size=3&page=2",
+        "responsetime": "5 ms"
     },
     "records": [
         {

@@ -31,7 +31,9 @@ Include one or more of the following parameters to filter the items.
         "totalrecordsperquery": 10,
         "totalrecords": 31,
         "pages": 4,
-        "page": 1
+        "page": 1,
+        "next": "https://api.harvardartmuseums.org/spectrum?q=month%3A1&sort=daynumber&size=10&page=2",
+        "responsetime": "5 ms"
     },
     "records": [
         {

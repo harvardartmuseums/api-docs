@@ -36,13 +36,14 @@ All data is in [JSON](http://json.org) format. Here is a typical response:
         "pages": 22412,
         "page": 1,
         "next": "",
-        "prev": ""
+        "prev": "",
+        "responsetime": "5 ms"
     },
     "records": [
 
     ],
     "aggregations": {
-    	
+
     }
 }
 ```

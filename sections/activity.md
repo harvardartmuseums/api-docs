@@ -45,41 +45,75 @@ Several types of activities are available via this endpoint. They are described 
 {
     "info": {
         "totalrecordsperquery": 5,
-        "totalrecords": 710,
-        "pages": 142,
-        "page": 1
+        "totalrecords": 2387,
+        "pages": 478,
+        "page": 1,
+        "next": "https://api.harvardartmuseums.org/activity?object=6772&size=5&page=2",
+        "responsetime": "4 ms"
     },
     "records": [
         {
-            "date": "2017-11-01",
+            "id": 1263375660,
             "objectid": 6772,
+            "date": "2023-03-02",
             "activitytype": "pageviews",
-            "activitycount": 3
+            "activitycount": 3,
+            "lastupdate": "2023-03-09T14:41:31-0500"
         },
         {
-            "date": "2010-03-31",
+            "id": 105307199,
             "objectid": 6772,
-            "activitytype": "pageviews",
-            "activitycount": 1
+            "date": "2023-03-06",
+            "activitytype": "uniquepageviews",
+            "activitycount": 2,
+            "lastupdate": "2023-03-09T14:41:35-0500"
         },
         {
-            "date": "2012-09-18",
+            "id": 105306334,
             "objectid": 6772,
-            "activitytype": "pageviews",
-            "activitycount": 1
+            "date": "2023-03-02",
+            "activitytype": "uniquepageviews",
+            "activitycount": 3,
+            "lastupdate": "2023-03-09T14:42:03-0500"
         },
         {
-            "date": "2016-02-22",
+            "id": 1263374795,
             "objectid": 6772,
+            "date": "2023-03-06",
             "activitytype": "pageviews",
-            "activitycount": 6
+            "activitycount": 2,
+            "lastupdate": "2023-03-09T14:42:14-0500"
         },
         {
-            "date": "2018-01-15",
+            "id": 1483504890,
             "objectid": 6772,
+            "date": "2022-12-13",
             "activitytype": "pageviews",
-            "activitycount": 1
+            "activitycount": 1,
+            "lastupdate": "2022-12-14T12:16:04-0500"
         }
     ]
 }
+```
+
+## Get Activity
+
+`GET /activity/ACTIVITY_ID` will get the full record of the specified activity.
+
+#### Examples
+
+> https://api.harvardartmuseums.org/activity/1483504890    
+> Returns the full record for activity with the ID number 1483504890.
+
+#### Response
+
+```json
+    {
+        "id": 1483504890,
+        "objectid": 6772,
+        "date": "2022-12-13",
+        "activitytype": "pageviews",
+        "activitycount": 1,
+        "lastupdate": "2022-12-14T12:16:04-0500"
+    }
 ```

@@ -63,7 +63,9 @@ To keep responses reasonably sized, the output from a get objects request contai
 		"totalrecordsperquery": 10,
 		"totalrecords": 261018,
 		"pages": 26102,
-		"page": 1
+		"page": 1,
+        "next": "https://api.harvardartmuseums.org/object?size=10&page=2",
+        "responsetime": "6 ms"
 	},
 	"records": [
 		{

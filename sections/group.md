@@ -37,7 +37,8 @@ Include one or more of the following parameters to filter the items.
         "totalrecords": 27,
         "pages": 14,
         "page": 1,
-        "next": "https://api.harvardartmuseums.org/group?size=2&page=2"
+        "next": "https://api.harvardartmuseums.org/group?size=2&page=2",
+        "responsetime": "4 ms"
     },
     "records": [
         {

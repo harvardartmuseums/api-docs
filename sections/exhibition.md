@@ -38,7 +38,9 @@ Include one or more of the following parameters to filter the items.
         "totalrecordsperquery": 2,
         "totalrecords": 470,
         "pages": 235,
-        "page": 1
+        "page": 1,
+        "next": "https://api.harvardartmuseums.org/exhibition?venue=HAM&size=2&page=2",
+        "responsetime": "7 ms"
     },
     "records": [
         {

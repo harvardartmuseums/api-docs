@@ -45,7 +45,9 @@ Include one or more of the following parameters to filter the items.
         "totalrecordsperquery": 2,
         "totalrecords": 6274466,
         "pages": 3137233,
-        "page": 1
+        "page": 1,
+        "next": "https://api.harvardartmuseums.org/annotation?size=2&page=2",
+        "responsetime": "10 ms"
     },
     "records": [
         {

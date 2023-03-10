@@ -33,7 +33,9 @@ Include one or more of the following parameters to filter the items.
         "totalrecordsperquery": 10,
         "totalrecords": 118,
         "pages": 12,
-        "page": 1
+        "page": 1,
+        "next": "https://api.harvardartmuseums.org/publication?q=publicationyear%3A2013&size=10&page=2",
+        "responsetime": "6 ms"
     },
     "records": [
         {

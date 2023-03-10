@@ -32,7 +32,9 @@ Include one or more of the following parameters to filter the items.
         "totalrecordsperquery": 10,
         "totalrecords": 600,
         "pages": 60,
-        "page": 1
+        "page": 1,
+        "next": "https://api.harvardartmuseums.org/person?q=culture%3ADutch&size=10&page=2",
+        "responsetime": "6 ms"
     },
     "records": [
         {

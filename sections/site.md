@@ -31,7 +31,8 @@ Include one or more of the following parameters to filter the items.
         "totalrecordsperquery": 10,
         "totalrecords": 3,
         "pages": 1,
-        "page": 1
+        "page": 1,
+        "responsetime": "5 ms"
     },
     "records": [
         {
