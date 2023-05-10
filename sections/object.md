@@ -224,10 +224,10 @@ Objects have lending restrictions for many different reasons. Sometimes restrict
 **objectid** describes the numeric unique identifier for a record  
 
 **objectnumber** describes the unique identifier for a record  
-This field is also known as accession number. For information on the structure and meaning of these numbers see the article [A Numbers Game](http://magazine.harvardartmuseums.org/article/2015/06/23/numbers-game).
+This field is also known as accession number. For information on the structure and meaning of these numbers see the article [A Numbers Game](https://harvardartmuseums.org/article/2015/06/23/numbers-game).
 
 **provenance** describes the history of ownership of the work  
-This field is a record of the history of all the people/institutions who have owned the work from its creation until the present. Whenever possible it documents the legal title to a work at any particular time. This field often contains names of people along with the dates and location of ownership.  
+This field is a record of the history of all the people/institutions who have owned the work from its creation until the present. Whenever possible it documents the legal title to a work at any particular time. This field often contains names of people along with the dates and location of ownership. See the museum's [Provenance Guidelines](https://harvardartmuseums.org/collections/collecting-policy#provenance) for more info on how to read provenance descriptions.  
 
 **rank** is a number that is a measurement of how inactive the object is  
 The number is computed every time the data in the API is refreshed. A number of factors go in to generating the number including membership in the “Collection Highlight” group, total number of page views (since 2009), and date of last page view. A lower number means the object is less active. We use the rank field to sort objects on our [Browse Our Collections](https://www.harvardartmuseums.org/collections) page. We do this to get the least active objects to rise to the top of search results so more of the collection is seen and used online.  
