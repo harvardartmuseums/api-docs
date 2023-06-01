@@ -20,7 +20,9 @@ Include one or more of the following parameters to filter the items.
 | aggregation |  see [Elasticsearch aggregations](http://www.elastic.co/guide/en/elasticsearch/reference/7.17/search-aggregations.html#_structuring_aggregations) |
 | id | pipe separated list of record IDs |
 | hasimage | 0 or 1 |
-| venue | “HAM” |
+| keyword | a keyword search string; this parameter searches exhibition titles, description, and people names related to the creation of the exhibition |
+| venue | “HAM” or "any" or "none" or VENUE ID or pipe separated list of VENUE IDs or VENUE NAME |
+| person | PERSON ID or pipe separated list of PERSON IDs or PERSON NAME or "any" or "none" |
 | status | “current”, “past”, “upcoming” |
 | exact_title | EXACT URL ENCODED TITLE |
 | before | YYYY-MM-DD or “begindate:YYYY-MM-DD” or “enddate:YYYY-MM-DD” or “temporalorder:1234” |

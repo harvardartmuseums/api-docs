@@ -24,16 +24,16 @@ Include one or more of the following parameters to filter the items.
 | classification | CLASSIFICATION ID or pipe separated list of CLASSIFICATION IDs or CLASSIFICATION NAME or pipe separated list of CLASSIFICATION NAMES or "any" |
 | color | URL encoded COLOR or pipe separated list of URL encoded colors or "any" |
 | culture | CULTURE ID or pipe separated list of CULTURE IDs or CULTURE NAME or pipe separated list of CULTURE NAMES or "any" |
-| exhibition | EXHIBITION ID or "any" or "none" |
+| exhibition | EXHIBITION ID or pipe separated list of EXHIBITION IDs or EXHIBITION TITLE  or "any" or "none" |
 | gallery | GALLERY NUMBER or pipe separated list of gallery numbers or "any" or "none" |
-| group | GROUP ID or pipe separated list of GROUP IDs or GROUP NAME or "any" |
+| group | GROUP ID or pipe separated list of GROUP IDs or GROUP NAME or "any" or "none" |
 | keyword | a keyword search string; this parameter searches object titles, artists, description, classification, culture, worktype, medium terms, provenance, and creditline |
 | medium | MEDIUM ID or pipe separated list of MEDIUM IDs or MEDIUM NAME or pipe separated list of MEDIUM NAMES or "any" |
 | objectnumber | 1 or more terms |
 | period | PERIOD or pipe separated list of periods or "any" |
-| person | PERSON ID or pipe separated list of PERSON IDs or PERSON NAME or "any" |
-| place | PLACE ID or pipe separated list of PLACE IDs or PLACE NAME or "any" |
-| publication | PUBLICATION ID or "any" or "none" |
+| person | PERSON ID or pipe separated list of PERSON IDs or PERSON NAME or "any" or "none" |
+| place | PLACE ID or pipe separated list of PLACE IDs or PLACE NAME or "any" or "none" |
+| publication | PUBLICATION ID or pipe separated list of PUBLICATION IDs or PUBLICATION TITLE or "any" or "none" |
 | relatedto | OBJECT ID |
 | support | SUPPORT ID or pipe separated list of SUPPORT IDs or SUPPORT NAME or pipe separated list of SUPPORT NAMES or "any" |
 | technique | TECHNIQUE ID or pipe separated list of TECHNIQUE IDs or TECHNIQUE NAME or pipe separated list of TECHNIQUE NAMES or "any" |
