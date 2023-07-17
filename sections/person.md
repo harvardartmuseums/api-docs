@@ -42,17 +42,39 @@ Include one or more of the following parameters to filter the items.
             "gender": "male",
             "displaydate": "1872 - 1944",
             "objectcount": 10,
+            "roles": [
+                {
+                    "role": "Related name",
+                    "context": "object",
+                    "frequency": 5
+                },
+                {
+                    "role": "Author",
+                    "context": "object",
+                    "frequency": 1
+                },
+                {
+                    "role": "Artist",
+                    "context": "object",
+                    "frequency": 19
+                },
+                {
+                    "role": "Artist after",
+                    "context": "object",
+                    "frequency": 2
+                }
+            ],
             "wikidata_id": "Q151803",
             "dateend": 1944,
             "url": "https://www.harvardartmuseums.org/collections/person/27650",
             "names": [
                 {
-                    "displayname": "Pieter Cornelis Mondriaan",
-                    "type": "Alternate Name"
-                },
-                {
                     "displayname": "Piet Mondrian",
                     "type": "Primary Name"
+                },
+                {
+                    "displayname": "Pieter Cornelis Mondriaan",
+                    "type": "Alternate Name"
                 },
                 {
                     "displayname": "Piet Mondriaan",
@@ -68,24 +90,47 @@ Include one or more of the following parameters to filter the items.
             "personid": 27650,
             "deathplace": "New York, N.Y.",
             "id": 27650,
-            "lastupdate": "2021-07-23T03:57:30-0400",
+            "lastupdate": "2023-07-16T13:53:36-0400",
             "lcnaf_id": "n79135254"
         },
         {
             "gender": "male",
             "displaydate": "1606 - 1669",
             "objectcount": 709,
+            "roles": [
+                {
+                    "role": "Related name",
+                    "context": "object",
+                    "frequency": 222
+                },
+                {
+                    "role": "Previous attribution",
+                    "context": "object",
+                    "frequency": 10
+                },
+                {
+                    "role": "Artist",
+                    "context": "object",
+                    "frequency": 291
+                },
+                {
+                    "role": "Artist after",
+                    "context": "object",
+                    "frequency": 233
+                }
+            ],
+            "wikidata_id": "Q5598",
             "dateend": 1669,
             "url": "https://www.harvardartmuseums.org/collections/person/28241",
             "viaf_id": "64013650",
             "names": [
                 {
-                    "displayname": "Rembrandt Harmensz. van Rijn",
-                    "type": "Primary Name"
-                },
-                {
                     "displayname": "Rembrandt van Rijn",
                     "type": "Alternate Name"
+                },
+                {
+                    "displayname": "Rembrandt Harmensz. van Rijn",
+                    "type": "Primary Name"
                 },
                 {
                     "displayname": "Rembrandt",
@@ -102,7 +147,8 @@ Include one or more of the following parameters to filter the items.
             "personid": 28241,
             "deathplace": "Amsterdam",
             "id": 28241,
-            "lastupdate": "2021-07-23T03:51:29-0400"
+            "lastupdate": "2023-07-16T13:54:11-0400",
+            "lcnaf_id": "n79142935"
         }
     ]
 }
@@ -125,6 +171,8 @@ A person may have one or more names.
 
 `displayname` - is the displayable variant name    
 `type` - is the type of variant name, such as 'Original Language Name' or 'Alternate Name'  
+
+**roles** describes the roles occupied by the person in the context of the Harvard Art Museums collections and activities
 
 **lcnaf_id** contains the identifier for the matching entry in [LCNAF](https://id.loc.gov/authorities/names)
 
