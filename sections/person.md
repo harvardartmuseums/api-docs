@@ -193,6 +193,7 @@ A person may have one or more names.
 
 ```json
 {
+    "id": 29481,
     "personid": 29481,
     "displayname": "Utagawa Yoshikazu",
     "datebegin": 1850,
@@ -205,10 +206,9 @@ A person may have one or more names.
     "alphasort": "Utagawa, Yoshikazu",
     "url": "https://www.harvardartmuseums.org/collections/person/29481",
     "objectcount": 50,
-    "id": 29481,
-    "lastupdate": "2021-04-24T04:10:32-0400",
-    "ulan_id": "500334458",
+    "lastupdate": "2023-07-16T13:52:05-0400",
     "viaf_id": "252063172",
+    "ulan_id": "500334458",
     "wikidata_id": "Q11545174",
     "names": [
         {
@@ -218,6 +218,13 @@ A person may have one or more names.
         {
             "displayname": "Utagawa Yoshikazu",
             "type": "Primary Name"
+        }
+    ],
+    "roles": [
+        {
+            "role": "Artist",
+            "context": "object",
+            "frequency": 135
         }
     ]
 }
