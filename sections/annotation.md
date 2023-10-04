@@ -145,7 +145,7 @@ Selectors take many forms. By default all of our selectors will conform to the M
 
 **source** describes how the annotation was generated. These are the possible values.   
 - Google Vision - means the annotation was generated using machine processing  
-- Microsoft Cognitve Services - means the annotation was generated using machine processing   
+- Microsoft Cognitive Services - means the annotation was generated using machine processing   
 - Imagga - means the annotation was generated using machine processing  
 - Clarifai - means the annotation was generated using machine processing   
 - AWS Rekognition - means the annotation was generated using machine processing   
