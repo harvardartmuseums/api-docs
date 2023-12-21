@@ -19,7 +19,7 @@ Include one or more of the following parameters to filter the items.
 | fields | comma separated list of data fields you want in the output |
 | aggregation |  see [Elasticsearch aggregations](http://www.elastic.co/guide/en/elasticsearch/reference/7.17/search-aggregations.html#_structuring_aggregations) |
 | id | pipe separated list of record IDs |
-| object | OBJECT ID |
+| object | OBJECT ID or pipe separated list of OBJECT IDs |
 | type | "edits", "pageviews", "uniquepageviews", "moves", "conservation", "studycenterviews" |
 
 Several types of activities are available via this endpoint. They are described in the `activitytype` field. 
