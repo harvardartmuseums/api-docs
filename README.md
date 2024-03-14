@@ -175,13 +175,13 @@ You can do a lot with the API. Here are a few examples.
 > [Art Forest](https://hvrd.art/art-forest)  
 > A simple "game" that is part classic text adventure, point-and-click adventure, and walking simulator.
 >   
-> [Spectrum Explorer](http://apps.harvardartmuseums.org/spectrum-explorer)  
+> [Spectrum Explorer](https://hvrd.art/spectrum-explorer)  
 > See color spectrum that is part of the branding of the Harvard Art Museums.  
 >  
-> [Museum Explorer](http://apps.harvardartmuseums.org/museum-explorer)  
+> [Museum Explorer](https://hvrd.art/museum-explorer)  
 > See the entire museum through tree and pack graphs and floor plans.  
 >  
-> [AI Explorer](http://ai.harvardartmuseums.org)  
+> [AI Explorer](https://ai.harvardartmuseums.org)  
 > Search and browse the collection via machine generated tags and descriptions.  
 >  
 > [ARTphone](https://github.com/harvardartmuseums/ARTphone)  
