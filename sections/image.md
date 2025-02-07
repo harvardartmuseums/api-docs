@@ -94,6 +94,10 @@ A record represents the concept of an image. An image can be represented by one 
 
 **fileid** describes the unique numeric identifier for a file  
 
+**accesslevel** describes the accessibility of a record  
+0 – Restricted. Image record is restricted to certain API keys  
+1 – Public. Image record is available to all API keys  
+
 **renditionnumber** describes the unique name for the image; this often takes the form of a prefix + serial number; the prefix can provide hints as to when, why, and how we made the image   
 
 **date** describes either the date of creation of the image record in our collections management system OR the date of creation of the image itself (this is very fuzzy data)  
