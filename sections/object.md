@@ -181,6 +181,8 @@ An object may have zero or more colors. The color of each pixel is read and then
 
 **copyright** describes the copyright of the object  
 
+**createdate** describes the date and time the record was created in the museum's electronic catalogue system   
+
 **dated** describes the time frame in which the object was created  
 This field contains a free text expression of the object’s date of creation. It is most often used for display purposes. We use BC and BCE ([Common Era notation](https://en.wikipedia.org/wiki/Common_Era)) to qualify dates.  
 
