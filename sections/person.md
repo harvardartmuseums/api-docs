@@ -163,11 +163,8 @@ This often takes the form of "lastname, firstname" and is our preferred way to s
 
 **createdate** describes the date and time the record was created in the museum's electronic catalogue system   
 
-
 **displayname** describes the form of the persons name used for display purposes  
 This often takes the form of "firstname lastname" and is our preferred way to display names.  
-
-Some fields contain numeric values that have special meaning and can help connect our records to other data sets. Not all records have these fields because we couldn't always find a match. 
 
 **names** describes the variant names of the person  
 A person may have one or more names.
@@ -175,7 +172,11 @@ A person may have one or more names.
 `displayname` - is the displayable variant name    
 `type` - is the type of variant name, such as 'Original Language Name' or 'Alternate Name'  
 
+**personid** describes the numeric unique identifier for a record    
+
 **roles** describes the roles occupied by the person in the context of the Harvard Art Museums collections and activities
+
+Some fields contain numeric values that have special meaning and can help connect our records to other data sets. Not all records have these fields because we couldn't always find a match.  
 
 **lcnaf_id** contains the identifier for the matching entry in [LCNAF](https://id.loc.gov/authorities/names)
 

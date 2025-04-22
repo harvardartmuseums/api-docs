@@ -136,6 +136,7 @@ Include one or more of the following parameters to filter the items.
 
 **createdate** describes the date and time the record was created in the museum's electronic catalogue system   
 
+**exhibitionid** describes the numeric unique identifier for a record    
 
 #### Examples
 

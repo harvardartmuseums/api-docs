@@ -14,7 +14,7 @@ Include one or more of the following parameters to filter the items.
 | q | FIELD:VALUE (see [Elasticsearch Query String syntax](https://www.elastic.co/guide/en/elasticsearch/reference/7.17/query-dsl-query-string-query.html) for more options) |
 | size | 0-9+ |
 | page | 0-9+ |
-| sort | FIELD NAME or "random" or "random:[SEED NUMBER]" |
+| sort | FIELD NAME or "chronological" or "random" or "random:[SEED NUMBER]" |
 | sortorder | asc or desc |
 | fields | comma separated list of data fields you want in the output |
 | aggregation |  see [Elasticsearch aggregations](http://www.elastic.co/guide/en/elasticsearch/reference/7.17/search-aggregations.html#_structuring_aggregations) |
@@ -110,6 +110,8 @@ Include one or more of the following parameters to filter the items.
 `GET /publication/PUBLICATION_ID` will get detailed info about a specific publication.
 
 **createdate** describes the date and time the record was created in the museum's electronic catalogue system   
+
+**publicationid** describes the numeric unique identifier for a record    
 
 The identifiers array contains numeric ID values that have special meaning and can help connect our records to other data sets. Not all records have these fields because we couldn't always find a match. 
 
