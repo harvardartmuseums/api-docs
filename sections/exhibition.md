@@ -134,6 +134,9 @@ Include one or more of the following parameters to filter the items.
 
 `GET /exhibition/EXHIBITION_ID` will get detailed info about a specific exhibition.
 
+**createdate** describes the date and time the record was created in the museum's electronic catalogue system   
+
+
 #### Examples
 
 > https://api.harvardartmuseums.org/exhibition/4236  

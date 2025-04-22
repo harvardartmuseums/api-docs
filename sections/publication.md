@@ -109,6 +109,8 @@ Include one or more of the following parameters to filter the items.
 
 `GET /publication/PUBLICATION_ID` will get detailed info about a specific publication.
 
+**createdate** describes the date and time the record was created in the museum's electronic catalogue system   
+
 The identifiers array contains numeric ID values that have special meaning and can help connect our records to other data sets. Not all records have these fields because we couldn't always find a match. 
 
 **Hollis Number** is the identifier for the matching entry in the [HOLLIS](http://hollis.harvard.edu/) catalogue

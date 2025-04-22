@@ -88,6 +88,8 @@ Include one or more of the following parameters to filter the items.
 
 A record represents the concept of an image. An image can be represented by one or more files that are accessible via one or more services.
 
+**createdate** describes the date and time the record was created in the museum's electronic catalogue system   
+
 **imageid** describes the numeric unique identifier for a record    
 
 **idsid** describes the unique numeric identifier for a file in the Harvard Digital Repository  

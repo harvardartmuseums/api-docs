@@ -161,6 +161,9 @@ Include one or more of the following parameters to filter the items.
 **alphasort** describes the form of the persons name useful for sorting names alphabetically  
 This often takes the form of "lastname, firstname" and is our preferred way to sort names.  
 
+**createdate** describes the date and time the record was created in the museum's electronic catalogue system   
+
+
 **displayname** describes the form of the persons name used for display purposes  
 This often takes the form of "firstname lastname" and is our preferred way to display names.  
 
