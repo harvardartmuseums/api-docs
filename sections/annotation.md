@@ -17,6 +17,7 @@ Annotations come from a number of different sources. Some of the annotations are
 - [Meta Llama on AWS Bedrock](https://aws.amazon.com/bedrock/llama/)
 - [Microsoft Cognitive Services](https://www.microsoft.com/cognitive-services)
 - [Mistral Pixtral on AWS Bedrock](https://aws.amazon.com/bedrock/mistral/)
+- [Qwen on Hyperbolic](https://qwenlm.github.io/)
 
 We use the services to perform face detection, text detection, tagging, categorization, and captioning. We do not use custom training sets with these services. We feed in our images and data as-is. We then process, store, and serve whatever comes out.  
 
@@ -162,6 +163,7 @@ Selectors take many forms. By default all of our selectors will conform to the M
 - Meta - means the annotation was generated using machine processing  
 - Microsoft Cognitive Services - means the annotation was generated using machine processing   
 - Mistral - means the annotation was generated using machine processing   
+- Qwen - means the annotation was generated using machine processing   
 
 **model** describes the model used for machine generated annotations  
 
