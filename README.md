@@ -64,30 +64,18 @@ Requests that contain a bad, invalid, or missing API key will return a `401 Unau
 
 ## Images
 
-Some of the datasets include image URLs as part of a block of image information in each record. Our images are served to you by an image server that supports a number of interfaces including [IIIF](http://iiif.io). 
+Some datasets include image URLs as part of a block of image information in each record. Our images are served to you by an image server that supports a number of interfaces including [IIIF](http://iiif.io). 
 
-#### Default service
-
-The default service is accessed through the URLs found in the fields `baseimageurl` and `primaryimageurl`. This service is capable of resizing images on the fly. Append `height` and `width` parameters to image URLs to get an image sized to fit to the supplied dimensions. For example, if you want an image scaled to 150 pixels on the longest side construct the URL as follows.
+The **IIIF image service** is accessed through the data found in the fields `baseimageurl` and `primaryimageurl`. Read more about the capabilities of the IIIF Image API at http://iiif.io/api/image/2.1/. The service we provide adheres to version 2.1 of the API. A typical base URI for an image looks like this:  
 
 ```shell
-https://nrs.harvard.edu/urn-3:HUAM:OCP16703_dynmc?height=150&width=150
-```
-
-#### IIIF 
-
-Some of the museums' data is accessible through [IIIF](http://iiif.io) image and presentation services.   
-
-The **IIIF image service** is accessed through the data found in the field `iiifbaseuri`. Read more about the capabilities of the IIIF Image API at http://iiif.io/api/image/2.1/. The service we provide adheres to version 2.1 of the API. A typical base URI for an image looks like this:  
-
-```shell
-https://ids.lib.harvard.edu/ids/iiif/18483392
+https://nrs.harvard.edu/urn-3:HUAM:799974
 ```
 
 A fully formed IIIF request for a full resolution JPEG version of that same image looks like this:
 
 ```shell
-https://ids.lib.harvard.edu/ids/iiif/18483392/full/full/0/default.jpg
+https://nrs.harvard.edu/urn-3:HUAM:799974/full/full/0/default.jpg
 ```
 
 Please note that URLs for images of objects that have rights restrictions are excluded for most API users. This means images for many 20th and 21st century works of art will not be available to you at the present time. We are working on a solution to this.  
