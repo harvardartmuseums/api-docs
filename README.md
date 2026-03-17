@@ -190,20 +190,19 @@ Find all of the objects in the collection.
 curl -XGET https://api.harvardartmuseums.org/object?apikey=[YOUR APIKEY HERE]
 ```
 
-#### Javascript + jQuery
+#### Javascript
 
 ```javascript
 // Find all of the objects that are paintings and have the word "rabbit" in the title
-var apiEndpointBaseURL = "https://api.harvardartmuseums.org/object";
-var queryString = $.param({
+const params = new URLSearchParams({
     apikey: "YOUR APIKEY HERE",
     title: "rabbit",
     classification: "Paintings"
 });
 
-$.getJSON(apiEndpointBaseURL + "?" + queryString, function(data) {
-   console.log(data); 
-});
+fetch(`https://api.harvardartmuseums.org/object?${params}`)
+    .then(response => response.json())
+    .then(data => console.log(data));
 ```
 
 #### Node.js
