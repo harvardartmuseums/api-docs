@@ -11,13 +11,13 @@ Include one or more of the following parameters to filter the items.
 | Parameter | Value |
 | :--------- | :----- |
 | apikey | YOUR API KEY ***required*** |
-| q | FIELD:VALUE (see [Elasticsearch Query String syntax](https://www.elastic.co/guide/en/elasticsearch/reference/7.17/query-dsl-query-string-query.html) for more options) |
+| q | FIELD:VALUE (see [Elasticsearch Query String syntax](https://www.elastic.co/docs/reference/query-languages/query-dsl/query-dsl-query-string-query) for more options) |
 | size | 0-9+ |
 | page | 0-9+ |
 | sort | FIELD NAME or "random" or "random:[SEED NUMBER]" |
 | sortorder | asc or desc |
 | fields | comma separated list of data fields you want in the output |
-| aggregation |  see [Elasticsearch aggregations](http://www.elastic.co/guide/en/elasticsearch/reference/7.17/search-aggregations.html#_structuring_aggregations) |
+| aggregation |  see [Elasticsearch aggregations](https://www.elastic.co/docs/explore-analyze/query-filter/aggregations) |
 | id | pipe separated list of record IDs |
 | object | OBJECT ID or pipe separated list of OBJECT IDs |
 | type | "edits", "pageviews", "uniquepageviews", "moves", "conservation", "studycenterviews" |

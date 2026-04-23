@@ -108,7 +108,7 @@ More technical documentation and use cases are described in the [IIIF section](h
 
 ## Analysis
 
-Slice and dice the data any way you like at our expense with the `aggregation` parameter. You can ask for aggregations on every resource. They are the best way to gather statistics and analyze the data. The aggregration parameter accepts the structure and syntax of [Elasticsearch aggregations](https://www.elastic.co/guide/en/elasticsearch/reference/7.17/search-aggregations.html#_structuring_aggregations). Output from aggregations will appear as an additional block of data in the response. Learn more about analyizing the data via examples in the [analysis section](https://github.com/harvardartmuseums/api-docs/blob/master/sections/analysis.md) of the API documentation.
+Slice and dice the data any way you like at our expense with the `aggregation` parameter. You can ask for aggregations on every resource. They are the best way to gather statistics and analyze the data. The aggregration parameter accepts the structure and syntax of [Elasticsearch aggregations](https://www.elastic.co/docs/reference/aggregations). Output from aggregations will appear as an additional block of data in the response. Learn more about analyizing the data via examples in the [analysis section](https://github.com/harvardartmuseums/api-docs/blob/master/sections/analysis.md) of the API documentation.
 
 ## Resources that are available
 

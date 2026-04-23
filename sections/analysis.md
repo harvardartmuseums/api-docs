@@ -1,6 +1,6 @@
 # Analysis
 
-The aggregation parameter provides a method for analyzing the museums data on our end so you have to do less work to use it on yours. You can ask for aggregations on every resource. The aggregration parameter accepts the structure and syntax of [Elasticsearch aggregations](https://www.elastic.co/guide/en/elasticsearch/reference/7.17/search-aggregations.html#_structuring_aggregations). A typical example looks like this.
+The aggregation parameter provides a method for analyzing the museums data on our end so you have to do less work to use it on yours. You can ask for aggregations on every resource. The aggregration parameter accepts the structure and syntax of [Elasticsearch aggregations](https://www.elastic.co/docs/explore-analyze/query-filter/aggregations). A typical example looks like this.
 
 ```json
 aggregation={"by_division":{"terms":{"field":"division"}}}
