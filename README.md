@@ -140,9 +140,7 @@ Several primary museum resources are accessible in this API. They include the fo
 
 ## Experimental data
 
-There is a small amount of experimental data available at this endpoint.
-
-* [Experimental](https://github.com/harvardartmuseums/api-docs/blob/master/sections/experimental.md)
+The experimental data graduated. Refer to the [Annotation](https://github.com/harvardartmuseums/api-docs/blob/master/sections/annotation.md) endpoint.  
 
 ## Learning the API
 
