@@ -61,35 +61,34 @@ Include one or more of the following parameters to filter the items.
     },
     "records": [
         {
-            "raw": {
-                "id": "ai_4Qjv5PTH",
-                "name": "modern",
-                "value": 0.88892984,
-                "app_id": "main"
-            },
-            "body": "modern",
-            "createdate": "2018-03-22T21:30:54-04:00",
+            "id": 1798459,
+            "imageid": 371197,
+            "annotationid": 1798459,
             "fileid": 359384,
+            "target": "https://nrs.harvard.edu/urn-3:HUAM:DDC110593_dynmc/full/full/0/default.jpg",
+            "body": "modern",
+            "source": "Clarifai",
+            "feature": "full",
             "confidence": 0.88893,
             "type": "tag",
-            "imageid": 371197,
-            "id": 1798459,
-            "lastupdate": "2018-10-30T14:33:18-0400",
-            "annotationid": 1798459,
-            "source": "Clarifai",
+            "raw": {
+                "name": "modern",
+                "app_id": "main",
+                "value": 0.88892984,
+                "id": "ai_4Qjv5PTH"
+            },
+            "createdate": "2018-03-22T21:30:54+00:00",
+            "accesslevel": 1,
+            "model": "unknown",
             "selectors": [
                 {
-                    "value": "xywh=0,0,1024,916",
-                    "type": "FragmentSelector"
+                    "type": "FragmentSelector",
+                    "value": "xywh=0,0,1024,916"
                 }
-            ],
-            "target": "https://ids.lib.harvard.edu/ids/iiif/15865142/full/full/0/native.jpg",
-            "feature": "full",
-            "idsid": 15865142
+            ]
         },
         {
             "raw": {
-                "annotationFragment": "xywh=171,458,33,29",
                 "description": "A",
                 "boundingPoly": {
                     "vertices": [
@@ -110,8 +109,7 @@ Include one or more of the following parameters to filter the items.
                             "x": 171
                         }
                     ]
-                },
-                "iiifTextImageURL": "https://ids.lib.harvard.edu/ids/iiif/5021442/171,458,33,29/full/0/native.jpg"
+                }
             },
             "body": "A",
             "createdate": "2018-06-27T22:53:39-04:00",
@@ -129,9 +127,8 @@ Include one or more of the following parameters to filter the items.
                     "type": "FragmentSelector"
                 }
             ],
-            "target": "https://ids.lib.harvard.edu/ids/iiif/5021442/full/full/0/native.jpg",
-            "feature": "region",
-            "idsid": 5021442
+            "target": "https://nrs.harvard.edu/urn-3:huam:INV102590_prdwork/full/full/0/default.jpg",
+            "feature": "region"
         }
     ]
 }
@@ -191,11 +188,11 @@ Selectors take many forms. By default all of our selectors will conform to the M
 
 ```json
 {
+    "id": 9329,
     "imageid": 441393,
     "annotationid": 9329,
     "fileid": 4967858,
-    "idsid": 400098359,
-    "target": "https://ids.lib.harvard.edu/ids/iiif/400098359/full/full/0/native.jpg",
+    "target": "https://nrs.harvard.edu/urn-3:HUAM:755630/full/full/0/default.jpg",
     "body": "Düsseldorf",
     "source": "Google Vision",
     "feature": "region",
@@ -224,14 +221,14 @@ Selectors take many forms. By default all of our selectors will conform to the M
             ]
         }
     },
-    "createdate": "2018-02-09T17:10:56-05:00",
-    "id": 9329,
+    "createdate": "2018-02-09T17:10:56+00:00",
+    "accesslevel": 1,
+    "model": "unknown",
     "selectors": [
         {
             "type": "FragmentSelector",
             "value": "xywh=1068,2005,268,77"
         }
-    ],
-    "lastupdate": "2018-10-30T13:09:18-0400"
+    ]
 }
 ```

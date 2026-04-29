@@ -109,7 +109,6 @@ Include one or more of the following parameters to filter the items.
                     "date": "2010-11-17",
                     "copyright": null,
                     "imageid": 400027,
-                    "idsid": 20480582,
                     "format": "image/jpeg",
                     "caption": null,
                     "description": null,
@@ -119,7 +118,6 @@ Include one or more of the following parameters to filter the items.
                     "baseimageurl": "https://nrs.harvard.edu/urn-3:huam:GS04997_dynmc",
                     "alttext": null,
                     "width": 1024,
-                    "iiifbaseuri": "https://ids.lib.harvard.edu/ids/iiif/20480582",
                     "height": 712
                 }
             ],
@@ -167,7 +165,6 @@ Include one or more of the following parameters to filter the items.
             "date": "2003-05-06",
             "copyright": "President and Fellows of Harvard College",
             "imageid": 54323,
-            "idsid": 17389005,
             "format": "image/jpeg",
             "caption": "interior",
             "description": null,
@@ -177,7 +174,6 @@ Include one or more of the following parameters to filter the items.
             "baseimageurl": "https://nrs.harvard.edu/urn-3:HUAM:61350_dynmc",
             "alttext": null,
             "width": 2382,
-            "iiifbaseuri": "https://ids.lib.harvard.edu/ids/iiif/17389005",
             "height": 2400
         }
     ],

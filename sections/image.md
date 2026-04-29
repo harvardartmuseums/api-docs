@@ -42,12 +42,10 @@ Include one or more of the following parameters to filter the items.
             "id": 130722,
             "imageid": 130722,
             "fileid": 4880475,
-            "idsid": 43183146,
             "caption": null,
             "alttext": null,
             "description": null,
             "copyright": "President and Fellows of Harvard College",
-            "iiifbaseuri": "https://ids.lib.harvard.edu/ids/iiif/43183146",
             "baseimageurl": "https://nrs.harvard.edu/urn-3:HUAM:48875_dynmc",
             "renditionnumber": "48875",
             "date": "1995-05-01",
@@ -62,12 +60,10 @@ Include one or more of the following parameters to filter the items.
             "id": 441758,
             "imageid": 441758,
             "fileid": 4968319,
-            "idsid": 400107499,
             "caption": null,
             "alttext": null,
             "description": null,
             "copyright": "President and Fellows of Harvard College",
-            "iiifbaseuri": "https://ids.lib.harvard.edu/ids/iiif/400107499",
             "baseimageurl": "https://nrs.harvard.edu/urn-3:HUAM:755710",
             "renditionnumber": "755710",
             "date": "2014-06-02",
@@ -92,8 +88,6 @@ A record represents the concept of an image. An image can be represented by one 
 
 **imageid** describes the numeric unique identifier for a record    
 
-**idsid** describes the unique numeric identifier for a file in the Harvard Digital Repository  
-
 **fileid** describes the unique numeric identifier for a file  
 
 **accesslevel** describes the accessibility of a record  
@@ -104,9 +98,7 @@ A record represents the concept of an image. An image can be represented by one 
 
 **date** describes either the date of creation of the image record in our collections management system OR the date of creation of the image itself (this is very fuzzy data)  
 
-**baseimageurl** describes the primary internet address for the image and is delivered through our [default image delivery service](https://github.com/harvardartmuseums/api-docs#default-service)  
-
-**iiifbaseuri** describes the root of the address for accessing the image through our [IIIF image delivery service](https://github.com/harvardartmuseums/api-docs#iiif)  
+**baseimageurl** describes the primary internet address for the image delivered via a [IIIF image delivery service](https://github.com/harvardartmuseums/api-docs#iiif)  
 
 **format** describes the [media type/MIME type](https://www.iana.org/assignments/media-types/media-types.xhtml) of the image (typically image/jpeg)  
 
@@ -140,12 +132,10 @@ An image may have zero or more colors. The color of each pixel is read and then 
     "id": 465905,
     "imageid": 465905,
     "fileid": 4997146,
-    "idsid": 423290977,
     "caption": null,
     "alttext": null,
     "description": null,
     "copyright": "President and Fellows of Harvard College",
-    "iiifbaseuri": "https://ids.lib.harvard.edu/ids/iiif/423290977",
     "baseimageurl": "https://nrs.harvard.edu/urn-3:HUAM:760994",
     "renditionnumber": "760994",
     "date": "2016-08-04",

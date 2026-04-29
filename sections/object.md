@@ -201,14 +201,12 @@ This field is used to record the latest year expressed in the dated field. Most 
 An object may have zero or more images. As of March 2016, 91% of our objects have at least one image.  
 
 `alttext` - is a short description of the most relevant, prominent features or general characteristics of the image  
-`baseimageurl` - is the primary internet address for the image and is delivered through our [default image delivery service](https://github.com/harvardartmuseums/api-docs#default-service)  
+`baseimageurl` describes the primary internet address for the image delivered via a [IIIF image delivery service](https://github.com/harvardartmuseums/api-docs#iiif)    
 `copyright` - is the copyright for the image  
 `description` - is a long description of the contents of the image    
 `displayorder` - is the preferred sequence number for the image within a group of images in the context of the object record; sequencing is especially important for manuscripts and books; an image with displayorder = 1 can be thought of as the current canonical image for the object  
 `format` - is the [media type/MIME type](https://www.iana.org/assignments/media-types/media-types.xhtml) of the image (typically image/jpeg)  
 `height` - is the height of the image in pixels  
-`idsid` - is the unique numeric identifier for the image in the Harvard Digital Repository    
-`iiifbaseuri` - is the root of the address for accessing the image through our [IIIF image delivery service](https://github.com/harvardartmuseums/api-docs#iiif)  
 `imageid` - is the numeric unique identifier for the image which can be used to construct a URI to dereference it 
 `publiccaption` - is a descriptive note about the content of the media often listing information about the view (recto, verso, profile, 3/4 view)  
 `renditionnumber` - is the unique name for the image; this often takes the form of a prefix + serial number; the prefix can provide hints as to when, why, and how we made the image  
@@ -445,7 +443,6 @@ An object many have zero or more of these links. The field structure of seeAlso 
             "date": "2013-05-28",
             "copyright": "President and Fellows of Harvard College",
             "imageid": 427747,
-            "idsid": 46585832,
             "format": "image/jpeg",
             "description": null,
             "technique": null,
@@ -455,14 +452,12 @@ An object many have zero or more of these links. The field structure of seeAlso 
             "alttext": null,
             "width": 1909,
             "publiccaption": null,
-            "iiifbaseuri": "https://ids.lib.harvard.edu/ids/iiif/46585832",
             "height": 2550
         },
         {
             "date": "2014-06-05",
             "copyright": "President and Fellows of Harvard College",
             "imageid": 440789,
-            "idsid": 400097623,
             "format": "image/jpeg",
             "description": null,
             "technique": null,
@@ -472,14 +467,12 @@ An object many have zero or more of these links. The field structure of seeAlso 
             "alttext": null,
             "width": 2351,
             "publiccaption": null,
-            "iiifbaseuri": "https://ids.lib.harvard.edu/ids/iiif/400097623",
             "height": 2450
         },
         {
             "date": "2013-05-28",
             "copyright": "President and Fellows of Harvard College",
             "imageid": 427746,
-            "idsid": 47334808,
             "format": "image/jpeg",
             "description": null,
             "technique": null,
@@ -489,14 +482,12 @@ An object many have zero or more of these links. The field structure of seeAlso 
             "alttext": null,
             "width": 685,
             "publiccaption": null,
-            "iiifbaseuri": "https://ids.lib.harvard.edu/ids/iiif/47334808",
             "height": 1024
         },
         {
             "date": "2008-02-19",
             "copyright": "President and Fellows of Harvard College",
             "imageid": 291689,
-            "idsid": 8385158,
             "format": "image/jpeg",
             "description": null,
             "technique": null,
@@ -506,14 +497,12 @@ An object many have zero or more of these links. The field structure of seeAlso 
             "alttext": null,
             "width": 827,
             "publiccaption": null,
-            "iiifbaseuri": "https://ids.lib.harvard.edu/ids/iiif/8385158",
             "height": 1024
         },
         {
             "date": null,
             "copyright": "President and Fellows of Harvard College",
             "imageid": 14371,
-            "idsid": 43182772,
             "format": "image/jpeg",
             "description": null,
             "technique": "Super XX",
@@ -523,7 +512,6 @@ An object many have zero or more of these links. The field structure of seeAlso 
             "alttext": null,
             "width": 842,
             "publiccaption": null,
-            "iiifbaseuri": "https://ids.lib.harvard.edu/ids/iiif/43182772",
             "height": 1024
         }
     ],
