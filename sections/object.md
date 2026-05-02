@@ -20,11 +20,13 @@ Include one or more of the following parameters to filter the items.
 | aggregation |  see [Elasticsearch aggregations](https://www.elastic.co/docs/explore-analyze/query-filter/aggregations) |
 | id | pipe separated list of record IDs |
 | hasimage | 0 or 1 |
+| audio | AUDIO ID or pipe separated list of AUDIO IDs or AUDIO DESCRIPTION or "any" or "none" |
 | century | CENTURY ID or pipe separated list of CENTURY IDs or CENTURY NAME or pipe separated list of CENTURY NAMES or "any"  |
 | classification | CLASSIFICATION ID or pipe separated list of CLASSIFICATION IDs or CLASSIFICATION NAME or pipe separated list of CLASSIFICATION NAMES or "any" |
 | color | URL encoded COLOR or pipe separated list of URL encoded colors or "any" |
 | culture | CULTURE ID or pipe separated list of CULTURE IDs or CULTURE NAME or pipe separated list of CULTURE NAMES or "any" |
 | exhibition | EXHIBITION ID or pipe separated list of EXHIBITION IDs or EXHIBITION TITLE  or "any" or "none" |
+| image | IMAGE ID or pipe separated list of IMAGE IDs or RENDITION NUMBER or "any" or "none" |
 | gallery | GALLERY NUMBER or pipe separated list of gallery numbers or "any" or "none" |
 | group | GROUP ID or pipe separated list of GROUP IDs or GROUP NAME or "any" or "none" |
 | keyword | a keyword search string; this parameter searches object titles, artists, description, classification, culture, worktype, medium terms, provenance, and creditline |
@@ -34,13 +36,14 @@ Include one or more of the following parameters to filter the items.
 | person | PERSON ID or pipe separated list of PERSON IDs or PERSON NAME or "any" or "none" |
 | place | PLACE ID or pipe separated list of PLACE IDs or PLACE NAME or "any" or "none" |
 | publication | PUBLICATION ID or pipe separated list of PUBLICATION IDs or PUBLICATION TITLE or "any" or "none" |
-| relatedto | OBJECT ID |
+| relatedto | OBJECT ID or "any" or "none" |
 | support | SUPPORT ID or pipe separated list of SUPPORT IDs or SUPPORT NAME or pipe separated list of SUPPORT NAMES or "any" |
 | technique | TECHNIQUE ID or pipe separated list of TECHNIQUE IDs or TECHNIQUE NAME or pipe separated list of TECHNIQUE NAMES or "any" |
 | title | 1 or more terms |
 | exact_title | EXACT URL ENCODED TITLE |
+| video | VIDEO ID or pipe separated list of VIDEO IDs or VIDEO DESCRIPTION or "any" or "none" |
 | worktype | WORKTYPE ID or pipe separated list of WORKTYPE IDs or WORKTYPE NAME or pipe separated list of WORKTYPE NAMES or "any" |
-| yearmade | four digit year |
+| yearmade | four digit year or dash separated begin and end year to search a range of dates |
 
 
 #### Examples
@@ -53,6 +56,9 @@ Include one or more of the following parameters to filter the items.
 >   
 > https://api.harvardartmuseums.org/object?classification=Prints&q=totalpageviews:1  
 > Finds all of the objects classified as prints that have been viewed only once on the Art Museums main public website.
+> 
+> https://api.harvardartmuseums.org/object?yearmade=2020-2026  
+> Finds all of the objects created in the years 2020 through 2026.
 
 #### Response
 
