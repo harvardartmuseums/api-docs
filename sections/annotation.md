@@ -9,7 +9,7 @@ Annotations come from a number of different sources. Some of the annotations are
 - [Amazon Nova](https://aws.amazon.com/ai/generative-ai/nova/)
 - [Amazon Rekognition](https://aws.amazon.com/rekognition/)
 - [Anthropic Claude on AWS Bedrock](https://aws.amazon.com/bedrock/claude/)
-- [Azure OpenAI Service](https://azure.microsoft.com/en-us/products/ai-services/openai-service)
+- [OpenAI on Azure](https://azure.microsoft.com/en-us/products/ai-services/openai-service)
 - [Clarifai](https://clarifai.com/)
 - [Google Gemini](https://cloud.google.com/ai/gemini/)
 - [Google Vision](https://cloud.google.com/vision/)
@@ -17,7 +17,9 @@ Annotations come from a number of different sources. Some of the annotations are
 - [Meta Llama on AWS Bedrock](https://aws.amazon.com/bedrock/llama/)
 - [Microsoft Cognitive Services](https://www.microsoft.com/cognitive-services)
 - [Mistral Pixtral on AWS Bedrock](https://aws.amazon.com/bedrock/mistral/)
-- [Qwen on Hyperbolic](https://qwenlm.github.io/)
+- [Moonshot AI on AWS Bedrock](https://docs.aws.amazon.com/bedrock/latest/userguide/model-cards-moonshot-ai.html)
+- [Qwen on Hyperbolic/AWS Bedrock](https://qwenlm.github.io/)
+- [Writer on AWS Bedrock](https://aws.amazon.com/bedrock/writer/)
 
 We use the services to perform face detection, text detection, tagging, categorization, and captioning. We do not use custom training sets with these services. We feed in our images and data as-is. We then process, store, and serve whatever comes out.  
 
@@ -151,7 +153,7 @@ Selectors take many forms. By default all of our selectors will conform to the M
 - Amazon - means the annotation was generated using machine processing  
 - Anthropic - means the annotation was generated using machine processing  
 - AWS Rekognition - means the annotation was generated using machine processing
-- Azure OpenAI Service - means the annotation was generated using machine processing  
+- OpenAI - means the annotation was generated using machine processing  
 - Clarifai - means the annotation was generated using machine processing   
 - Google Gemini - means the annotation was generated using machine processing  
 - Google Vision - means the annotation was generated using machine processing  
@@ -160,7 +162,9 @@ Selectors take many forms. By default all of our selectors will conform to the M
 - Meta - means the annotation was generated using machine processing  
 - Microsoft Cognitive Services - means the annotation was generated using machine processing   
 - Mistral - means the annotation was generated using machine processing   
+- Moonshot AI - means the annotation was generated using machine processing   
 - Qwen - means the annotation was generated using machine processing   
+- Writer - means the annotation was generated using machine processing   
 
 **model** describes the model used for machine generated annotations  
 
