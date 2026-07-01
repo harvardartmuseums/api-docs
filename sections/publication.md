@@ -22,6 +22,8 @@ Include one or more of the following parameters to filter the items.
 | hasimage | 0 or 1 |
 | keyword | a keyword search string; this parameter searches publication titles, description, and people names related to the creation of the publication |
 | person | PERSON ID or pipe separated list of PERSON IDs or PERSON NAME or "any" or "none" |
+| group | GROUP ID or pipe separated list of GROUP IDs or GROUP NAME or "any" or "none" |
+
 
 #### Examples
 
