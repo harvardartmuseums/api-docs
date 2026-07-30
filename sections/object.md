@@ -17,6 +17,7 @@ Include one or more of the following parameters to filter the items.
 | sort | FIELD NAME or NAMED SORT or "random" or "random:[SEED NUMBER]" |
 | sortorder | asc or desc |
 | fields | comma separated list of data fields you want in the output |
+| view | NAMED VIEW — returns a predefined subset of fields; overridden by the fields parameter |
 | aggregation |  see [Elasticsearch aggregations](https://www.elastic.co/docs/explore-analyze/query-filter/aggregations) |
 | id | pipe separated list of record IDs |
 | hasimage | 0 or 1 |
@@ -66,6 +67,18 @@ In addition to sorting by any field name, the following named sorts are availabl
 | lastupdate | Sort by when the record was last modified and republished | lastupdate |
 | accession | Sort by the year the object was acquired | accessionyear |
 | rank | Sort by the computed inactivity score (lower rank = less active) | rank |
+
+#### Named views
+
+Named views return a predefined subset of fields, useful for reducing response size when you only need specific aspects of the data. The `fields` parameter takes precedence over `view` if both are specified.
+
+| View name | Description | Fields included |
+| :--------- | :---------- | :-------------- |
+| core | Citation-style record | classification, dated, objectid, objectnumber, title, people, worktypes, places, period, culture, medium, technique, dimensions |
+| stats | Numeric/analytics fields | objectid, objectnumber, title, totalpageviews, totaluniquepageviews, rank, imagecount, colorcount, mediacount, exhibitioncount, publicationcount, peoplecount, relatedcount, groupcount, accessionyear, datebegin, dateend |
+| images | Visual gallery data | objectid, objectnumber, title, primaryimageurl, images, dated, classification, people |
+| provenance | Ownership history | objectid, objectnumber, title, provenance, creditline, accessionmethod, accessionyear, department, division |
+| minimal | Lightest possible | objectid, objectnumber, title, classification, dated |
 
 
 #### Examples
@@ -120,6 +133,12 @@ In addition to sorting by any field name, the following named sorts are availabl
 >
 > https://api.harvardartmuseums.org/object?classification=Paintings&sort=accession&sortorder=desc  
 > Returns paintings sorted by most recently accessioned first.
+>
+> https://api.harvardartmuseums.org/object?view=minimal&size=100  
+> Returns 100 objects with only the minimal fields (objectid, objectnumber, title, classification, dated).
+>
+> https://api.harvardartmuseums.org/object?view=stats&sort=pageviews&sortorder=desc  
+> Returns objects sorted by most viewed, with only the stats fields in the response.
 
 #### Response
 
