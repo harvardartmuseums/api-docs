@@ -20,16 +20,22 @@ Include one or more of the following parameters to filter the items.
 | aggregation |  see [Elasticsearch aggregations](https://www.elastic.co/docs/explore-analyze/query-filter/aggregations) |
 | id | pipe separated list of record IDs |
 | hasimage | 0 or 1 |
+| accessionmethod | ACCESSION METHOD or pipe separated list of ACCESSION METHODS or "any" or "none" |
+| after | YEAR (filters on datebegin by default) or FIELD:YEAR where FIELD is a date/year field such as accessionyear, datebegin, or dateend |
 | audio | AUDIO ID or pipe separated list of AUDIO IDs or AUDIO DESCRIPTION or "any" or "none" |
+| before | YEAR (filters on dateend by default) or FIELD:YEAR where FIELD is a date/year field such as accessionyear, datebegin, or dateend |
 | century | CENTURY ID or pipe separated list of CENTURY IDs or CENTURY NAME or pipe separated list of CENTURY NAMES or "any" or "none"  |
 | classification | CLASSIFICATION ID or pipe separated list of CLASSIFICATION IDs or CLASSIFICATION NAME or pipe separated list of CLASSIFICATION NAMES or "any" or "none" |
-| color | URL encoded COLOR or pipe separated list of URL encoded colors or "any" |
+| color | URL encoded COLOR or pipe separated list of URL encoded colors or "any" or "none" |
 | culture | CULTURE ID or pipe separated list of CULTURE IDs or CULTURE NAME or pipe separated list of CULTURE NAMES or "any" or "none" |
+| department | DEPARTMENT NAME or pipe separated list of DEPARTMENT NAMES or "any" or "none" |
+| division | DIVISION NAME or pipe separated list of DIVISION NAMES or "any" or "none" |
 | exhibition | EXHIBITION ID or pipe separated list of EXHIBITION IDs or EXHIBITION TITLE  or "any" or "none" |
 | image | IMAGE ID or pipe separated list of IMAGE IDs or RENDITION NUMBER or "any" or "none" |
 | gallery | GALLERY NUMBER or pipe separated list of gallery numbers or "any" or "none" |
 | group | GROUP ID or pipe separated list of GROUP IDs or GROUP NAME or "any" or "none" |
-| keyword | a keyword search string; this parameter searches object titles, artists, description, classification, culture, period, worktype, medium terms, support terms, technique, provenance, and creditline |
+| keyword | a keyword search string; searches titles, artists, description, classification, culture, period, worktype, medium terms, support terms, technique, provenance, creditline, medium, commentary, label text, object number, contextual text, exhibition titles, and marks |
+| match | "all" or "any"; controls how many keyword terms must match; default is "all" (every term required); use "any" for exploratory natural language queries where matching at least one term is sufficient |
 | medium | MEDIUM ID or pipe separated list of MEDIUM IDs or MEDIUM NAME or pipe separated list of MEDIUM NAMES or "any" or "none" |
 | objectnumber | 1 or more terms |
 | period | PERIOD or pipe separated list of periods or "any" or "none" |
@@ -37,10 +43,14 @@ Include one or more of the following parameters to filter the items.
 | place | PLACE ID or pipe separated list of PLACE IDs or PLACE NAME or "any" or "none" |
 | publication | PUBLICATION ID or pipe separated list of PUBLICATION IDs or PUBLICATION TITLE or "any" or "none" |
 | relatedto | OBJECT ID or "any" or "none" |
+| role | ROLE NAME or pipe separated list of ROLE NAMES or "any" or "none" |
+| state | STATE DESCRIPTION or pipe separated list of STATE DESCRIPTIONS or "any" or "none" |
+| style | STYLE NAME or pipe separated list of STYLE NAMES or "any" or "none" |
 | support | SUPPORT ID or pipe separated list of SUPPORT IDs or SUPPORT NAME or pipe separated list of SUPPORT NAMES or "any" or "none" |
 | technique | TECHNIQUE ID or pipe separated list of TECHNIQUE IDs or TECHNIQUE NAME or pipe separated list of TECHNIQUE NAMES or "any" |
 | title | 1 or more terms |
 | exact_title | EXACT URL ENCODED TITLE |
+| verificationlevel | VERIFICATION LEVEL NUMBER or pipe separated list of numbers or "any" or "none" |
 | video | VIDEO ID or pipe separated list of VIDEO IDs or VIDEO DESCRIPTION or "any" or "none" |
 | worktype | WORKTYPE ID or pipe separated list of WORKTYPE IDs or WORKTYPE NAME or pipe separated list of WORKTYPE NAMES or "any" or "none" |
 | yearmade | four digit year or dash separated begin and end year to search a range of dates |
@@ -59,6 +69,36 @@ Include one or more of the following parameters to filter the items.
 > 
 > https://api.harvardartmuseums.org/object?yearmade=2020-2026  
 > Finds all of the objects created in the years 2020 through 2026.
+>
+> https://api.harvardartmuseums.org/object?keyword=paintings+van+gogh+shoe&match=any  
+> Finds objects matching any of the terms "paintings", "shoe", "van", or "gogh". Results matching more terms rank higher.
+>
+> https://api.harvardartmuseums.org/object?division=Asian+and+Mediterranean+Art  
+> Finds all objects in the Asian and Mediterranean Art division.
+>
+> https://api.harvardartmuseums.org/object?verificationlevel=4  
+> Finds all objects with the highest verification level (Best).
+>
+> https://api.harvardartmuseums.org/object?accessionmethod=Gift  
+> Finds all objects that were gifted to the museums.
+>
+> https://api.harvardartmuseums.org/object?department=Department+of+Ancient+and+Byzantine+Art+%26+Numismatics  
+> Finds all objects in the Department of Ancient and Byzantine Art & Numismatics.
+>
+> https://api.harvardartmuseums.org/object?after=accessionyear:2020  
+> Finds all objects accessioned in or after the year 2020.
+>
+> https://api.harvardartmuseums.org/object?before=dateend:1800  
+> Finds all objects whose creation ended before 1800.
+>
+> https://api.harvardartmuseums.org/object?after=1900&before=1950  
+> Finds all objects created between 1900 and 1950 (uses datebegin for after, dateend for before by default).
+>
+> https://api.harvardartmuseums.org/object?role=Artist  
+> Finds all objects where someone has the role of "Artist".
+>
+> https://api.harvardartmuseums.org/object?style=Impressionist  
+> Finds all objects with the style "Impressionist".
 
 #### Response
 
