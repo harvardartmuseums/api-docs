@@ -21,28 +21,28 @@ Include one or more of the following parameters to filter the items.
 | id | pipe separated list of record IDs |
 | hasimage | 0 or 1 |
 | audio | AUDIO ID or pipe separated list of AUDIO IDs or AUDIO DESCRIPTION or "any" or "none" |
-| century | CENTURY ID or pipe separated list of CENTURY IDs or CENTURY NAME or pipe separated list of CENTURY NAMES or "any"  |
-| classification | CLASSIFICATION ID or pipe separated list of CLASSIFICATION IDs or CLASSIFICATION NAME or pipe separated list of CLASSIFICATION NAMES or "any" |
+| century | CENTURY ID or pipe separated list of CENTURY IDs or CENTURY NAME or pipe separated list of CENTURY NAMES or "any" or "none"  |
+| classification | CLASSIFICATION ID or pipe separated list of CLASSIFICATION IDs or CLASSIFICATION NAME or pipe separated list of CLASSIFICATION NAMES or "any" or "none" |
 | color | URL encoded COLOR or pipe separated list of URL encoded colors or "any" |
-| culture | CULTURE ID or pipe separated list of CULTURE IDs or CULTURE NAME or pipe separated list of CULTURE NAMES or "any" |
+| culture | CULTURE ID or pipe separated list of CULTURE IDs or CULTURE NAME or pipe separated list of CULTURE NAMES or "any" or "none" |
 | exhibition | EXHIBITION ID or pipe separated list of EXHIBITION IDs or EXHIBITION TITLE  or "any" or "none" |
 | image | IMAGE ID or pipe separated list of IMAGE IDs or RENDITION NUMBER or "any" or "none" |
 | gallery | GALLERY NUMBER or pipe separated list of gallery numbers or "any" or "none" |
 | group | GROUP ID or pipe separated list of GROUP IDs or GROUP NAME or "any" or "none" |
-| keyword | a keyword search string; this parameter searches object titles, artists, description, classification, culture, worktype, medium terms, provenance, and creditline |
-| medium | MEDIUM ID or pipe separated list of MEDIUM IDs or MEDIUM NAME or pipe separated list of MEDIUM NAMES or "any" |
+| keyword | a keyword search string; this parameter searches object titles, artists, description, classification, culture, period, worktype, medium terms, support terms, technique, provenance, and creditline |
+| medium | MEDIUM ID or pipe separated list of MEDIUM IDs or MEDIUM NAME or pipe separated list of MEDIUM NAMES or "any" or "none" |
 | objectnumber | 1 or more terms |
-| period | PERIOD or pipe separated list of periods or "any" |
+| period | PERIOD or pipe separated list of periods or "any" or "none" |
 | person | PERSON ID or pipe separated list of PERSON IDs or PERSON NAME or "any" or "none" |
 | place | PLACE ID or pipe separated list of PLACE IDs or PLACE NAME or "any" or "none" |
 | publication | PUBLICATION ID or pipe separated list of PUBLICATION IDs or PUBLICATION TITLE or "any" or "none" |
 | relatedto | OBJECT ID or "any" or "none" |
-| support | SUPPORT ID or pipe separated list of SUPPORT IDs or SUPPORT NAME or pipe separated list of SUPPORT NAMES or "any" |
+| support | SUPPORT ID or pipe separated list of SUPPORT IDs or SUPPORT NAME or pipe separated list of SUPPORT NAMES or "any" or "none" |
 | technique | TECHNIQUE ID or pipe separated list of TECHNIQUE IDs or TECHNIQUE NAME or pipe separated list of TECHNIQUE NAMES or "any" |
 | title | 1 or more terms |
 | exact_title | EXACT URL ENCODED TITLE |
 | video | VIDEO ID or pipe separated list of VIDEO IDs or VIDEO DESCRIPTION or "any" or "none" |
-| worktype | WORKTYPE ID or pipe separated list of WORKTYPE IDs or WORKTYPE NAME or pipe separated list of WORKTYPE NAMES or "any" |
+| worktype | WORKTYPE ID or pipe separated list of WORKTYPE IDs or WORKTYPE NAME or pipe separated list of WORKTYPE NAMES or "any" or "none" |
 | yearmade | four digit year or dash separated begin and end year to search a range of dates |
 
 
