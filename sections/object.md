@@ -14,7 +14,7 @@ Include one or more of the following parameters to filter the items.
 | q | FIELD:VALUE (see [Elasticsearch Query String syntax](https://www.elastic.co/docs/reference/query-languages/query-dsl/query-dsl-query-string-query) for more options) |
 | size | 0-9+ |
 | page | 0-9+ |
-| sort | FIELD NAME or "random" or "random:[SEED NUMBER]" |
+| sort | FIELD NAME or NAMED SORT or "random" or "random:[SEED NUMBER]" |
 | sortorder | asc or desc |
 | fields | comma separated list of data fields you want in the output |
 | aggregation |  see [Elasticsearch aggregations](https://www.elastic.co/docs/explore-analyze/query-filter/aggregations) |
@@ -54,6 +54,18 @@ Include one or more of the following parameters to filter the items.
 | video | VIDEO ID or pipe separated list of VIDEO IDs or VIDEO DESCRIPTION or "any" or "none" |
 | worktype | WORKTYPE ID or pipe separated list of WORKTYPE IDs or WORKTYPE NAME or pipe separated list of WORKTYPE NAMES or "any" or "none" |
 | yearmade | four digit year or dash separated begin and end year to search a range of dates |
+
+#### Named sorts
+
+In addition to sorting by any field name, the following named sorts are available. Named sorts map a logical name to the appropriate underlying field(s).
+
+| Sort name | Description | Field |
+| :--------- | :---------- | :---- |
+| dated | Sort by object creation date. Ascending uses datebegin; descending uses dateend. | datebegin / dateend |
+| pageviews | Sort by total page views on the museums website (since 2009) | totalpageviews |
+| lastupdate | Sort by when the record was last modified and republished | lastupdate |
+| accession | Sort by the year the object was acquired | accessionyear |
+| rank | Sort by the computed inactivity score (lower rank = less active) | rank |
 
 
 #### Examples
@@ -99,6 +111,15 @@ Include one or more of the following parameters to filter the items.
 >
 > https://api.harvardartmuseums.org/object?style=Impressionist  
 > Finds all objects with the style "Impressionist".
+>
+> https://api.harvardartmuseums.org/object?sort=dated&sortorder=desc  
+> Returns objects sorted by most recently created (by dateend) first.
+>
+> https://api.harvardartmuseums.org/object?sort=pageviews&sortorder=desc  
+> Returns objects sorted by most viewed first.
+>
+> https://api.harvardartmuseums.org/object?classification=Paintings&sort=accession&sortorder=desc  
+> Returns paintings sorted by most recently accessioned first.
 
 #### Response
 
