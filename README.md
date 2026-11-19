@@ -98,6 +98,24 @@ Add `&highlight=1` to any request to get a `_highlight` block on each record sho
 
 Read the [search section](https://github.com/harvardartmuseums/api-docs/blob/master/sections/search.md) for the full details, including the advanced query syntax that `keyword` accepts.
 
+## Keeping data in sync
+
+Every record carries an `md5` fingerprint and a `lastupdate` timestamp so you can keep a local copy in step with ours without refetching everything.
+
+If you are tracking a known set of records, ask for their fingerprints and compare them with the ones you stored last time. Anything that differs is worth refetching:
+
+```shell
+https://api.harvardartmuseums.org/object?id=299843|230942|55320&fields=objectid,md5&size=3
+```
+
+If you are following a whole resource rather than a fixed set, ask for what changed since your last run:
+
+```shell
+https://api.harvardartmuseums.org/object?q=lastupdate:[2026-11-01 TO *]&sort=lastupdate
+```
+
+A record is only republished when its fingerprint changes, so the two fields move together. `lastupdate` is empty until a record changes for the first time. Fingerprints are computed on our side and cannot be recreated from the data you receive. The [sync section](https://github.com/harvardartmuseums/api-docs/blob/master/sections/sync.md) covers both fields in full, including what happens when the data is rebuilt.
+
 ## Errors
 
 Requests that contain a bad, invalid, or missing API key will return a `401 Unauthorized` error. Remember every request requires the `apikey` parameter with a valid key. See the very top of this document for [more information about keys](https://github.com/harvardartmuseums/api-docs#access-to-the-api). Requests for resources other than those listed in the [resources section below](https://github.com/harvardartmuseums/api-docs#resources-that-are-available) will return a `404 Not Found` error.  
@@ -179,7 +197,11 @@ Several primary museum resources are accessible in this API. They include the fo
 * [Annotation](https://github.com/harvardartmuseums/api-docs/blob/master/sections/annotation.md)
 * [Info](https://github.com/harvardartmuseums/api-docs/blob/master/sections/info.md)
 
-Three further sections describe topics that span every resource: [Search](https://github.com/harvardartmuseums/api-docs/blob/master/sections/search.md), [Analysis](https://github.com/harvardartmuseums/api-docs/blob/master/sections/analysis.md), and [IIIF](https://github.com/harvardartmuseums/api-docs/blob/master/sections/iiif.md).
+Four further sections describe topics that span every resource: 
+* [Search](https://github.com/harvardartmuseums/api-docs/blob/master/sections/search.md)
+* [Sync](https://github.com/harvardartmuseums/api-docs/blob/master/sections/sync.md)
+* [Analysis](https://github.com/harvardartmuseums/api-docs/blob/master/sections/analysis.md)
+* [IIIF](https://github.com/harvardartmuseums/api-docs/blob/master/sections/iiif.md)
 
 ## Learning the API
 
@@ -214,6 +236,9 @@ You can do a lot with the API. Here are a few examples.
 >  
 > [Magnetic Poetry, Magic Message, Face Match, etc](https://hvrd.art/iiif)  
 > Playful projects that show the possibilities with computer vision and IIIF.  
+>
+> [666,105 WAYS OF LOOKING](https://apps.harvardartmuseums.org/ways-of-looking/2026-11-01/)  
+> A supply of random, poetic starting points for looking
 
 ### Example code snippets
 
