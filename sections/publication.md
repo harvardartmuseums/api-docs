@@ -12,6 +12,7 @@ Include one or more of the following parameters to filter the items.
 | :--------- | :----- |
 | apikey | YOUR API KEY ***required*** |
 | q | FIELD:VALUE (see [Elasticsearch Query String syntax](https://www.elastic.co/docs/reference/query-languages/query-dsl/query-dsl-query-string-query) for more options) |
+| semantic | a natural language description of what you are looking for; see the [search section](https://github.com/harvardartmuseums/api-docs/blob/master/sections/search.md) |
 | size | 0-9+ |
 | page | 0-9+ |
 | sort | FIELD NAME or "chronological" or "random" or "random:[SEED NUMBER]" |
@@ -23,6 +24,7 @@ Include one or more of the following parameters to filter the items.
 | keyword | a keyword search string; this parameter searches publication titles, description, and people names related to the creation of the publication |
 | person | PERSON ID or pipe separated list of PERSON IDs or PERSON NAME or "any" or "none" |
 | group | GROUP ID or pipe separated list of GROUP IDs or GROUP NAME or "any" or "none" |
+| isinshop | 1 to return only publications for sale in the museums shop; any other value has no effect |
 
 
 #### Examples

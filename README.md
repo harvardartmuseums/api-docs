@@ -58,6 +58,46 @@ https://api.harvardartmuseums.org/object?size=5&page=42
 
 The `next` and `prev` fields in the info block provide a handy shortcut for paging forward and backward through records. They will contain a fully formed URL to the next and previous pages of records. Send a new request to the value in the `next` field to move forward. Check for the existance of the `next` and `prev` fields to determine if you are at the beginning or end of your results.
 
+As an alternative to `page`, you can set an explicit offset with the `from` parameter (i.e. `&from=40` to begin at the forty-first record). If both are supplied and `page` is a number, `page` wins.
+
+One caveat when using the `semantic` parameter: relevance-fused results do not report a reliable total, so a `next` link is included whenever a full page of records comes back. Following it may land you on an empty page. Treat an empty `records` array as the end of the results.
+
+## Value conventions
+
+Most parameters that filter a resource share the same conventions.
+
+Separate multiple values with a pipe (`|`) to match **any** of them. For example `&century=17th century|18th century` finds objects from either century.
+
+Supplying the same parameter twice does not combine the two values. If you send `&century=17th century&century=18th century` only the last one is used. Use a pipe separated list instead.
+
+Two reserved values work on nearly every filter:
+
+* `any` matches records where the field has some value. `&culture=any` finds objects that have a culture recorded.
+* `none` matches records where the field is empty or absent. `&culture=none` finds objects with no culture recorded.
+
+Filters that accept both an ID and a name decide between them by looking at the value. A value made up entirely of digits is matched against the ID field; anything else is matched against the name field. This means you cannot mix IDs and names in the same pipe-separated list — pick one form or the other.
+
+Name matching is case-insensitive, so `&culture=roman` and `&culture=Roman` return the same records.
+
+The `before` and `after` parameters are exclusive bounds. `&after=1900` finds objects whose `datebegin` is greater than 1900, not greater than or equal to it.
+
+Values containing spaces, ampersands, or other reserved characters must be URL encoded (i.e. `&division=Asian+and+Mediterranean+Art`).
+
+## Searching
+
+There are four ways to search, and they can be combined.
+
+* `q` takes a field-scoped query in [Elasticsearch query string syntax](https://www.elastic.co/docs/reference/query-languages/query-dsl/query-dsl-query-string-query), i.e. `&q=totalpageviews:1`.
+* `keyword` takes a plain-language search string and runs it across many fields at once. It is available on the object, image, exhibition, and publication resources.
+* `match` controls whether every `keyword` term must match (`all`, the default) or just one (`any`).
+* `semantic` takes a natural language description and finds records by meaning rather than by matching words.
+
+Supplying `semantic` together with `keyword` or `q` runs a hybrid search that blends both sets of results.
+
+Add `&highlight=1` to any request to get a `_highlight` block on each record showing which fields matched and where.
+
+Read the [search section](https://github.com/harvardartmuseums/api-docs/blob/master/sections/search.md) for the full details, including the advanced query syntax that `keyword` accepts.
+
 ## Errors
 
 Requests that contain a bad, invalid, or missing API key will return a `401 Unauthorized` error. Remember every request requires the `apikey` parameter with a valid key. See the very top of this document for [more information about keys](https://github.com/harvardartmuseums/api-docs#access-to-the-api). Requests for resources other than those listed in the [resources section below](https://github.com/harvardartmuseums/api-docs#resources-that-are-available) will return a `404 Not Found` error.  
@@ -137,10 +177,9 @@ Several primary museum resources are accessible in this API. They include the fo
 * [Image](https://github.com/harvardartmuseums/api-docs/blob/master/sections/image.md)
 * [Audio](https://github.com/harvardartmuseums/api-docs/blob/master/sections/audio.md)
 * [Annotation](https://github.com/harvardartmuseums/api-docs/blob/master/sections/annotation.md)
+* [Info](https://github.com/harvardartmuseums/api-docs/blob/master/sections/info.md)
 
-## Experimental data
-
-The experimental data graduated. Refer to the [Annotation](https://github.com/harvardartmuseums/api-docs/blob/master/sections/annotation.md) endpoint.  
+Three further sections describe topics that span every resource: [Search](https://github.com/harvardartmuseums/api-docs/blob/master/sections/search.md), [Analysis](https://github.com/harvardartmuseums/api-docs/blob/master/sections/analysis.md), and [IIIF](https://github.com/harvardartmuseums/api-docs/blob/master/sections/iiif.md).
 
 ## Learning the API
 

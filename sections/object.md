@@ -12,13 +12,17 @@ Include one or more of the following parameters to filter the items.
 | :--------- | :----- |
 | apikey | YOUR API KEY ***required*** |
 | q | FIELD:VALUE (see [Elasticsearch Query String syntax](https://www.elastic.co/docs/reference/query-languages/query-dsl/query-dsl-query-string-query) for more options) |
+| semantic | a natural language description of what you are looking for; see the [search section](https://github.com/harvardartmuseums/api-docs/blob/master/sections/search.md) |
 | size | 0-9+ |
 | page | 0-9+ |
 | sort | FIELD NAME or NAMED SORT or "random" or "random:[SEED NUMBER]" |
 | sortorder | asc or desc |
 | fields | comma separated list of data fields you want in the output |
 | view | NAMED VIEW — returns a predefined subset of fields; overridden by the fields parameter |
+| highlight | 1 to add a `_highlight` block to each record showing which fields matched |
 | aggregation |  see [Elasticsearch aggregations](https://www.elastic.co/docs/explore-analyze/query-filter/aggregations) |
+| facets | "all" or a comma separated list of facet names |
+| facet_size | 0-9+; the number of values returned per facet; default is 10, maximum is 100 |
 | id | pipe separated list of record IDs |
 | hasimage | 0 or 1 |
 | accessionmethod | ACCESSION METHOD or pipe separated list of ACCESSION METHODS or "any" or "none" |
@@ -35,22 +39,23 @@ Include one or more of the following parameters to filter the items.
 | image | IMAGE ID or pipe separated list of IMAGE IDs or RENDITION NUMBER or "any" or "none" |
 | gallery | GALLERY NUMBER or pipe separated list of gallery numbers or "any" or "none" |
 | group | GROUP ID or pipe separated list of GROUP IDs or GROUP NAME or "any" or "none" |
-| keyword | a keyword search string; searches titles, artists, description, classification, culture, period, worktype, medium terms, support terms, technique, provenance, creditline, medium, commentary, label text, object number, contextual text, exhibition titles, and marks |
+| keyword | a keyword search string; searches titles, artists, description, classification, culture, period, worktype, medium terms, support terms, technique, provenance, creditline, medium, commentary, label text, object number, contextual text, exhibition titles, marks, places, and gallery names |
 | match | "all" or "any"; controls how many keyword terms must match; default is "all" (every term required); use "any" for exploratory natural language queries where matching at least one term is sufficient |
 | medium | MEDIUM ID or pipe separated list of MEDIUM IDs or MEDIUM NAME or pipe separated list of MEDIUM NAMES or "any" or "none" |
 | objectnumber | 1 or more terms |
-| period | PERIOD or pipe separated list of periods or "any" or "none" |
+| period | PERIOD ID or pipe separated list of PERIOD IDs or PERIOD NAME or pipe separated list of PERIOD NAMES or "any" or "none" |
 | person | PERSON ID or pipe separated list of PERSON IDs or PERSON NAME or "any" or "none" |
 | place | PLACE ID or pipe separated list of PLACE IDs or PLACE NAME or "any" or "none" |
 | publication | PUBLICATION ID or pipe separated list of PUBLICATION IDs or PUBLICATION TITLE or "any" or "none" |
-| relatedto | OBJECT ID or "any" or "none" |
+| relatedto | OBJECT ID of another object, or "any" or "none"; finds objects curatorially related to the one you name. Only numeric IDs are honored — a name is ignored |
 | role | ROLE NAME or pipe separated list of ROLE NAMES or "any" or "none" |
 | state | STATE DESCRIPTION or pipe separated list of STATE DESCRIPTIONS or "any" or "none" |
 | style | STYLE NAME or pipe separated list of STYLE NAMES or "any" or "none" |
 | support | SUPPORT ID or pipe separated list of SUPPORT IDs or SUPPORT NAME or pipe separated list of SUPPORT NAMES or "any" or "none" |
-| technique | TECHNIQUE ID or pipe separated list of TECHNIQUE IDs or TECHNIQUE NAME or pipe separated list of TECHNIQUE NAMES or "any" |
+| technique | TECHNIQUE ID or pipe separated list of TECHNIQUE IDs or TECHNIQUE NAME or pipe separated list of TECHNIQUE NAMES or "any" or "none" |
 | title | 1 or more terms |
 | exact_title | EXACT URL ENCODED TITLE |
+| topic | TOPIC ID or pipe separated list of TOPIC IDs or TOPIC NAME or pipe separated list of TOPIC NAMES or "any" or "none" |
 | verificationlevel | VERIFICATION LEVEL NUMBER or pipe separated list of numbers or "any" or "none" |
 | video | VIDEO ID or pipe separated list of VIDEO IDs or VIDEO DESCRIPTION or "any" or "none" |
 | worktype | WORKTYPE ID or pipe separated list of WORKTYPE IDs or WORKTYPE NAME or pipe separated list of WORKTYPE NAMES or "any" or "none" |
@@ -74,11 +79,92 @@ Named views return a predefined subset of fields, useful for reducing response s
 
 | View name | Description | Fields included |
 | :--------- | :---------- | :-------------- |
-| core | Citation-style record | classification, dated, objectid, objectnumber, title, people, worktypes, places, period, culture, medium, technique, dimensions |
+| core | Citation-style record | classification, dated, objectid, objectnumber, title, people, worktypes, places, period, culture, medium, technique, dimensions, images |
 | stats | Numeric/analytics fields | objectid, objectnumber, title, totalpageviews, totaluniquepageviews, rank, imagecount, colorcount, mediacount, exhibitioncount, publicationcount, peoplecount, relatedcount, groupcount, accessionyear, datebegin, dateend |
 | images | Visual gallery data | objectid, objectnumber, title, primaryimageurl, images, dated, classification, people |
 | provenance | Ownership history | objectid, objectnumber, title, provenance, creditline, accessionmethod, accessionyear, department, division |
 | minimal | Lightest possible | objectid, objectnumber, title, classification, dated |
+
+#### Facets
+
+Facets are a prepackaged form of aggregation. Where the `aggregation` parameter asks you to write Elasticsearch syntax, the `facets` parameter takes a plain list of names and returns counts already matched up to the filter parameter you would use to drill down.
+
+Add `facets=all` to get every facet, or name the ones you want.
+
+| Facet name | Counts by | Drill down with |
+| :--------- | :---------- | :-------------- |
+| classification | classification | classification |
+| worktype | work type | worktype |
+| culture | culture | culture |
+| century | century | century |
+| technique | technique | technique |
+| medium | medium term | medium |
+| support | support term | support |
+| grouping | group name | group |
+| period | period | period |
+| place | place | place |
+| gallery | gallery number | gallery |
+| color | color | color |
+| division | division | division |
+| verificationlevel | verification level | verificationlevel |
+| topic | topic | topic |
+| accessionmethod | accession method | accessionmethod |
+| department | department | department |
+| style | style | style |
+| state | state | state |
+
+Note that the facet is named `grouping` while the parameter you filter with is named `group`.
+
+Facets appear as a block of data in the response alongside `records`.
+
+```json
+"facets": {
+    "classification": {
+        "values": [
+            {
+                "value": "Photographs",
+                "count": 83199,
+                "active": false,
+                "id": 17
+            },
+            {
+                "value": "Prints",
+                "count": 69330,
+                "active": false,
+                "id": 23
+            }
+        ],
+        "missing": 0,
+        "other": 95974
+    }
+}
+```
+
+| Field | Description |
+| :--------- | :----- |
+| value | the value being counted, in its display form |
+| count | the number of records in the current result set with that value |
+| active | true when this value is one you are already filtering on |
+| id | the ID for the value, when the facet has one; use it in place of the name when drilling down |
+| missing | the number of records in the result set with no value for this field |
+| other | the number of records in values beyond those returned; raise `facet_size` to see more of them |
+
+By default each facet returns its ten most common values. Use `facet_size` to ask for more, up to 100.
+
+Two things to know when you filter on the same attribute you are faceting on:
+
+* `active` is matched against the value name, so it is only set when you filtered by name. Filtering by ID leaves every bucket `false`.
+* For facets drawn from a list of values on a record — grouping, worktype, culture, century, medium, support, place, topic, and gallery — the `id` returned alongside each value is unreliable in that situation. Filter by name, or read the IDs from an unfiltered request.
+
+> https://api.harvardartmuseums.org/object?facets=classification,culture,century  
+> Returns objects along with counts by classification, culture, and century.  
+>   
+> https://api.harvardartmuseums.org/object?facets=all&size=0  
+> Returns every facet and no records, which is the quickest way to survey the whole collection.  
+>   
+> https://api.harvardartmuseums.org/object?facets=culture&facet_size=50&classification=Paintings  
+> Returns the fifty most common cultures among paintings. Counts reflect the classification filter.  
+
 
 
 #### Examples
@@ -870,6 +956,8 @@ An object many have zero or more of these links. The field structure of seeAlso 
 
 `GET /object/OBJECT_ID/SECTION` will get a section of detailed info about the specified object.
 
+SECTION can be the name of any top-level field in an object record. The sections below are the ones most people want.
+
 | Sections | Description |
 | :--------- | :----- |
 | colors | an array of the colors programmatically extracted from the primary image of the object |
@@ -955,4 +1043,67 @@ An object many have zero or more of these links. The field structure of seeAlso 
         "pagenumbers": "p. 134, ill. (color)"
     }
 ]
+```
+
+## Get similar objects
+
+`GET /object/OBJECT_ID/similar` will get objects that resemble the specified object.
+
+Similarity is computed from the descriptive text attached to each object rather than from the structured fields, so the results are not simply other works by the same artist or in the same classification.
+
+Four signals are returned, each as its own array. An object that lacks the source text for a signal returns an empty array for it.
+
+| Signal | Description |
+| :--------- | :----- |
+| visual | Objects that look alike, based on descriptions of what each work depicts |
+| concrete | Objects sharing concrete subject matter, such as the things and places shown |
+| interpretive | Objects sharing themes, mood, or ideas |
+| mixed | A blend of the concrete and interpretive signals |
+
+Include one or more of the following parameters.
+
+| Parameter | Value |
+| :--------- | :----- |
+| apikey | YOUR API KEY ***required*** |
+| size | 0-9+; the number of records returned per signal; default is 10, maximum is 100 |
+| fields | comma separated list of data fields you want in the output |
+
+Each record carries a `_score` showing how strong the match is. Scores are comparable within a signal but not across signals. Note that this response has no `info` block and no `records` wrapper.
+
+#### Examples
+
+> https://api.harvardartmuseums.org/object/299843/similar  
+> Returns objects similar to van Gogh's "Self-Portrait Dedicated to Paul Gauguin".  
+>   
+> https://api.harvardartmuseums.org/object/299843/similar?size=3&fields=objectid,title  
+> Returns three objects per signal with only the object ID and title.  
+
+#### Response
+
+```json
+{
+    "visual": [
+        {
+            "id": 55320,
+            "objectid": 55320,
+            "objectnumber": "2009.90.33",
+            "title": "Self Portrait",
+            "classification": "Paintings",
+            "dated": "c. 1920s",
+            "primaryimageurl": "https://nrs.harvard.edu/urn-3:HUAM:77602_dynmc",
+            "people": [
+                {
+                    "role": "Artist",
+                    "displayname": "Walter Sickert",
+                    "personid": 33016,
+                    "displayorder": 1
+                }
+            ],
+            "_score": 18.432
+        }
+    ],
+    "concrete": [],
+    "interpretive": [],
+    "mixed": []
+}
 ```

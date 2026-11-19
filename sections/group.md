@@ -19,7 +19,6 @@ Include one or more of the following parameters to filter the items.
 | fields | comma separated list of data fields you want in the output |
 | aggregation |  see [Elasticsearch aggregations](https://www.elastic.co/docs/explore-analyze/query-filter/aggregations) |
 | id | pipe separated list of record IDs |
-| usedby | FIELD NAME:ID |
 | level | [0-9+] |
 | parent | [0-9+] |
 

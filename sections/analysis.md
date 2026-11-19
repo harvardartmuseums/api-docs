@@ -31,6 +31,8 @@ Output from aggregations will appear as an additional block of data in the respo
 
 To see aggregations in action, take a look at the object activity graphs in the [Art Explorer](http://apps.harvardartmuseums.org/art-explorer/) demo application. The application fetches aggregation data from the [activity](https://github.com/harvardartmuseums/api-docs/blob/master/sections/activity.md) endpoint. The data is fed in to [D3](https://d3js.org/) to produce the graphs.  
 
+If you only want counts by one of the common object attributes, the `facets` parameter on the [object endpoint](https://github.com/harvardartmuseums/api-docs/blob/master/sections/object.md) is simpler. It takes a plain list of names rather than Elasticsearch syntax, and it returns the ID you need to drill down alongside each count.
+
 #### Tips and tricks
 
 * Aggregation parameter values must be [URL encoded](https://en.wikipedia.org/wiki/Percent-encoding).
@@ -61,8 +63,8 @@ https://api.harvardartmuseums.org/activity?object=299843&aggregation={
             "by_yearmonth": {
                 "date_histogram": {
                     "field": "date",
-                    "interval": "month",
-                    "format": "yyy-MM"
+                    "calendar_interval": "month",
+                    "format": "yyyy-MM"
                 },
                 "aggs": {
                     "totals": {

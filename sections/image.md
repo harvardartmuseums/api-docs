@@ -12,6 +12,7 @@ Include one or more of the following parameters to filter the items.
 | :--------- | :----- |
 | apikey | YOUR API KEY ***required*** |
 | q | FIELD:VALUE (see [Elasticsearch Query String syntax](https://www.elastic.co/docs/reference/query-languages/query-dsl/query-dsl-query-string-query) for more options) |
+| semantic | a natural language description of what you are looking for; see the [search section](https://github.com/harvardartmuseums/api-docs/blob/master/sections/search.md) |
 | size | 0-9+ |
 | page | 0-9+ |
 | sort | FIELD NAME or "random" or "random:[SEED NUMBER]" |
@@ -19,11 +20,19 @@ Include one or more of the following parameters to filter the items.
 | fields | comma separated list of data fields you want in the output |
 | aggregation |  see [Elasticsearch aggregations](https://www.elastic.co/docs/explore-analyze/query-filter/aggregations) |
 | id | pipe separated list of record IDs |
+| keyword | a keyword search string; searches image descriptions and captions |
+| match | "all" or "any"; controls how many keyword terms must match; default is "all" |
 
 #### Examples
 
 > https://api.harvardartmuseums.org/image?q=width:>2000  
 > Finds all images that are wider than 2000 pixels.  
+>   
+> https://api.harvardartmuseums.org/image?keyword=seated+figure  
+> Finds images whose description or caption mentions a seated figure.  
+>   
+> https://api.harvardartmuseums.org/image?semantic=a+crowded+street+at+night  
+> Finds images matching that description by meaning rather than by words.  
 
 #### Response
 
@@ -146,4 +155,60 @@ An image may have zero or more colors. The color of each pixel is read and then 
     "technique": "Make:Hasselblad;Model:Hasselblad H5D-50c MS;Orientation:1;Software:Adobe Photoshop CS6 (Macintosh);",
     "lastupdate": "2020-07-17T06:30:34-0400"
   }
+```
+
+## Get similar images
+
+`GET /image/IMAGE_ID/similar` will get images that resemble the specified image.
+
+Three signals are returned, each as its own array. An image that lacks the source data for a signal returns an empty array for it.
+
+| Signal | Description |
+| :--------- | :----- |
+| semantic | Images whose descriptions convey similar content |
+| perceptual | Images that look alike, compared pixel to pixel |
+| color | Images with a similar distribution of color |
+
+Include one or more of the following parameters.
+
+| Parameter | Value |
+| :--------- | :----- |
+| apikey | YOUR API KEY ***required*** |
+| size | 0-9+; the number of records returned per signal; default is 10, maximum is 1000 |
+| fields | comma separated list of data fields you want in the output |
+
+Each record carries a `_score` showing how strong the match is. Scores are comparable within a signal but not across signals. Note that this response has no `info` block and no `records` wrapper.
+
+Use `perceptual` to find duplicate or near-duplicate photography of the same work, and `semantic` to find images of different works that depict similar things.
+
+#### Examples
+
+> https://api.harvardartmuseums.org/image/56/similar  
+> Returns images similar to image 56.  
+>   
+> https://api.harvardartmuseums.org/image/56/similar?size=5&fields=imageid,baseimageurl  
+> Returns five images per signal with only the image ID and base URL.  
+
+#### Response
+
+```json
+{
+    "semantic": [
+        {
+            "id": 56,
+            "imageid": 56,
+            "baseimageurl": "https://nrs.harvard.edu/urn-3:HUAM:VRS10216",
+            "alttext": null,
+            "description": null,
+            "caption": null,
+            "width": 2550,
+            "height": 1879,
+            "format": "image/jpeg",
+            "accesslevel": 1,
+            "_score": 14.206
+        }
+    ],
+    "perceptual": [],
+    "color": []
+}
 ```

@@ -20,7 +20,7 @@ Include one or more of the following parameters to filter the items.
 | aggregation |  see [Elasticsearch aggregations](https://www.elastic.co/docs/explore-analyze/query-filter/aggregations) |
 | id | pipe separated list of record IDs |
 | object | OBJECT ID or pipe separated list of OBJECT IDs |
-| type | "edits", "pageviews", "uniquepageviews", "moves", "conservation", "studycenterviews" |
+| type | "edits", "pageviews", "uniquepageviews", "moves", "conservation", "studycenterviews", or "any" |
 
 Several types of activities are available via this endpoint. They are described in the `activitytype` field. 
 

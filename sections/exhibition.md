@@ -12,6 +12,7 @@ Include one or more of the following parameters to filter the items.
 | :--------- | :----- |
 | apikey | YOUR API KEY ***required*** |
 | q | FIELD:VALUE (see [Elasticsearch Query String syntax](https://www.elastic.co/docs/reference/query-languages/query-dsl/query-dsl-query-string-query) for more options) |
+| semantic | a natural language description of what you are looking for; see the [search section](https://github.com/harvardartmuseums/api-docs/blob/master/sections/search.md) |
 | size | 0-9+ |
 | page | 0-9+ |
 | sort | FIELD NAME or "chronological" or "random" or "random:[SEED NUMBER]" |
@@ -27,6 +28,8 @@ Include one or more of the following parameters to filter the items.
 | exact_title | EXACT URL ENCODED TITLE |
 | before | YYYY-MM-DD or “begindate:YYYY-MM-DD” or “enddate:YYYY-MM-DD” or “temporalorder:1234” |
 | after | YYYY-MM-DD or “begindate:YYYY-MM-DD” or “enddate:YYYY-MM-DD” or “temporalorder:1234” |
+| image | IMAGE ID or pipe separated list of IMAGE IDs or RENDITION NUMBER or "any" or "none" |
+| video | VIDEO ID or pipe separated list of VIDEO IDs or VIDEO DESCRIPTION or "any" or "none" |
 
 #### Examples
 
